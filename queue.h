@@ -42,9 +42,10 @@ public:
         Node<T>* new_node = new Node<T>;
         new_node->SetData(user_entered_value);
         
-        if (IsEmpty()) {front = rear = new_node ; used_size++;}
+        if (IsEmpty()) {front = rear = new_node ; }
         
-        else  {rear->set_next_node(new_node); rear = new_node; used_size++;}
+        else  {rear->set_next_node(new_node); rear = new_node;}
+        used_size++;
     }
     
     void Dequeue() {
