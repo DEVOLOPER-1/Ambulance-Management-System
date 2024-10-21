@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 26)
 
 add_executable(Ambulance_Management_System main.cpp
         Stack.h
-        Stack.cpp)
+        Stack.cpp
+        queue.cpp)
