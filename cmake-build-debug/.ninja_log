@@ -1,7 +1,6 @@
 # ninja log v6
-8	686	7510454980823426	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	35f365f3e6033068
-687	893	7510454987615799	Ambulance_Management_System.exe	d132bb0a79a5576b
-24	962	7510454757427470	CMakeFiles/Ambulance_Management_System.dir/Stack.cpp.obj	9bc63fc03fd12ca0
-24	795	7511891708867065	CMakeFiles/Ambulance_Management_System.dir/queue.cpp.obj	210d7d8fbe791602
 7	825	7511891708701778	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	35f365f3e6033068
+24	795	7511891708867065	CMakeFiles/Ambulance_Management_System.dir/queue.cpp.obj	210d7d8fbe791602
 825	1144	7511891716876119	Ambulance_Management_System.exe	936d4a6372ab26a6
+24	962	7510454757427470	CMakeFiles/Ambulance_Management_System.dir/Stack.cpp.obj	9bc63fc03fd12ca0
+36	457	7513274895518127	CMakeFiles/Ambulance_Management_System.dir/LinkedList.cpp.obj	964c4d4f582c046b
