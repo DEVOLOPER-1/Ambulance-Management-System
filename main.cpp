@@ -1,9 +1,9 @@
 #include <iostream>
 
-#include "queue.h"
+#include "data_structures/queue.h"
 using namespace  std;
-#include "Stack.h"
-#include "LinkedList.h"
+#include "data_structures/Stack.h"
+#include "data_structures/LinkedList.h"
 
 
 int main()

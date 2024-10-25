@@ -1,8 +1,12 @@
 # ninja log v6
-4	350	7515688026946462	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	3243f83a19ceaa9b
 83	599	7515687368617424	CMakeFiles/Ambulance_Management_System.dir/queue.cpp.obj	64d4aad0eddc12ef
+4	350	7515688026946462	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	3243f83a19ceaa9b
 351	538	7515688030412697	Ambulance_Management_System.exe	5d7b99d9f113c6b1
-265	422	7515687370434520	CMakeFiles/Ambulance_Management_System.dir/Node.cpp.obj	37f3c2f9a7223443
-1	311	7515839271454769	build.ninja	f0eb1b92e44fe1c6
+109	258	7515843286435322	CMakeFiles/Ambulance_Management_System.dir/data_structures/Node.cpp.obj	9663a5f575a7b2f5
 32	557	7515687368099656	CMakeFiles/Ambulance_Management_System.dir/Stack.cpp.obj	1eaf153508ac4ec5
+1	271	7515843328709371	build.ninja	f0eb1b92e44fe1c6
+265	422	7515687370434520	CMakeFiles/Ambulance_Management_System.dir/Node.cpp.obj	37f3c2f9a7223443
 17	531	7515695991286861	CMakeFiles/Ambulance_Management_System.dir/LinkedList.cpp.obj	e110731bb2fd5f2a
+19	308	7515843285535241	CMakeFiles/Ambulance_Management_System.dir/data_structures/Stack.cpp.obj	630fe9e72af3a789
+30	346	7515843285645246	CMakeFiles/Ambulance_Management_System.dir/data_structures/queue.cpp.obj	4b6b18149f5f9708
+71	374	7515843286045160	CMakeFiles/Ambulance_Management_System.dir/data_structures/LinkedList.cpp.obj	42c5f98ec019b9bd
