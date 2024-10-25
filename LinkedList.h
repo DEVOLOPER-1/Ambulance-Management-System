@@ -175,8 +175,8 @@ private:
     }
 
 public:
-    Node<T>* Sort() {   //merge-sort
-    if (IsEmpty() or count() == 1 ) cout<<"It's Already Sorted !\n";
+    Node<T>* Sort() {   //merge-sort [1,2][3][4,5]
+    if (IsEmpty() or (count() == 1) ) cout<<"It's Already Sorted !\n";
         else {
                 Node<T>* middle_positioned_ptr = FindMiddle(head);
                 Node<T>* a = head;

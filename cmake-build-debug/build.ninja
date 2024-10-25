@@ -51,31 +51,31 @@ build cmake_object_order_depends_target_Ambulance_Management_System: phony || .
 
 build CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/main.cpp || cmake_object_order_depends_target_Ambulance_Management_System
   DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
 
 build CMakeFiles/Ambulance_Management_System.dir/Stack.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/Stack.cpp || cmake_object_order_depends_target_Ambulance_Management_System
   DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\Stack.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
 
 build CMakeFiles/Ambulance_Management_System.dir/queue.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/queue.cpp || cmake_object_order_depends_target_Ambulance_Management_System
   DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\queue.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
 
 build CMakeFiles/Ambulance_Management_System.dir/LinkedList.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/LinkedList.cpp || cmake_object_order_depends_target_Ambulance_Management_System
   DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\LinkedList.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
 
 build CMakeFiles/Ambulance_Management_System.dir/Node.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/Node.cpp || cmake_object_order_depends_target_Ambulance_Management_System
   DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\Node.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
 
