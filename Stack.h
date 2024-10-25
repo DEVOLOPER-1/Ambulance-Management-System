@@ -5,33 +5,18 @@
 #ifndef STACK_H
 #define STACK_H
 #include<iostream>
+#include "Node.h"
 using namespace std;
 
 
-template<class T>
-class node {
-private:
-    node * next_node ;
-    T node_data;
 
-public:
-    node() : next_node(nullptr)  {}
-    void set_next_node(node* new_node) {
-        next_node = new_node ;
-    }
-    void set_data(T node_data) {
-        this->node_data = node_data ;
-    }
-    node* get_next_node()const{return next_node ;}
-    T get_data()const{return node_data;}
-};
 
 
 template<class T>
 class Stack {
 private:
     int size ;
-    node<T> * top ;
+    Node<T> * top ;
 
 public:
     Stack() : size(0) , top(nullptr) {}
@@ -41,15 +26,15 @@ public:
     }
     
     void Push(T user_entered_value) {
-        node<T> * NewNode = new node<T>; //Is there a problem when duplicating the type name ?
-        NewNode->set_data(user_entered_value);
+        Node<T> * NewNode = new Node<T>; //Is there a problem when duplicating the type name ?
+        NewNode->SetData(user_entered_value);
 
         if (Is_stack_empty()) {
-            NewNode->set_next_node(nullptr);
+            NewNode->SetNextNode(nullptr);
             top = NewNode ;
         }
         else {
-            NewNode->set_next_node(top);
+            NewNode->SetNextNode(top);
             top = NewNode;
         }
         size++;
@@ -59,9 +44,9 @@ public:
             cout<<"Stack Is Empty! "<<endl; 
         }
         else {
-            node<T>* del_ptr = top;
-            T value = top->get_data();
-            top  = top->get_next_node();
+            Node<T>* del_ptr = top;
+            T value = top->GetData();
+            top  = top->GetNextNode();
             delete del_ptr;
             size--;
             return value;
@@ -71,7 +56,7 @@ public:
 
     void PeekLook() {
         if (Is_stack_empty()!=true)
-            cout<<"The Value on Top of The Stack Is "<<top->get_data()<<endl;
+            cout<<"The Value on Top of The Stack Is "<<top->GetData()<<endl;
         else  cout<<"Stack Is Empty! "<<endl; 
 
 
@@ -80,21 +65,21 @@ public:
     
 
     void Display() {
-        node<T>* temp = top ;
+        Node<T>* temp = top ;
         while (temp!=nullptr) {
-            cout<<temp->get_data()<<" ";
-            temp = temp->get_next_node();
+            cout<<temp->GetData()<<" ";
+            temp = temp->GetNextNode();
         }
     }
     
     int get_stack_members_count()const{return size;}
 
     bool Search(T user_entered_value) {
-        node<T> temp_ptr = top;
+        Node<T> temp_ptr = top;
         
         while (temp_ptr!= nullptr) {
-            if (temp_ptr.get_data()==user_entered_value) return true;
-            temp_ptr = temp_ptr.get_next_node();
+            if (temp_ptr.GetData()==user_entered_value) return true;
+            temp_ptr = temp_ptr.GetNextNode();
         }
         return false;
     }
