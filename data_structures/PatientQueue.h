@@ -22,11 +22,12 @@ public:
 
     string  GetCaseType() const;
     int  GetRequestTime() const;
-    int  GetPatientID() const;
+
+    int GetPatientID() const;
     int  GetHospitalID() const;
     int  GetCaseSeverity() const;
     
-    ~PatientData();
+    // ~PatientData();
 };
 
 
