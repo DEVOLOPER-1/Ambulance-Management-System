@@ -3,22 +3,53 @@
 //
 
 #include "PatientQueue.h"
+PatientData::PatientData(string CaseType, int RequestTime, int PatientID, int HospitalID, int CaseSeverity) {
+    this->CaseType = CaseType;
+    this->RequestTime = RequestTime;
+    this->PatientID = PatientID;
+    this->HospitalID = HospitalID;
+    this->CaseSeverity = CaseSeverity;
+    
+}
+
+int  PatientData::GetCaseSeverity() const {
+    return CaseSeverity;
+}
+
+string PatientData::GetCaseType() const {
+    return CaseType;
+}
+
+int PatientData::GetRequestTime() const {
+    return RequestTime;
+}
+
+int PatientData::GetHospitalID() const {
+    return HospitalID;
+}
+
+int PatientData::GetPatientID() const {
+    return PatientID;
+}
 
 
 
-void PatientQueue:: PatientDataHandler(const PatientData & PatientObj , int N0_0f_Patients) {
-    PatientData* EP_Patients = new PatientData[N0_0f_Patients]; // where SIZE is the number of PatientData objects
+
+
+
+void PatientQueue:: PatientDataHandler(PatientData &PatientObj, int N0_0f_Patients) {
+    PatientData* EP_Patients = new PatientData[N0_0f_Patients](); // where SIZE is the number of PatientData objects
     int counter = 0 ;
     int array_counter = 0 ;
-    if (PatientObj.CaseType == "EP") {
+    if (PatientObj.GetCaseType() == "EP") {
         EP_Patients[array_counter] = PatientObj;
         array_counter++;
         // EP->Enqueue(PatientData) ;
         counter++;
     }
         
-    if (PatientObj.CaseType == "NP") {NP->Enqueue(PatientObj); counter++;} 
-    if (PatientObj.CaseType == "SP") {SP->Enqueue(PatientObj) ; counter++;}
+    if (PatientObj.GetCaseType() == "NP") {NP->Enqueue(PatientObj); counter++;} 
+    if (PatientObj.GetCaseType() == "SP") {SP->Enqueue(PatientObj) ; counter++;}
     if (counter == N0_0f_Patients) {
         //Sort the patients array
         //Push the objects of the array into the queue after sorting
@@ -37,22 +68,26 @@ void PatientQueue:: PatientDataHandler(const PatientData & PatientObj , int N0_0
 }
 
 
-PatientData* PatientQueue:: Get_A_Patient() {
+PatientData* PatientQueue:: Get_A_Patient() const {
+    PatientData* patient = nullptr; 
     if (! EP->IsEmpty()){
-        EP->get_most_front_one();
+        patient = EP->GetFromTheQueuePointer(true);
         EP->Dequeue();
     }
     if (! SP->IsEmpty()) {
-        SP->get_most_front_one();
+        patient = SP->GetFromTheQueuePointer(true);
         SP->Dequeue();
     }
     if (! NP->IsEmpty()) {
-        NP->get_most_front_one();
+        patient = NP->GetFromTheQueuePointer(true);
         NP->Dequeue();
     }
     else {
         throw out_of_range("No Patients Al Hamdullilah !");
     }
+    return patient;
+    patient = nullptr;
+    delete patient;
 }
 
 void PatientQueue::Sort_EP_Patients_Array(PatientData* Patientsarray[] , int  beginning , int ending) {
@@ -66,10 +101,10 @@ void PatientQueue::Sort_EP_Patients_Array(PatientData* Patientsarray[] , int  be
 }
 
 int PatientQueue::Partition(PatientData* Patientsarray[] , int  beginning , int ending) {
-    int pivot = Patientsarray[ending]->CaseSeverity;
+    int pivot = Patientsarray[ending]->GetCaseSeverity();
     int i = beginning-1 ;
     for (int j = beginning ; j <=ending ;j++ ) {
-        if (Patientsarray[j]->CaseSeverity<pivot){
+        if (Patientsarray[j]->GetCaseSeverity()<pivot){
             i++;
             PatientData * temp = Patientsarray[i] ;
             Patientsarray[i] = Patientsarray[j];

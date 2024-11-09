@@ -7,6 +7,8 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+
+#include "PatientQueue.h"
 using namespace std;
 #include "Node.h"
 
@@ -92,9 +94,16 @@ public:
     }
     
     int get_size() const {return used_size;}
+    
+    T* GetFromTheQueuePointer(bool IsFront = false) const{
+        if (IsFront){return front->GetData();}
+        return rear->GetData();
+    }
 
-    T get_most_front_one() const {return front->GetData();}
-    T get_most_rear_one() const {return rear->GetData();}
+    T GetFromTheQueue(bool IsFront = false) const{
+        if (IsFront){return front->GetData();}
+        return rear->GetData();
+    }
 
     
 };

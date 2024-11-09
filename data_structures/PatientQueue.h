@@ -8,12 +8,25 @@ using namespace std;
 #include "queue.h"
 #include<string>
 
-struct PatientData {
+class PatientData {
+private:
     string CaseType;
     int RequestTime;
     int PatientID;
     int HospitalID;
     int CaseSeverity;
+public:
+    PatientData(string CaseTpe , int RequestTime , int PatientID , int HospitalID , int CaseSeverity);
+
+
+
+    string  GetCaseType() const;
+    int  GetRequestTime() const;
+    int  GetPatientID() const;
+    int  GetHospitalID() const;
+    int  GetCaseSeverity() const;
+    
+    ~PatientData();
 };
 
 
@@ -32,9 +45,9 @@ private:
 
 public:
 
-    void PatientDataHandler(const PatientData & PatientObj , int N0_0f_Patients);
+    void PatientDataHandler(PatientData &PatientObj, int N0_0f_Patients);
     
-    PatientData* Get_A_Patient();
+    PatientData* Get_A_Patient() const;
 };
 
 
