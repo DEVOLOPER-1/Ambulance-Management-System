@@ -1,13 +1,15 @@
 #include <iostream>
-
-#include "data_structures/queue.h"
-using namespace  std;
 #include "data_structures/Stack.h"
 #include "data_structures/LinkedList.h"
+#include "data_structures/PatientQueue.h"
+#include "data_structures/queue.h"
+using namespace  std;
+
 
 
 int main()
 {
+
     std::cout << "Hello, World!" << std::endl;
     Stack<int>s;
     queue<float>q;
@@ -16,7 +18,7 @@ int main()
     linked_list.Append(6);
     linked_list.Append(2);
     cout<<"ll  " ; linked_list.Display() ; cout<<endl;
-    linked_list.Sort();
+    // linked_list.Sort();
     cout<<"ll  after sorting " ; linked_list.Display() ; cout<<endl;
     cout<<s.get_stack_members_count()<<endl;
     cout<<s.Is_stack_empty()<<endl;

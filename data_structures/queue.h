@@ -6,6 +6,7 @@
 #define QUEUE_H
 #include <iostream>
 #include <stdexcept>
+#include <string>
 using namespace std;
 #include "Node.h"
 
@@ -18,11 +19,33 @@ private:
     Node<T>*front = new Node<T>;
     Node<T>*rear = new Node<T>;
     int used_size  ;
+
+// protected:
+//     queue* SortingPatientsSeverity() {
+//         if (IsEmpty()) throw out_of_range("Empty Queue! \n");
+//         else if (rear == front) cout<<"Sorted !";
+//         
+//         else {
+//             queue* temp_queue = new queue<T> ; 
+//             Node<T>* temp_ptr = new Node<T> ;
+//             temp_ptr = front ;
+//             Node<T>* temp_ptr_2 = new Node<T> ;
+//             temp_ptr_2 = front->GetNextNode() ;
+//             while (temp_ptr_2) {
+//                 if (stoi(temp_ptr->GetData()[5]) > stoi(temp_ptr_2->GetData()[5])) {
+//                     temp_queue->Enqueue(temp_ptr);
+//                 }
+//             }
+//             return temp_queue ; 
+//         }
+//     }
 public:
     queue(): front(nullptr) , rear(nullptr) , used_size(0){}
+    
     bool IsEmpty() {
         return (front ==nullptr && rear == nullptr);
     }
+    
     void Enqueue(T user_entered_value) {
         Node<T>* new_node = new Node<T>;
         new_node->SetData(user_entered_value);
@@ -33,6 +56,7 @@ public:
         used_size++;
     }
     
+    
     void Dequeue() {
         if (IsEmpty()) throw out_of_range("Empty Queue! \n");
         //If we have 1 element only
@@ -41,6 +65,7 @@ public:
         else {
             const Node<T>* delptr = front ;
             front = front->GetNextNode();
+            delptr = nullptr;
             delete delptr ;
             used_size--;
         }

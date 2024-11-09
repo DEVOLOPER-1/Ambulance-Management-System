@@ -11,4 +11,6 @@ add_executable(Ambulance_Management_System main.cpp
         data_structures/LinkedList.cpp
         data_structures/LinkedList.h
         data_structures/Node.cpp
-        data_structures/Node.h)
+        data_structures/Node.h
+        data_structures/PatientQueue.cpp
+        data_structures/PatientQueue.h)
