@@ -4,19 +4,16 @@
 
 #ifndef QUEUE_H
 #define QUEUE_H
-#include <iostream>
-#include <stdexcept>
-#include <string>
-
-#include "PatientQueue.h"
+#include <bits/stdc++.h>
+#include "SyntheticNode.h"
 using namespace std;
-#include "Node.h"
+
 
 
 
 template<class T>
 
-class queue {
+class synthetic_queue {
 private:
     Node<T>*front = new Node<T>;
     Node<T>*rear = new Node<T>;
@@ -42,7 +39,7 @@ private:
 //         }
 //     }
 public:
-    queue(): front(nullptr) , rear(nullptr) , used_size(0){}
+    synthetic_queue(): front(nullptr) , rear(nullptr) , used_size(0){}
     
     bool IsEmpty() {
         return (front ==nullptr && rear == nullptr);

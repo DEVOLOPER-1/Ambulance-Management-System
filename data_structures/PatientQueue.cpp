@@ -1,8 +1,9 @@
 //
 // Created by youss on 08-Nov-24.
 //
-
+#include <bits/stdc++.h>
 #include "PatientQueue.h"
+#include "synthetic_queue.h"
 PatientData::PatientData(string CaseType, int RequestTime, int PatientID, int HospitalID, int CaseSeverity) {
     this->CaseType = CaseType;
     this->RequestTime = RequestTime;
@@ -120,9 +121,9 @@ int PatientQueue::Partition(PatientData* Patientsarray[] , int  beginning , int 
 }
 
 PatientQueue::PatientQueue() {
-    SP = new queue<PatientData>;
-    EP = new queue<PatientData>;
-    NP = new queue<PatientData>;
+    SP = new synthetic_queue<PatientData>;
+    EP = new synthetic_queue<PatientData>;
+    NP = new synthetic_queue<PatientData>;
 }
 
 PatientQueue::~PatientQueue() {

@@ -1,8 +1,8 @@
-#include <iostream>
-#include "data_structures/Stack.h"
+#include <bits/stdc++.h>
+#include "data_structures/synthetic_stack.h"
 #include "data_structures/LinkedList.h"
 #include "data_structures/PatientQueue.h"
-#include "data_structures/queue.h"
+#include "data_structures/synthetic_queue.h"
 using namespace  std;
 
 
@@ -12,7 +12,7 @@ int main()
 
     std::cout << "Hello, World!" << std::endl;
     Stack<int>s;
-    queue<float>q;
+    synthetic_queue<float>q;
     LinkedList<int>linked_list;
     // linked_list.
     linked_list.Append(6);

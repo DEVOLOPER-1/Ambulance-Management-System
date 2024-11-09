@@ -4,8 +4,8 @@
 
 #ifndef STACK_H
 #define STACK_H
-#include<iostream>
-#include "Node.h"
+#include <bits/stdc++.h>
+#include "SyntheticNode.h"
 using namespace std;
 
 

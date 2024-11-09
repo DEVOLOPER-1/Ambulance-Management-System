@@ -5,8 +5,8 @@
 #ifndef PATIENTQUEUE_H
 #define PATIENTQUEUE_H
 using namespace std;
-#include "queue.h"
-#include<string>
+#include "synthetic_queue.h"
+#include <bits/stdc++.h>
 
 class PatientData {
 private:
@@ -33,9 +33,9 @@ public:
 
 class PatientQueue {
 private:
-    queue<PatientData> *SP = new queue<PatientData>; //Special Patient Queue
-    queue<PatientData> *EP = new queue<PatientData>; //Emergent Patient Queue
-    queue<PatientData> *NP = new queue<PatientData>; //Normal Patient Queue
+    synthetic_queue<PatientData> *SP = new synthetic_queue<PatientData>; //Special Patient Queue
+    synthetic_queue<PatientData> *EP = new synthetic_queue<PatientData>; //Emergent Patient Queue
+    synthetic_queue<PatientData> *NP = new synthetic_queue<PatientData>; //Normal Patient Queue
 
     PatientQueue();
     ~PatientQueue();

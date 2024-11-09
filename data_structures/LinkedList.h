@@ -4,9 +4,9 @@
 
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
-#include <iostream>
-#include "queue.h"
-#include "Node.h"
+#include <bits/stdc++.h>
+#include "synthetic_queue.h"
+#include "SyntheticNode.h"
 using namespace std;
 
 
