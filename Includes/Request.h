@@ -4,41 +4,42 @@ using namespace std;
 
 class Request
 {
-	int RequestTime;
-	int distance;
-	int severity;
+	string	PatientType;
+	int		RequestTime;
+	int     PatientID;
+	int		PickupTime;
+	int     NearestHospital;
+	int		distance;
+	int		severity;
 
 public:
-	Request(int RequestTime, int distance) : Request(RequestTime, distance, 0) {}
-	Request(int RequestTime, int distance, int severity) : RequestTime(RequestTime), distance(distance), severity(severity) {}
+	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity)
+		: PatientType("Patient"), RequestTime(RequestTime), PatientID(PatientID), NearestHospital(NearestHospital)
+		, distance(distance), severity(severity), PickupTime(0) {}
+
+	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance)
+		: Request(PatientType, RequestTime, PatientID, NearestHospital, distance, 0) {}
 
 	// getters
-	int getRequestTime() { return RequestTime; }
-	int getDistance() { return distance; }
-	int getSeverity() { return severity; }
+	string getPatientType()		{ return PatientType;		}
+	int    getRequestTime()		{ return RequestTime;		}
+	int    getPatientID()		{ return PatientID;			}
+	int    getPickupTime()		{ return PickupTime;		}
+	int    getNearestHospital() { return NearestHospital;	}
+	int    getDistance()		{ return distance;			}
+	int    getSeverity()		{ return severity;			}
 
-	// stream insertion operator
-	friend std::ostream& operator<<(std::ostream& os, Request& r)
-	{
-		os << r.getSeverity();
-		return os;
-	}
-	/*
-	bool operator< (Request& r2) { return getSeverity() < r2.getSeverity(); }
-	bool operator> (Request& r2) { return getSeverity() > r2.getSeverity(); }
-	bool operator<=(Request& r2) { return getSeverity() <= r2.getSeverity(); }
-	bool operator>=(Request& r2) { return getSeverity() >= r2.getSeverity(); }
-	bool operator==(Request& r2) { return getSeverity() == r2.getSeverity(); }
-	bool operator!=(Request& r2) { return getSeverity() != r2.getSeverity(); }
-	*/
+	// setters
+	void setPickupTime(int time) { PickupTime = time; }
 };
 
 // comparison operators (based on severity)
 
-
-bool operator< (Request r1, Request r2) { return r1.getSeverity() < r2.getSeverity(); }
-bool operator> (Request r1, Request r2) { return r1.getSeverity() > r2.getSeverity(); }
+/*
+bool operator< (Request r1, Request r2) { return r1.getSeverity() <  r2.getSeverity(); }
+bool operator> (Request r1, Request r2) { return r1.getSeverity() >  r2.getSeverity(); }
 bool operator<=(Request r1, Request r2) { return r1.getSeverity() <= r2.getSeverity(); }
 bool operator>=(Request r1, Request r2) { return r1.getSeverity() >= r2.getSeverity(); }
 bool operator==(Request r1, Request r2) { return r1.getSeverity() == r2.getSeverity(); }
 bool operator!=(Request r1, Request r2) { return r1.getSeverity() != r2.getSeverity(); }
+*/
