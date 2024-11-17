@@ -51,39 +51,9 @@ build cmake_object_order_depends_target_Ambulance_Management_System: phony || .
 
 build CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/main.cpp || cmake_object_order_depends_target_Ambulance_Management_System
   DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
-
-build CMakeFiles/Ambulance_Management_System.dir/data_structures/synthetic_queue.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/data_structures/synthetic_queue.cpp || cmake_object_order_depends_target_Ambulance_Management_System
-  DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\data_structures\synthetic_queue.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir\data_structures
-
-build CMakeFiles/Ambulance_Management_System.dir/data_structures/synthetic_stack.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/data_structures/synthetic_stack.cpp || cmake_object_order_depends_target_Ambulance_Management_System
-  DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\data_structures\synthetic_stack.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir\data_structures
-
-build CMakeFiles/Ambulance_Management_System.dir/data_structures/LinkedList.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/data_structures/LinkedList.cpp || cmake_object_order_depends_target_Ambulance_Management_System
-  DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\data_structures\LinkedList.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir\data_structures
-
-build CMakeFiles/Ambulance_Management_System.dir/data_structures/SyntheticNode.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/data_structures/SyntheticNode.cpp || cmake_object_order_depends_target_Ambulance_Management_System
-  DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\data_structures\SyntheticNode.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir\data_structures
-
-build CMakeFiles/Ambulance_Management_System.dir/data_structures/PatientQueue.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug E$:/Coding/C++/Ambulance-Management-System/data_structures/PatientQueue.cpp || cmake_object_order_depends_target_Ambulance_Management_System
-  DEP_FILE = CMakeFiles\Ambulance_Management_System.dir\data_structures\PatientQueue.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir\data_structures
 
 
 # =============================================================================
@@ -93,7 +63,7 @@ build CMakeFiles/Ambulance_Management_System.dir/data_structures/PatientQueue.cp
 #############################################
 # Link the executable Ambulance_Management_System.exe
 
-build Ambulance_Management_System.exe: CXX_EXECUTABLE_LINKER__Ambulance_Management_System_Debug CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj CMakeFiles/Ambulance_Management_System.dir/data_structures/synthetic_queue.cpp.obj CMakeFiles/Ambulance_Management_System.dir/data_structures/synthetic_stack.cpp.obj CMakeFiles/Ambulance_Management_System.dir/data_structures/LinkedList.cpp.obj CMakeFiles/Ambulance_Management_System.dir/data_structures/SyntheticNode.cpp.obj CMakeFiles/Ambulance_Management_System.dir/data_structures/PatientQueue.cpp.obj
+build Ambulance_Management_System.exe: CXX_EXECUTABLE_LINKER__Ambulance_Management_System_Debug CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
