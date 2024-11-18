@@ -1,13 +1,41 @@
 # ninja log v6
 83	599	7515687368617424	CMakeFiles/Ambulance_Management_System.dir/queue.cpp.obj	64d4aad0eddc12ef
-29	752	7528409500946871	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	47cdf0ac405ae8a
-752	1251	7528409508175625	Ambulance_Management_System.exe	bf57acaeafca398d
+3	313	7536115520504977	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+313	428	7536115523609759	Ambulance_Management_System.exe	e88a84f31f4ca04d
 109	258	7515843286435322	CMakeFiles/Ambulance_Management_System.dir/data_structures/Node.cpp.obj	9663a5f575a7b2f5
 32	557	7515687368099656	CMakeFiles/Ambulance_Management_System.dir/Stack.cpp.obj	1eaf153508ac4ec5
+<<<<<<< Updated upstream
 1	271	7536561047275812	build.ninja	f0eb1b92e44fe1c6
+=======
+1	255	7536120720662774	build.ninja	f0eb1b92e44fe1c6
+>>>>>>> Stashed changes
 265	422	7515687370434520	CMakeFiles/Ambulance_Management_System.dir/Node.cpp.obj	37f3c2f9a7223443
 17	531	7515695991286861	CMakeFiles/Ambulance_Management_System.dir/LinkedList.cpp.obj	e110731bb2fd5f2a
 19	347	7527757151330700	CMakeFiles/Ambulance_Management_System.dir/data_structures/Stack.cpp.obj	630fe9e72af3a789
 49	640	7528409501147472	CMakeFiles/Ambulance_Management_System.dir/data_structures/queue.cpp.obj	4b6b18149f5f9708
 67	647	7528409501331219	CMakeFiles/Ambulance_Management_System.dir/data_structures/LinkedList.cpp.obj	42c5f98ec019b9bd
 92	684	7528409501577535	CMakeFiles/Ambulance_Management_System.dir/data_structures/PatientQueue.cpp.obj	e2d3a92dec83e187
+4	303	7536120859834614	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+304	412	7536120862831775	Ambulance_Management_System.exe	e88a84f31f4ca04d
+3	315	7536121091880013	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+315	422	7536121094998007	Ambulance_Management_System.exe	e88a84f31f4ca04d
+4	314	7536121235635608	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+314	425	7536121238737416	Ambulance_Management_System.exe	e88a84f31f4ca04d
+4	313	7536121719747906	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+313	420	7536121722839154	Ambulance_Management_System.exe	e88a84f31f4ca04d
+3	314	7536122555887129	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+314	420	7536122558995909	Ambulance_Management_System.exe	e88a84f31f4ca04d
+3	321	7536127225090673	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+321	431	7536127228269877	Ambulance_Management_System.exe	e88a84f31f4ca04d
+19	1410	7536192844315795	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+1411	1837	7536192858222868	Ambulance_Management_System.exe	e88a84f31f4ca04d
+11	791	7536193878285202	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+792	1074	7536193886089145	Ambulance_Management_System.exe	e88a84f31f4ca04d
+11	790	7536196218594843	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+791	1013	7536196226391906	Ambulance_Management_System.exe	e88a84f31f4ca04d
+11	788	7536196962486412	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+789	1022	7536196970275605	Ambulance_Management_System.exe	e88a84f31f4ca04d
+11	784	7536201568053317	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+785	1032	7536201575789135	Ambulance_Management_System.exe	e88a84f31f4ca04d
+13	789	7536202538976596	CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj	afbae23432ecb7ee
+791	1039	7536202546753154	Ambulance_Management_System.exe	e88a84f31f4ca04d

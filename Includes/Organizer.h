@@ -6,35 +6,146 @@
 #define ORGANIZER_H
 #include <iostream>
 #include <fstream>
-#include <string>
-#include "Request.h"
-#include "Car.h"
+#include<string>
 using namespace std;
 
+class ReadingHelper {
+private:
+    static void Tokenizer(string line , int SectionNumber) {
+        // if ()
+    }
+};
+
+
 class Organizer {
+private:
+    ifstream InputFile;
+    string FileName;
+private:
+        
+    void simulateTimeStep(int timeStep){}
+
+    void handleCarArrival(Car* car){}
+
+    // void assignPatientToCar(Patient* patient, Car* car){}
+
+    void collectStatistics(){}
+
+    void produceOutputFile(string fileName){}
+
+    void callUIUpdate(int timeStep){}
+
+
+
 
 public:
-    void loadInputFile(string fileName);
-
-    void simulateTimeStep(int timeStep);
-
-    void handleCarArrival(Car* car);
-
-    void assignPatientToCar(Request* PatientRequest, Car* car);
-
-    void collectStatistics();
-
-    void produceOutputFile(string fileName);
-
-    void callUIUpdate(int timeStep);
-
-
-
-
-
+    Organizer(): FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt") {}
     
+
+    void loadInputFile() {
+        cout << "Reading File....." << endl;
+        this->InputFile.open(FileName);
+        if (!InputFile.is_open()) {
+            cout << "Failed to open file!" << endl;
+            return;
+        }
+
+        string line;
+        int sectionCounter = -1;
+
+        while (getline(InputFile, line )) {
+            
+            if (line.empty()) {
+                sectionCounter++;
+                cout << "Section Counter -> " << sectionCounter << endl;
+                continue;
+            }
+
+            if (sectionCounter == 0) {
+                cout << "HOSPITALS" << endl;
+                cout << line << endl;
+            } else if (sectionCounter == 1) {
+                cout << "DISTANCE_MATRIX" << endl;
+                cout << line << endl;
+            } else if (sectionCounter == 2) {
+                cout << "CAR_DISTRIBUTION" << endl;
+                cout << line << endl;
+            } else if (sectionCounter == 3) {
+                cout << "REQUESTS" << endl;
+                cout << line << endl;
+            } else if (sectionCounter == 4) {
+                cout << "CANCELLATIONS" << endl;
+                cout << line << endl;
+            }
+            else {
+                cout<<line.length()<<" -> "<<line<<endl;
+            }
+        }
+
+        InputFile.close();
+        cout << "File Reading Completed." << endl;
+    }
 };
 
 
 
 #endif //ORGANIZER_H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Deprecated
+    
+//     void loadInputFile() {
+//         
+//         cout<<"Reading File....."<<endl;
+//         this->InputFile.open(FileName);
+//         if (InputFile.is_open()) {
+//             string Currentline,NextLine;
+//             int SectionCounter{0};
+//
+//             while (getline(InputFile, Currentline)) {
+//                 while (getline(InputFile, NextLine, ' ')) {
+//                     if (Currentline.empty()) {
+//                         SectionCounter++;
+//                         cout << "Section Counter -> " << SectionCounter << endl;
+//                         continue;
+//                     }
+//
+//                     // Process sections based on the SectionCounter
+//                     if (SectionCounter == 0) {
+//                         cout << "### HOSPITALS ###" << endl;
+//                         cout << Currentline << endl;
+//                     } else if (SectionCounter == 1) {
+//                         cout << "### DISTANCE_MATRIX ###" << endl;
+//                         cout << Currentline << endl;
+//                     } else if (SectionCounter == 2) {
+//                         cout << "### CAR_DISTRIBUTION ###" << endl;
+//                         cout << Currentline << endl;
+//                     } else if (SectionCounter == 3) {
+//                         cout << "### REQUESTS ###" << endl;
+//                         cout << Currentline << endl;
+//                     } else if (SectionCounter == 4) {
+//                         cout << "### CANCELLATIONS ###" << endl;
+//                         cout << Currentline << endl;
+//                     }
+//     }
+// }
+//             InputFile.close();
+//         }
+//         
+//     }
+
+
+
