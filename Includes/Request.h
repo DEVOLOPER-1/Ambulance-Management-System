@@ -14,7 +14,7 @@ class Request
 
 public:
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity)
-		: PatientType("Patient"), RequestTime(RequestTime), PatientID(PatientID), NearestHospital(NearestHospital)
+		: PatientType(PatientType), RequestTime(RequestTime), PatientID(PatientID), NearestHospital(NearestHospital)
 		, distance(distance), severity(severity), PickupTime(0) {}
 
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance)

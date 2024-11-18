@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	int timestep = 0;
-	Request* request = new Request(3, 150);
+	Request* request = new Request("Patient", 0, 1, 1, 10, 5); // (PatientType, RequestTime, PatientID, NearestHospital, distance, severity
 	Car car(50);
 	while (++timestep <= 10) {
 		cout << "Timestep: " << timestep << endl;
