@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Request.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -39,19 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Organizer.h",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h",
+              "RelativeDocumentMoniker": "Includes\\Organizer.h",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h",
+              "RelativeToolTip": "Includes\\Organizer.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-18T08:32:11.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Request.h",
               "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h",
               "RelativeDocumentMoniker": "Includes\\Request.h",
               "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h",
               "RelativeToolTip": "Includes\\Request.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-18T08:26:48.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Car.h",
               "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h",
               "RelativeDocumentMoniker": "Includes\\Car.h",
@@ -59,8 +76,7 @@
               "RelativeToolTip": "Includes\\Car.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T09:29:38.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T09:29:38.903Z"
             }
           ]
         },

@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Request.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 394,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,32 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Request.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h",
-              "RelativeDocumentMoniker": "Includes\\Request.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h",
-              "RelativeToolTip": "Includes\\Request.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T08:26:48.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Car.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h",
-              "RelativeDocumentMoniker": "Includes\\Car.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h",
-              "RelativeToolTip": "Includes\\Car.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T09:29:38.903Z",
-              "EditorCaption": ""
             }
           ]
         },

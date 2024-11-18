@@ -50,7 +50,7 @@ cmake_ninja_workdir = D$:\University\Year$ 2\Semester$ 1\data$ structure\Project
 build cmake_object_order_depends_target_Ambulance_Management_System: phony || .
 
 build CMakeFiles\Ambulance_Management_System.dir\main.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug D$:\University\Year$ 2\Semester$ 1\data$ structure\Project\Ambulance-Management-System\main.cpp || cmake_object_order_depends_target_Ambulance_Management_System
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
   OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
   OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir
   TARGET_COMPILE_PDB = CMakeFiles\Ambulance_Management_System.dir\

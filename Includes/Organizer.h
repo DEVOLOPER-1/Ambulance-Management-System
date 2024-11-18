@@ -6,23 +6,27 @@
 #define ORGANIZER_H
 #include <iostream>
 #include <fstream>
+#include <string>
+#include "Request.h"
+#include "Car.h"
+using namespace std;
 
 class Organizer {
 
 private:
-    void loadInputFile(string fileName)
+    void loadInputFile(string fileName);
 
-    void simulateTimeStep(int timeStep)
+    void simulateTimeStep(int timeStep);
 
-    void handleCarArrival(Car* car)
+    void handleCarArrival(Car* car);
 
-    void assignPatientToCar(Patient* patient, Car* car)
+    void assignPatientToCar(Request* PatientRequest, Car* car);
 
-    void collectStatistics()
+    void collectStatistics();
 
-    void produceOutputFile(string fileName)
+    void produceOutputFile(string fileName);
 
-    void callUIUpdate(int timeStep)
+    void callUIUpdate(int timeStep);
 
 
 
