@@ -13,7 +13,7 @@ using namespace std;
 
 class Organizer {
 
-private:
+public:
     void loadInputFile(string fileName);
 
     void simulateTimeStep(int timeStep);
@@ -31,7 +31,7 @@ private:
 
 
 
-public:
+
     
 };
 
