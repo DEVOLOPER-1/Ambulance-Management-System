@@ -6,15 +6,66 @@
 #define ORGANIZER_H
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include<string>
 using namespace std;
 
 class ReadingHelper {
 private:
-    static void Tokenizer(string line , int SectionNumber) {
-        // if ()
+    int HospitalsCount;
+    int** DistancesMatrix;
+
+public:
+    static ReadingHelper& getInstance() {
+        static ReadingHelper instance;
+        return instance;
     }
+
+    void Build2DMatrix(int & token) {
+        // Allocate memory for the 2D matrix
+        DistancesMatrix = new int*[HospitalsCount];
+        for (int i = 0; i < HospitalsCount; i++) {
+            DistancesMatrix[i] = new int[HospitalsCount];
+        }
+    }
+
+    static void Tokenizer(string& line, int& SectionNumber) {
+        ReadingHelper& instance = ReadingHelper::getInstance();
+        if (SectionNumber == 0) {
+            string token;
+            istringstream stream(line);
+            char delimiter{' '};
+            int row  = 0 , col = 0 ;
+            while (getline(stream, token, delimiter)) {
+                cout << "Token"
+                     << " -> " << token << endl;
+                int distance = stoi(token);
+                instance.DistancesMatrix[row][col] = distance;
+                col++;
+                if (col == instance.HospitalsCount) {
+                    col = 0;
+                    row++;
+                }
+                
+            }
+        } else {
+            if (line.length() <= 2) {
+                    instance.HospitalsCount = stoi(line);
+                    instance.Build2DMatrix(instance.HospitalsCount);
+
+            }
+        }
+    }
+
+private:
+    ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) {}
+    ReadingHelper(const ReadingHelper&) = delete;
+    ReadingHelper& operator=(const ReadingHelper&) = delete;
+    // ~ReadingHelper() {
+    //     
+    // }
 };
+
 
 
 class Organizer {
@@ -46,12 +97,13 @@ public:
         cout << "Reading File....." << endl;
         this->InputFile.open(FileName);
         if (!InputFile.is_open()) {
-            cout << "Failed to open file!" << endl;
+            cout << "Failed Openinig!" << endl;
             return;
         }
 
         string line;
         int sectionCounter = -1;
+        ReadingHelper & instance = ReadingHelper::getInstance() ;
 
         while (getline(InputFile, line )) {
             
@@ -63,6 +115,7 @@ public:
 
             if (sectionCounter == 0) {
                 cout << "HOSPITALS" << endl;
+                instance.Tokenizer(line , sectionCounter);
                 cout << line << endl;
             } else if (sectionCounter == 1) {
                 cout << "DISTANCE_MATRIX" << endl;
@@ -78,7 +131,9 @@ public:
                 cout << line << endl;
             }
             else {
+                int Hospitals;
                 cout<<line.length()<<" -> "<<line<<endl;
+                if(0<=line.length()<=3) Hospitals = stoi(line);
             }
         }
 
