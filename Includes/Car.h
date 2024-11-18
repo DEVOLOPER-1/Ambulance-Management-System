@@ -6,16 +6,17 @@ using namespace std;
 
 class Car
 {
-	Request* request;
+	string CarType;
 	int speed;
 	string status;
+	Request* request;
 	int nextPickupTime;
 	int nextDropOffTime;
 
 	void setStatus(string status) { this->status = status; }
 
 public:
-	Car(int speed) : request(nullptr), speed(speed), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
+	Car(string CarType, int speed) : CarType(CarType), request(nullptr), speed(speed), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
 
 	void assign(int timestep, Request* request)
 	{
