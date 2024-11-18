@@ -24,4 +24,40 @@ public:
 		for (int i = 0; i < NumberOFnCars; i++)
 			nCars.enqueue(new Car("NC", 50)); // We will handle car speed later
 	}
+
+	void receive(Request* request)
+	{
+		if (request->getPatientType() == "NP")
+			NP_Requests.enqueue(request);
+		else if (request->getPatientType() == "SP")
+			SP_Requests.enqueue(request);
+		else
+			EP_Requests.enqueue(request, request->getSeverity());
+	}
+
+	void handleRequests(int timestep)
+	{
+		int priority;
+		Request* request;
+		Car* car;
+		while (EP_Requests.peek(request, priority) && (nCars.peek(car) || sCars.peek(car)))
+		{
+			EP_Requests.dequeue(request, priority);
+			nCars.peek(car) ? nCars.dequeue(car) : sCars.dequeue(car);
+			car->assign(timestep, request);
+			// if there is a request the hospital should report it to the organizer --|><| S O O N |><|--
+		}
+		while (SP_Requests.peek(request) && sCars.peek(car))
+		{
+			SP_Requests.dequeue(request);
+			sCars.dequeue(car);
+			car->assign(timestep, request);
+		}
+		while (NP_Requests.peek(request) && nCars.peek(car))
+		{
+			NP_Requests.dequeue(request);
+			nCars.dequeue(car);
+			car->assign(timestep, request);
+		}
+	}
 };
