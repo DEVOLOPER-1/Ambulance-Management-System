@@ -31,7 +31,8 @@ public:
 
     void SetNoOfHospitals(int &Counts) {
         ReadingHelper& instance = ReadingHelper::getInstance();
-        instance.HospitalsCount = Counts ; 
+        instance.HospitalsCount = Counts ;
+        instance.Build2DMatrix(Counts);
     }
 
     static void Tokenizer(string& line, int& SectionNumber) {
