@@ -23,10 +23,15 @@ public:
 
     void Build2DMatrix(int & token) {
         // Allocate memory for the 2D matrix
-        DistancesMatrix = new int*[HospitalsCount];
-        for (int i = 0; i < HospitalsCount; i++) {
-            DistancesMatrix[i] = new int[HospitalsCount];
+        DistancesMatrix = new int*[token];
+        for (int i = 0; i < token; i++) {
+            DistancesMatrix[i] = new int[token];
         }
+    }
+
+    void SetNoOfHospitals(int &Counts) {
+        ReadingHelper& instance = ReadingHelper::getInstance();
+        instance.HospitalsCount = Counts ; 
     }
 
     static void Tokenizer(string& line, int& SectionNumber) {
@@ -48,22 +53,29 @@ public:
                 }
                 
             }
-        } else {
-            if (line.length() <= 2) {
-                    instance.HospitalsCount = stoi(line);
-                    instance.Build2DMatrix(instance.HospitalsCount);
-
-            }
         }
+        // else {
+        //     if (line.length() <= 3) {
+        //             instance.HospitalsCount = stoi(line);
+        //             instance.Build2DMatrix(instance.HospitalsCount);
+        //
+        //     }
+        // }
     }
 
 private:
     ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) {}
     ReadingHelper(const ReadingHelper&) = delete;
     ReadingHelper& operator=(const ReadingHelper&) = delete;
-    // ~ReadingHelper() {
-    //     
-    // }
+    ~ReadingHelper() {
+        if (DistancesMatrix) {
+            for (int i = 0; i < HospitalsCount; ++i) {
+                delete[] DistancesMatrix[i];
+            }
+            delete[] DistancesMatrix; 
+        }
+    }
+
 };
 
 
@@ -131,9 +143,17 @@ public:
                 cout << line << endl;
             }
             else {
-                int Hospitals;
                 cout<<line.length()<<" -> "<<line<<endl;
-                if(0<=line.length()<=3) Hospitals = stoi(line);
+                if(line.length()<=2) {
+                    int Hospitals;
+                    Hospitals = stoi(line);
+                    cout<<"Hospitals Count -> "<<Hospitals<<endl;
+                    instance.SetNoOfHospitals(Hospitals);
+                }
+                else {
+                    continue;
+                }
+                
             }
         }
 
