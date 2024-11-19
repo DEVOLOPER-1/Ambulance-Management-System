@@ -4,20 +4,29 @@
 
 #ifndef ORGANIZER_H
 #define ORGANIZER_H
+#define RH ReadingHelper::getInstance()
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include<string>
+#include "Includes/Car.h"
 using namespace std;
 
 class ReadingHelper {
 private:
     int HospitalsCount;
     int** DistancesMatrix;
+    int row = 0 ;
+    int col = 0;
+    float SpecialCarSpeed;
+    float NormalCarSpeed;
+    static ReadingHelper* instance;
 
 public:
-    static ReadingHelper& getInstance() {
-        static ReadingHelper instance;
+    static ReadingHelper* getInstance() {
+        
+        if (instance == nullptr)
+            instance = new ReadingHelper();
         return instance;
     }
 
@@ -30,38 +39,50 @@ public:
     }
 
     void SetNoOfHospitals(int &Counts) {
-        ReadingHelper& instance = ReadingHelper::getInstance();
-        instance.HospitalsCount = Counts ;
-        instance.Build2DMatrix(Counts);
+        RH->HospitalsCount = Counts ;
+        RH->Build2DMatrix(HospitalsCount);
     }
 
     static void Tokenizer(string& line, int& SectionNumber) {
-        ReadingHelper& instance = ReadingHelper::getInstance();
+        string token;
+        istringstream stream(line);
+        char delimiter{' '};
         if (SectionNumber == 0) {
-            string token;
-            istringstream stream(line);
-            char delimiter{' '};
-            int row  = 0 , col = 0 ;
             while (getline(stream, token, delimiter)) {
                 cout << "Token"
                      << " -> " << token << endl;
                 int distance = stoi(token);
-                instance.DistancesMatrix[row][col] = distance;
-                col++;
-                if (col == instance.HospitalsCount) {
-                    col = 0;
-                    row++;
+                cout<<distance<<" -> "<<RH->row<<RH->col<<endl;
+                RH->DistancesMatrix[RH->row][RH->col] = distance;
+                RH->col++;
+                if (RH->col == RH->HospitalsCount) {
+                    RH->col = 0;
+                    RH->row++;
                 }
-                
             }
         }
-        // else {
-        //     if (line.length() <= 3) {
-        //             instance.HospitalsCount = stoi(line);
-        //             instance.Build2DMatrix(instance.HospitalsCount);
-        //
-        //     }
-        // }
+            else if (SectionNumber==-1) {
+                int count = 0 ;
+                while (getline(stream, token, delimiter)) {
+                if (count == 0 ){
+                    RH->SpecialCarSpeed = stof(token) ;
+                    
+                    cout<<"SpecialCarSpeed -> "<<RH->SpecialCarSpeed<<endl; ;
+
+                    count+=1;
+                }
+                else if(count==1) {
+                    RH->NormalCarSpeed = stof(token) ;
+                    cout<<"NormalCarSpeed -> "<<RH->NormalCarSpeed<<endl; ;
+                }
+                
+
+            }
+        }
+
+        else if (SectionNumber == 1) {
+            
+        }
     }
 
 private:
@@ -116,7 +137,6 @@ public:
 
         string line;
         int sectionCounter = -1;
-        ReadingHelper & instance = ReadingHelper::getInstance() ;
 
         while (getline(InputFile, line )) {
             
@@ -127,19 +147,16 @@ public:
             }
 
             if (sectionCounter == 0) {
-                cout << "HOSPITALS" << endl;
-                instance.Tokenizer(line , sectionCounter);
+                cout << "DISTANCE_MATRIX" << endl;
+                RH->Tokenizer(line , sectionCounter);
                 cout << line << endl;
             } else if (sectionCounter == 1) {
-                cout << "DISTANCE_MATRIX" << endl;
-                cout << line << endl;
-            } else if (sectionCounter == 2) {
                 cout << "CAR_DISTRIBUTION" << endl;
                 cout << line << endl;
-            } else if (sectionCounter == 3) {
+            } else if (sectionCounter == 2) {
                 cout << "REQUESTS" << endl;
                 cout << line << endl;
-            } else if (sectionCounter == 4) {
+            } else if (sectionCounter == 3) {
                 cout << "CANCELLATIONS" << endl;
                 cout << line << endl;
             }
@@ -149,10 +166,12 @@ public:
                     int Hospitals;
                     Hospitals = stoi(line);
                     cout<<"Hospitals Count -> "<<Hospitals<<endl;
-                    instance.SetNoOfHospitals(Hospitals);
+                    RH->SetNoOfHospitals(Hospitals);
                 }
                 else {
-                    continue;
+                    int sec = -1 ;
+                    cout<<"Cars Speeds -> "<<line<<endl;
+                    RH->Tokenizer(line , sec);
                 }
                 
             }
@@ -164,6 +183,7 @@ public:
 };
 
 
+ReadingHelper* ReadingHelper::instance = nullptr;
 
 #endif //ORGANIZER_H
 
