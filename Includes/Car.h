@@ -18,6 +18,8 @@ class Car
 public:
 	Car(string CarType, int speed) : CarType(CarType), request(nullptr), speed(speed), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
 
+	string getCarType() { return CarType; }
+
 	void assign(int timestep, Request* request)
 	{
 		this->request = request;
