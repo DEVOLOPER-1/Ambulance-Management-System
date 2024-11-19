@@ -12,17 +12,20 @@ class Hospital
 	LinkedQueue<Request*> SP_Requests;
 	LinkedQueue<Request*> NP_Requests; // We will change the data structure to a derived class of LinkedQueue with the ability to cancel
 	priQueue<Request*>    EP_Requests;
+	int ScarSpeed;
+	int NcarSpeed;
 	LinkedQueue<Car*>     sCars;
 	LinkedQueue<Car*>     nCars;
 
 public:
-	Hospital(int ID, int NumberOFsCars, int NumberOFnCars) : ID(ID), SP_Requests(), NP_Requests(), EP_Requests(), sCars(), nCars()
+	Hospital(){};
+	Hospital(int ID, int NumberOFsCars, int NumberOFnCars , const int ScarSpeed , const int NcarSpeed) : ID(ID), SP_Requests(), NP_Requests(), EP_Requests(), sCars(), nCars()
 	{
 		for (int i = 0; i < NumberOFsCars; i++)
-			sCars.enqueue(new Car("SC", 50)); // We will handle car speed later
+			sCars.enqueue(new Car("SC", ScarSpeed)); // We will handle car speed later
 
 		for (int i = 0; i < NumberOFnCars; i++)
-			nCars.enqueue(new Car("NC", 50)); // We will handle car speed later
+			nCars.enqueue(new Car("NC", NcarSpeed)); // We will handle car speed later
 	}
 
 	void receive(Request* request)

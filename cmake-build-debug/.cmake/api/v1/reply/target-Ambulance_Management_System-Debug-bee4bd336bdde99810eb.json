@@ -104,7 +104,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -159,6 +160,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Includes/UI.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Includes/ReadingHelper.h",
 			"sourceGroupIndex" : 1
 		}
 	],
