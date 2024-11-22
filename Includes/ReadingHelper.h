@@ -14,8 +14,8 @@ using namespace std;
 
 class ReadingHelper {
 private:
-    LinkedList<Request>* Requests;
-    LinkedList<Request>* CancellationRequests;
+    LinkedList<Request>* Requests= new LinkedList<Request>;
+    LinkedList<CancellationRequest>* CancellationRequests = new LinkedList<CancellationRequest>;;
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
@@ -30,19 +30,23 @@ private:
     static ReadingHelper* instance;
 
 public:
-    void InitializeRequestsList() ;
     static ReadingHelper* getInstance();
-
-    void Build2DMatrix_and_HospitalsArray(int& token);
-
-    void SetNoOfHospitals(int& Counts);
-
-    void Tokenizer(string& line, int& SectionNumber);
+    void Tokenizer(string& line, int SectionNumber);
+    void SetNoOfHospitals(int Counts);
+    int** GetDistancesMatrix()const;
+    Hospital* GetHospitalsArray()const;
+    int GetScarSpeed() const;
+    int GetNcarSpeed()const;
+    LinkedList<Request>* GetRequestsLinkedList()const;
+    LinkedList<CancellationRequest>* GetCancellationRequestsLinkedList()const;
+    
 
 private:
     ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) {}
     // ReadingHelper(const ReadingHelper&) = delete;
     // ReadingHelper& operator=(const ReadingHelper&) = delete;
+    void Build2DMatrix_and_HospitalsArray(int token);
+
     void DeleteMatrix(int ** Matrix2D , int rows);
     void DeleteMatrix(Hospital*array );
     ~ReadingHelper() {
