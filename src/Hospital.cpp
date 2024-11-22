@@ -10,10 +10,10 @@ void Hospital::send(Car* car)
 Hospital::Hospital(int ID, int NumberOFsCars, int NumberOFnCars, const int ScarSpeed, const int NcarSpeed) : ID(ID), EP_Requests(), NP_Requests(), SP_Requests(), sCars(), nCars()
 {
 	for (int i = 0; i < NumberOFsCars; i++)
-		sCars.enqueue(new Car("SC", ScarSpeed)); // We will handle car speed later
+		sCars.enqueue(new Car("SC", ScarSpeed, this->ID)); // We will handle car speed later
 
 	for (int i = 0; i < NumberOFnCars; i++)
-		nCars.enqueue(new Car("NC", NcarSpeed)); // We will handle car speed later
+		nCars.enqueue(new Car("NC", NcarSpeed, this->ID)); // We will handle car speed later
 }
 
 void Hospital::receive(Request* request)

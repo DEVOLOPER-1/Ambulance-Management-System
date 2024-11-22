@@ -56,6 +56,8 @@ public:
 
     void receive(Car* car);
 
+	void sendBack();
+
     void loadInputFile();
 };
 
