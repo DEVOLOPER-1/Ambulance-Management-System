@@ -2,22 +2,13 @@
 // Created by youss on 17-Nov-24.
 //
 
-#ifndef ORGANIZER_H
-#define ORGANIZER_H
-#define RH ReadingHelper::getInstance()
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include<string>
+#pragma once
+#include <string>
 #include "Car.h"
 #include "Hospital.h"
 #include "ReadingHelper.h"
 #define ORG Organizer::GetInstance()
 using namespace std;
-namespace fs = std::filesystem;
-
-
-
 
 
 
@@ -25,12 +16,19 @@ class Organizer {
 private:
     ifstream InputFile;
     string FileName;
+	LinkedQueue<Request*> requests;
+	LinkedQueue<Request*> cancellations;
+	LinkedQueue<Car* > outCars;
+    LinkedQueue<Car* > backCars;
     static Organizer* instance; 
 private:
     Organizer()
-    : FileName("..\\InputText.txt") {
-    }
+        : FileName("D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/Includes/InputText.txt")
+        , requests(), cancellations(), outCars(), backCars() {};
+
+	Organizer(const Organizer& other) = delete;
     
+    /*
     void simulateTimeStep(int timeStep){}
 
     void handleCarArrival(Car* car){}
@@ -42,75 +40,27 @@ private:
     void produceOutputFile(string fileName){}
 
     void callUIUpdate(int timeStep){}
-
+    */
 
 
 
 public:
-    static Organizer* GetInstance() {
-        if (instance==nullptr){instance = new Organizer();}
-        return instance;
-    }
+    static Organizer* GetInstance();
 
-    void loadInputFile() {
-        cout << "Reading File....." << endl;
-        this->InputFile.open(FileName);
-        if (!InputFile.is_open()) {
-            cout << "Failed Openinig!" << endl;
-            return;
-        }
+    /*
+	LinkedQueue<Request*> getRequests()      { return requests; }
+	LinkedQueue<Request*> getCancellations() { return cancellations; }
+	LinkedQueue<Car*>     getOutCars()       { return outCars; }
+	LinkedQueue<Car*>     getBackCars()      { return backCars; }
+    */
 
-        string line;
-        int sectionCounter = -1;
+    void receive(Car* car);
 
-        while (getline(InputFile, line )) {
-            
-            if (line.empty()) {
-                sectionCounter++;
-                cout << "Section Counter -> " << sectionCounter << endl;
-                continue;
-            }
-
-            if (sectionCounter == 0) {
-                cout << "DISTANCE_MATRIX" << endl;
-                RH->Tokenizer(line , sectionCounter);
-                cout << line << endl;
-            } else if (sectionCounter == 1) {
-                cout << "CAR_DISTRIBUTION" << endl;
-                RH->Tokenizer(line , sectionCounter);
-                // cout << line << endl;
-            } else if (sectionCounter == 2) {
-                cout << "REQUESTS" << endl;
-                cout << line << endl;
-            } else if (sectionCounter == 3) {
-                cout << "CANCELLATIONS" << endl;
-                cout << line << endl;
-            }
-            else {
-                cout<<line.length()<<" -> "<<line<<endl;
-                if(line.length()<=2) {
-                    int Hospitals;
-                    Hospitals = stoi(line);
-                    cout<<"Hospitals Count -> "<<Hospitals<<endl;
-                    RH->SetNoOfHospitals(Hospitals);
-                }
-                else {
-                    int sec = -1 ;
-                    cout<<"Cars Speeds -> "<<line<<endl;
-                    RH->Tokenizer(line , sec);
-                }
-                
-            }
-        }
-
-        InputFile.close();
-        cout << "File Reading Completed." << endl;
-    }
+    void loadInputFile();
 };
-Organizer* Organizer::instance = nullptr ;
 
 
-#endif //ORGANIZER_H
+
 
 
 
