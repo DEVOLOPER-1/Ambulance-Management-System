@@ -23,8 +23,8 @@ void ReadingHelper::Build2DMatrix_and_HospitalsArray(int& token)
 
 void ReadingHelper::SetNoOfHospitals(int& Counts)
 {
-    RH->HospitalsCount = Counts;
-    RH->Build2DMatrix_and_HospitalsArray(HospitalsCount);
+    HospitalsCount = Counts;
+    Build2DMatrix_and_HospitalsArray(HospitalsCount);
 }
 
 void ReadingHelper::Tokenizer(string& line, int& SectionNumber)
@@ -37,12 +37,12 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber)
             cout << "Token"
                 << " -> " << token << endl;
             int distance = stoi(token);
-            cout << distance << " -> " << RH->row << RH->col << endl;
-            RH->DistancesMatrix[RH->row][RH->col] = distance;
-            RH->col++;
-            if (RH->col == RH->HospitalsCount) {
-                RH->col = 0;
-                RH->row++;
+            cout << distance << " -> " << row << col << endl;
+            DistancesMatrix[row][col] = distance;
+            col++;
+            if (col == HospitalsCount) {
+                col = 0;
+                row++;
             }
         }
     }
@@ -50,13 +50,13 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber)
         int count = 0;
         while (getline(stream, token, delimiter)) {
             if (count == 0) {
-                RH->SpecialCarSpeed = stoi(token);
-                cout << "SpecialCarSpeed -> " << RH->SpecialCarSpeed << endl; ;
+                SpecialCarSpeed = stoi(token);
+                cout << "SpecialCarSpeed -> " << SpecialCarSpeed << endl; ;
                 count += 1;
             }
             else if (count == 1) {
-                RH->NormalCarSpeed = stoi(token);
-                cout << "NormalCarSpeed -> " << RH->NormalCarSpeed << endl; ;
+                NormalCarSpeed = stoi(token);
+                cout << "NormalCarSpeed -> " << NormalCarSpeed << endl; ;
             }
 
 
@@ -79,8 +79,8 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber)
 
                 NcarNumber = stoi(token);
                 counter++;
-                HospitalsArray[RH->HospitalsCounter] = Hospital(RH->HospitalsCounter, ScarNumber, NcarNumber, RH->SpecialCarSpeed, RH->NormalCarSpeed);
-                RH->HospitalsCounter++;
+                HospitalsArray[HospitalsCounter] = Hospital(HospitalsCounter, ScarNumber, NcarNumber, SpecialCarSpeed, NormalCarSpeed);
+                HospitalsCounter++;
 
             }
 
