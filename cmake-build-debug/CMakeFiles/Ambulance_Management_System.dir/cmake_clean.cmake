@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj.d"
+  "CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.obj"
+  "CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.obj.d"
   "libAmbulance_Management_System.dll.a"
 )
 

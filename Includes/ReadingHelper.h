@@ -4,16 +4,20 @@
 #pragma once
 #define RH ReadingHelper::getInstance()
 #include "Hospital.h"
+#include "Request.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include<string>
+#include "../ds/LinkedList.h"
 using namespace std;
 
 class ReadingHelper {
 private:
+    LinkedList<Request>* Requests;
     int HospitalsCount;
     int** DistancesMatrix;
+    int NoOfPatients;
     Hospital* HospitalsArray;
     int row = 0 ;
     int col = 0;
@@ -23,6 +27,7 @@ private:
     static ReadingHelper* instance;
 
 public:
+    void InitializeRequestsList() ;
     static ReadingHelper* getInstance();
 
     void Build2DMatrix_and_HospitalsArray(int& token);

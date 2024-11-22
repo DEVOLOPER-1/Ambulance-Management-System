@@ -224,6 +224,30 @@ src/ReadingHelper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.s
 .PHONY : src/ReadingHelper.cpp.s
 
+src/Request.obj: src/Request.cpp.obj
+.PHONY : src/Request.obj
+
+# target to build an object file
+src/Request.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.obj
+.PHONY : src/Request.cpp.obj
+
+src/Request.i: src/Request.cpp.i
+.PHONY : src/Request.i
+
+# target to preprocess a source file
+src/Request.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.i
+.PHONY : src/Request.cpp.i
+
+src/Request.s: src/Request.cpp.s
+.PHONY : src/Request.s
+
+# target to generate assembly for a file
+src/Request.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.s
+.PHONY : src/Request.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +269,9 @@ help:
 	@echo ... src/ReadingHelper.obj
 	@echo ... src/ReadingHelper.i
 	@echo ... src/ReadingHelper.s
+	@echo ... src/Request.obj
+	@echo ... src/Request.i
+	@echo ... src/Request.s
 .PHONY : help
 
 

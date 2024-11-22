@@ -13,24 +13,23 @@ class Request
 	int		severity;
 
 public:
-	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity)
-		: PatientType(PatientType), RequestTime(RequestTime), PatientID(PatientID), NearestHospital(NearestHospital)
-		, distance(distance), severity(severity), PickupTime(0) {}
+	Request() : PatientType(""), RequestTime(0), PatientID(0), NearestHospital(0), distance(0), severity(0), PickupTime(0) {}
 
-	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance)
-		: Request(PatientType, RequestTime, PatientID, NearestHospital, distance, 0) {}
+	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity);
+
+	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance);
 
 	// getters
-	string getPatientType() { return PatientType; }
-	int    getRequestTime() { return RequestTime; }
-	int    getPatientID() { return PatientID; }
-	int    getPickupTime() { return PickupTime; }
-	int    getNearestHospital() { return NearestHospital; }
-	int    getDistance() { return distance; }
-	int    getSeverity() { return severity; }
+	string getPatientType();
+	int    getRequestTime();
+	int    getPatientID() ;
+	int    getPickupTime() ;
+	int    getNearestHospital() ;
+	int    getDistance() ;
+	int    getSeverity() ;
 
 	// setters
-	void setPickupTime(int time) { PickupTime = time; }
+	void setPickupTime(int time) ;
 };
 
 // comparison operators (based on severity)

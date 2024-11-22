@@ -1,6 +1,5 @@
 #include "../Includes/ReadingHelper.h"
-
-
+#include "../ds/LinkedList.h"
 ReadingHelper* ReadingHelper::instance = nullptr;
 
 ReadingHelper* ReadingHelper::getInstance()
@@ -10,6 +9,7 @@ ReadingHelper* ReadingHelper::getInstance()
         instance = new ReadingHelper();
     return instance;
 }
+void ReadingHelper::InitializeRequestsList() {Requests = new LinkedList<Request>;}
 
 void ReadingHelper::Build2DMatrix_and_HospitalsArray(int& token)
 {
@@ -90,12 +90,57 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber)
     else if(SectionNumber==2) {
         string PatientDataArray[6];
         int TokenCounter = 0 ;
+        InitializeRequestsList();
         while (getline(stream , token , delimiter)) {
+            if (token.length()<3)
+                NoOfPatients = stoi(token);
+            else{
                 if (TokenCounter<6) {
-                    cout<<TokenCounter<<" -> "<<token<<endl;
+                    
                     PatientDataArray[TokenCounter] = token ;
                     TokenCounter++;
                 }
+
+                else if (TokenCounter == 6) {
+                    if (PatientDataArray[0] == "EP") {
+                        Request* temp  =  new Request(PatientDataArray[0]
+                            , stoi(PatientDataArray[1])
+                            , stoi(PatientDataArray[2])
+                            ,stoi(PatientDataArray[3])
+                            ,stoi(PatientDataArray[4])
+                            ,stoi(PatientDataArray[5])
+                            );
+                        Requests->InsertBeg(*temp);
+                        cout<<"Catched in EP \n";
+
+                    }
+                    else if (PatientDataArray[0] == "NP") {
+                        Request * temp = new Request(PatientDataArray[0]
+                            , stoi(PatientDataArray[1])
+                            , stoi(PatientDataArray[2])
+                            ,stoi(PatientDataArray[3])
+                            ,stoi(PatientDataArray[4])
+                            );
+                        Requests->InsertBeg(*temp);
+
+                        cout<<"Catched in NP \n";
+
+                    }
+                    else if (PatientDataArray[0] == "SP") {
+                        Request *temp = new Request(PatientDataArray[0]
+                        , stoi(PatientDataArray[1])
+                        , stoi(PatientDataArray[2])
+                        ,stoi(PatientDataArray[3])
+                        ,stoi(PatientDataArray[4])
+                        );
+                        Requests->InsertBeg(*temp);
+
+                        cout<<"Catched in SP \n";
+
+                    }
+                }
+            }
+
         }
     }
 }
