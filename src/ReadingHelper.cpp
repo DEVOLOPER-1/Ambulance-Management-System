@@ -83,9 +83,37 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber)
                 RH->HospitalsCounter++;
 
             }
+    
+        }
+    }
 
+    else if(SectionNumber==2) {
+        string PatientDataArray[6];
+        int TokenCounter = 0 ;
+        while (getline(stream , token , delimiter)) {
+                if (TokenCounter<6) {
+                    cout<<TokenCounter<<" -> "<<token<<endl;
+                    PatientDataArray[TokenCounter] = token ;
+                    TokenCounter++;
+                }
         }
     }
 }
 
+
+void ReadingHelper:: DeleteMatrix(int ** Matrix2D , int rows) {
+    if (Matrix2D) {
+        for (int i = 0; i < rows; ++i) {
+            delete[] Matrix2D[i];
+        }
+        delete[] Matrix2D;
+    }
+}
+
+
+void ReadingHelper::DeleteMatrix( Hospital*array) {
+    if (array) 
+            delete [] array;
+        
+    }
 

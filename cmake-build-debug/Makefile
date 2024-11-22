@@ -152,6 +152,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Hospital.obj: src/Hospital.cpp.obj
+.PHONY : src/Hospital.obj
+
+# target to build an object file
+src/Hospital.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj
+.PHONY : src/Hospital.cpp.obj
+
+src/Hospital.i: src/Hospital.cpp.i
+.PHONY : src/Hospital.i
+
+# target to preprocess a source file
+src/Hospital.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.i
+.PHONY : src/Hospital.cpp.i
+
+src/Hospital.s: src/Hospital.cpp.s
+.PHONY : src/Hospital.s
+
+# target to generate assembly for a file
+src/Hospital.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.s
+.PHONY : src/Hospital.cpp.s
+
+src/Organizer.obj: src/Organizer.cpp.obj
+.PHONY : src/Organizer.obj
+
+# target to build an object file
+src/Organizer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj
+.PHONY : src/Organizer.cpp.obj
+
+src/Organizer.i: src/Organizer.cpp.i
+.PHONY : src/Organizer.i
+
+# target to preprocess a source file
+src/Organizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.i
+.PHONY : src/Organizer.cpp.i
+
+src/Organizer.s: src/Organizer.cpp.s
+.PHONY : src/Organizer.s
+
+# target to generate assembly for a file
+src/Organizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.s
+.PHONY : src/Organizer.cpp.s
+
+src/ReadingHelper.obj: src/ReadingHelper.cpp.obj
+.PHONY : src/ReadingHelper.obj
+
+# target to build an object file
+src/ReadingHelper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj
+.PHONY : src/ReadingHelper.cpp.obj
+
+src/ReadingHelper.i: src/ReadingHelper.cpp.i
+.PHONY : src/ReadingHelper.i
+
+# target to preprocess a source file
+src/ReadingHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.i
+.PHONY : src/ReadingHelper.cpp.i
+
+src/ReadingHelper.s: src/ReadingHelper.cpp.s
+.PHONY : src/ReadingHelper.s
+
+# target to generate assembly for a file
+src/ReadingHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.s
+.PHONY : src/ReadingHelper.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +236,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Hospital.obj
+	@echo ... src/Hospital.i
+	@echo ... src/Hospital.s
+	@echo ... src/Organizer.obj
+	@echo ... src/Organizer.i
+	@echo ... src/Organizer.s
+	@echo ... src/ReadingHelper.obj
+	@echo ... src/ReadingHelper.i
+	@echo ... src/ReadingHelper.s
 .PHONY : help
 
 

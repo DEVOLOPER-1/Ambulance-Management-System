@@ -33,16 +33,16 @@ public:
 
 private:
     ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) {}
-    ReadingHelper(const ReadingHelper&) = delete;
-    ReadingHelper& operator=(const ReadingHelper&) = delete;
-    ~ReadingHelper()
-    {
-        if (DistancesMatrix) {
-            for (int i = 0; i < HospitalsCount; ++i) {
-                delete[] DistancesMatrix[i];
-            }
-            delete[] DistancesMatrix;
-        }
+    // ReadingHelper(const ReadingHelper&) = delete;
+    // ReadingHelper& operator=(const ReadingHelper&) = delete;
+    void DeleteMatrix(int ** Matrix2D , int rows);
+    void DeleteMatrix(Hospital*array );
+    ~ReadingHelper() {
+        DeleteMatrix(DistancesMatrix , HospitalsCount);
+        DeleteMatrix(HospitalsArray);
     }
+        
+    
+
 
 };

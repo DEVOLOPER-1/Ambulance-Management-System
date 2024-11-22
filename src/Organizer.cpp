@@ -45,7 +45,8 @@ void Organizer::loadInputFile()
         }
         else if (sectionCounter == 2) {
             cout << "REQUESTS" << endl;
-            cout << line << endl;
+            RH->Tokenizer(line , sectionCounter);
+            // cout << line << endl;
         }
         else if (sectionCounter == 3) {
             cout << "CANCELLATIONS" << endl;

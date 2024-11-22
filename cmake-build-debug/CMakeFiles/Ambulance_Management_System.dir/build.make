@@ -82,19 +82,67 @@ CMakeFiles/Ambulance_Management_System.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Ambulance_Management_System.dir/main.cpp.s"
 	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Coding\C++\Ambulance-Management-System\main.cpp -o CMakeFiles\Ambulance_Management_System.dir\main.cpp.s
 
+CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj: CMakeFiles/Ambulance_Management_System.dir/flags.make
+CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj: E:/Coding/C++/Ambulance-Management-System/src/Hospital.cpp
+CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj: CMakeFiles/Ambulance_Management_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Coding\C++\Ambulance-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj -MF CMakeFiles\Ambulance_Management_System.dir\src\Hospital.cpp.obj.d -o CMakeFiles\Ambulance_Management_System.dir\src\Hospital.cpp.obj -c E:\Coding\C++\Ambulance-Management-System\src\Hospital.cpp
+
+CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.i"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Coding\C++\Ambulance-Management-System\src\Hospital.cpp > CMakeFiles\Ambulance_Management_System.dir\src\Hospital.cpp.i
+
+CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.s"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Coding\C++\Ambulance-Management-System\src\Hospital.cpp -o CMakeFiles\Ambulance_Management_System.dir\src\Hospital.cpp.s
+
+CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: CMakeFiles/Ambulance_Management_System.dir/flags.make
+CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/Ambulance-Management-System/src/Organizer.cpp
+CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: CMakeFiles/Ambulance_Management_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Coding\C++\Ambulance-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj -MF CMakeFiles\Ambulance_Management_System.dir\src\Organizer.cpp.obj.d -o CMakeFiles\Ambulance_Management_System.dir\src\Organizer.cpp.obj -c E:\Coding\C++\Ambulance-Management-System\src\Organizer.cpp
+
+CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.i"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Coding\C++\Ambulance-Management-System\src\Organizer.cpp > CMakeFiles\Ambulance_Management_System.dir\src\Organizer.cpp.i
+
+CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.s"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Coding\C++\Ambulance-Management-System\src\Organizer.cpp -o CMakeFiles\Ambulance_Management_System.dir\src\Organizer.cpp.s
+
+CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj: CMakeFiles/Ambulance_Management_System.dir/flags.make
+CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj: E:/Coding/C++/Ambulance-Management-System/src/ReadingHelper.cpp
+CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj: CMakeFiles/Ambulance_Management_System.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\Coding\C++\Ambulance-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj -MF CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.obj.d -o CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.obj -c E:\Coding\C++\Ambulance-Management-System\src\ReadingHelper.cpp
+
+CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.i"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Coding\C++\Ambulance-Management-System\src\ReadingHelper.cpp > CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.i
+
+CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.s"
+	"E:\Setup Files\CLion\CLION2~1.2\bin\mingw\bin\G__~1.EXE" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Coding\C++\Ambulance-Management-System\src\ReadingHelper.cpp -o CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.s
+
 # Object files for target Ambulance_Management_System
 Ambulance_Management_System_OBJECTS = \
-"CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj"
+"CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj" \
+"CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj" \
+"CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj" \
+"CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj"
 
 # External object files for target Ambulance_Management_System
 Ambulance_Management_System_EXTERNAL_OBJECTS =
 
 Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj
+Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj
+Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj
+Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj
 Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/build.make
 Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/linkLibs.rsp
 Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/objects1.rsp
 Ambulance_Management_System.exe: CMakeFiles/Ambulance_Management_System.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\Coding\C++\Ambulance-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Ambulance_Management_System.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\Coding\C++\Ambulance-Management-System\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Ambulance_Management_System.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Ambulance_Management_System.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
