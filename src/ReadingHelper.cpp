@@ -9,7 +9,10 @@ ReadingHelper* ReadingHelper::getInstance()
         instance = new ReadingHelper();
     return instance;
 }
-void ReadingHelper::InitializeRequestsList() {Requests = new LinkedList<Request>;}
+void ReadingHelper::InitializeRequestsList() {
+    Requests = new LinkedList<Request>;
+    CancellationRequests = new LinkedList<Request>;
+}
 
 void ReadingHelper::Build2DMatrix_and_HospitalsArray(int& token)
 {
@@ -90,7 +93,6 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber) {
 
     else if (SectionNumber == 2) {
         int TokenCounter = 0;
-        InitializeRequestsList();
 
         while (getline(stream, token, delimiter)) {
             if (line.length() < 3) {
@@ -147,6 +149,28 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber) {
                 }
             }
         }
+    else if(SectionNumber == 3) {
+        int counter = 0;
+        int CRTime = 0;
+        int CRId = 0;
+        while(getline(stream , token , delimiter)) {
+            if (line.length()<=2) NoOfCancellations = stoi(token);
+            else {
+
+                if (counter%2 == 0) {
+                    CRTime = stoi(token);
+                    counter++;
+                }
+                else{
+                    CRId = stoi(token);
+                    cout<<"Time "<<CRTime<<" ID "<<CRId<<endl;
+                    Request* temp = new Request(CRTime , CRId);
+                    CancellationRequests->InsertBeg(*temp);
+                    cout<<"Catched in the list"<<endl;
+                }
+            }
+        }
+    }
 }
 
     

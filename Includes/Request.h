@@ -11,10 +11,11 @@ class Request
 	int     NearestHospital;
 	int		distance;
 	int		severity;
-
+	int CancellationPatientID;
+	int CancellationTime;
 public:
 	Request() : PatientType(""), RequestTime(0), PatientID(0), NearestHospital(0), distance(0), severity(0), PickupTime(0) {}
-
+	Request(int CancellationTime , int CancellationPatientID);
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity);
 
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance);

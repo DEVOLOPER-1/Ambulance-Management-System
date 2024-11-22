@@ -15,6 +15,7 @@ using namespace std;
 class ReadingHelper {
 private:
     LinkedList<Request>* Requests;
+    LinkedList<Request>* CancellationRequests;
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
@@ -25,6 +26,7 @@ private:
     int SpecialCarSpeed;
     int NormalCarSpeed;
     string PatientDataArray[6];
+    int NoOfCancellations;
     static ReadingHelper* instance;
 
 public:

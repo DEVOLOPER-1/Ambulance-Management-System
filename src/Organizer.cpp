@@ -22,6 +22,8 @@ void Organizer::sendBack()
 
 void Organizer::loadInputFile()
 {
+    RH->InitializeRequestsList();
+
     cout << "Reading File....." << endl;
     this->InputFile.open(FileName);
     if (!InputFile.is_open()) {
@@ -57,7 +59,7 @@ void Organizer::loadInputFile()
         }
         else if (sectionCounter == 3) {
             cout << "CANCELLATIONS" << endl;
-            cout << line << endl;
+            RH->Tokenizer(line , sectionCounter);
         }
         else {
             cout << line.length() << " -> " << line << endl;

@@ -5,7 +5,7 @@
 #include "../Includes/Request.h"
 #include <iostream>
 using namespace std;
-
+Request::Request(int CancellationTime , int CancellationPatientID) : CancellationTime(CancellationTime) , CancellationPatientID(CancellationPatientID){}
 Request::Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity)
         : PatientType(PatientType), RequestTime(RequestTime), PatientID(PatientID), NearestHospital(NearestHospital)
         , distance(distance), severity(severity), PickupTime(0) {}
