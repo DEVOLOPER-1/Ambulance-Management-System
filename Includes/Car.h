@@ -8,6 +8,7 @@ class Car
 {
 	string CarType;
 	int speed;
+	int HospitalID;
 	string status;
 	Request* request;
 	int nextPickupTime;
@@ -16,10 +17,26 @@ class Car
 	void setStatus(string status) { this->status = status; }
 
 public:
-	Car(string CarType, int speed) : CarType(CarType), request(nullptr), speed(speed), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
+	// Constructor
+	Car(string CarType, int speed, int HospitalID) : CarType(CarType), request(nullptr), speed(speed)
+		, HospitalID(HospitalID), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
+
+	// Getters
+	string getStatus() { return status; }
 
 	string getCarType() { return CarType; }
 
+	int getHospitalID() { return HospitalID; }
+
+	int PatientID()
+	{
+		if (!request)
+			return -1;
+
+		return request->getPatientID();
+	}
+
+	// methods
 	void assign(int timestep, Request* request)
 	{
 		this->request = request;
@@ -33,6 +50,8 @@ public:
 		setStatus("Loaded");
 
 	}
+
+	void cancel() { request = nullptr; }
 
 	void dropOff()
 	{

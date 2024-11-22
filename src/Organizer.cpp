@@ -13,6 +13,13 @@ Organizer* Organizer::GetInstance()
 
 void Organizer::receive(Car* car) { outCars.enqueue(car); }
 
+void Organizer::sendBack()
+{
+	Car* car;
+	outCars.dequeue(car);
+	backCars.enqueue(car);
+}
+
 void Organizer::loadInputFile()
 {
     cout << "Reading File....." << endl;
