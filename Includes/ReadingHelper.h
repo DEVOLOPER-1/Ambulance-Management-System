@@ -24,6 +24,7 @@ private:
     int HospitalsCounter = 0 ;
     int SpecialCarSpeed;
     int NormalCarSpeed;
+    string PatientDataArray[6];
     static ReadingHelper* instance;
 
 public:
