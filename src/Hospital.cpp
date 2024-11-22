@@ -20,8 +20,10 @@ void Hospital::receive(Request* request)
 {
 	if (request->getPatientType() == "NP")
 		NP_Requests.enqueue(request);
+
 	else if (request->getPatientType() == "SP")
 		SP_Requests.enqueue(request);
+
 	else
 		EP_Requests.enqueue(request, request->getSeverity());
 }
@@ -37,7 +39,6 @@ void Hospital::handleRequests(int timestep)
 		nCars.peek(car) ? nCars.dequeue(car) : sCars.dequeue(car);
 		car->assign(timestep, request);
 		send(car);
-		// report the car to the organizer --|><| S O O N |><|--
 		// if there is a request the hospital should report it to the organizer --|><| S O O N |><|--
 	}
 	while (SP_Requests.peek(request) && sCars.peek(car))
@@ -46,7 +47,6 @@ void Hospital::handleRequests(int timestep)
 		sCars.dequeue(car);
 		car->assign(timestep, request);
 		send(car);
-		// report the car to the organizer --|><| S O O N |><|--
 	}
 	while (NP_Requests.peek(request) && nCars.peek(car))
 	{
@@ -54,7 +54,6 @@ void Hospital::handleRequests(int timestep)
 		nCars.dequeue(car);
 		car->assign(timestep, request);
 		send(car);
-		// report the car to the organizer --|><| S O O N |><|--
 	}
 }
 
