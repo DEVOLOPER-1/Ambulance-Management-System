@@ -1,6 +1,7 @@
 #pragma once
 #include "Request.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -9,71 +10,49 @@ class Car
 	string CarType;
 	int speed;
 	int HospitalID;
+	string CarID;
 	string status;
 	Request* request;
 	int nextPickupTime;
 	int nextDropOffTime;
 
-	void setStatus(string status) { this->status = status; }
+	void setStatus(string status);
 
 public:
 	// Constructor
-	Car(string CarType, int speed, int HospitalID) : CarType(CarType), request(nullptr), speed(speed)
-		, HospitalID(HospitalID), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
+	Car(string CarType, int speed, int HospitalID, int car_number);
 
 	// Getters
-	string getStatus() { return status; }
+	string getStatus();
 
-	string getCarType() { return CarType; }
+	string getCarType();
 
-	int getHospitalID() { return HospitalID; }
+	int getHospitalID();
 
-	int PatientID()
-	{
-		if (!request)
-			return -1;
+	int getPatientID();
 
-		return request->getPatientID();
-	}
+	int getPickedUpTime();
+
+	int getDroppedOffTime();
 
 	// methods
-	void assign(int timestep, Request* request)
+	void assign(int timestep, Request* request);
+
+
+	void pickUp();
+
+	void cancel(); // for NP requests only
+
+	void dropOff();
+
+
+	// stream operators
+	friend ostream& operator<<(ostream& os, Car& c)
 	{
-		this->request = request;
-		setStatus("Assigned");
-		nextPickupTime = timestep + (request->getDistance() / speed);
-		nextDropOffTime = nextPickupTime + (request->getDistance() / speed);
-	}
-
-	void pickUp()
-	{
-		setStatus("Loaded");
-
-	}
-
-	void cancel() { request = nullptr; }
-
-	void dropOff()
-	{
-		setStatus("Ready");
-		request = nullptr;
-	}
-
-	void work(Request* request, int timestep)
-	{
-		if (status == "Ready" && timestep == request->getRequestTime())
-		{
-			assign(timestep, request);
-		}
-		else if (status == "Assigned" && timestep == nextPickupTime)
-		{
-			pickUp();
-		}
-		else if (status == "Loaded" && timestep == nextDropOffTime)
-		{
-			dropOff();
-		}
-		cout << "Car status: " << status << endl;
+		os << c.CarID;
+		if (c.request)
+			os << "_P" << c.getPatientID();
+		return os;
 	}
 
 };

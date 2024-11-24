@@ -1,3 +1,3 @@
-E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/Ambulance_Management_System.dir
-E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/cmake-build-debug/CMakeFiles/Ambulance_Management_System.dir
+D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/cmake-build-debug/CMakeFiles/rebuild_cache.dir

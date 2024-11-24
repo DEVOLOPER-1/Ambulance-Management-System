@@ -16,15 +16,16 @@ class Organizer {
 private:
     ifstream InputFile;
     string FileName;
+	Hospital** hospitals;
 	LinkedQueue<Request*> requests;
 	LinkedQueue<Request*> cancellations;
-	LinkedQueue<Car* > outCars;
-    LinkedQueue<Car* > backCars;
-    static Organizer* instance; 
+	priQueue<Car* > outCars;
+    priQueue<Car* > backCars;
+	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
         : FileName("D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/Includes/InputText.txt")
-        , requests(), cancellations(), outCars(), backCars() {};
+        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;
     
@@ -54,9 +55,31 @@ public:
 	LinkedQueue<Car*>     getBackCars()      { return backCars; }
     */
 
+	void setHospital(Hospital** hospitals) { this->hospitals = hospitals; }
+
+	void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; }
+
+    void printOutCars()
+    {
+		outCars.print();
+    }
+
+    void printBackCars()
+    {
+		backCars.print();
+    }
+
+    void sendRequests(int timeStep);
+
+	void runSimulation(int timeSteps);
+
     void receive(Car* car);
 
 	void sendBack();
+
+	void returnCar();
+
+	void sendCarToHospital(Car* car);
 
     void loadInputFile();
 };
