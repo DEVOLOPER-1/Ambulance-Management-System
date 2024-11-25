@@ -11,9 +11,29 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-void Organizer::sendRequests(int timeStep)
+// private methods
+void Organizer::sendBack()
 {
-	if (requests.isEmpty()) return;
+    Car* car;
+    int pri;
+    outCars.dequeue(car, pri);
+    car->pickUp();
+    backCars.enqueue(car, -(car->getDroppedOffTime()));
+}
+
+void Organizer::returnCar()
+{
+    Car* car;
+    int pri;
+    backCars.dequeue(car, pri);
+    car->dropOff();
+    hospitals[car->getHospitalID() - 1]->receive(car);
+}
+
+// public methods
+void Organizer::distributeRequests(int timeStep)
+{
+	// if (requests.isEmpty()) return;
 	Request* request;
 	while (requests.peek(request) && request->getRequestTime() == timeStep) 
     {
@@ -23,7 +43,7 @@ void Organizer::sendRequests(int timeStep)
 	}
 }
 
-void Organizer::runSimulation(int timeSteps)
+void Organizer::handleCars(int timeSteps)
 {
 	// sendRequests(timeSteps);
 	Car* car;
@@ -44,29 +64,6 @@ void Organizer::runSimulation(int timeSteps)
 }
 
 void Organizer::receive(Car* car) { outCars.enqueue(car, -(car->getPickedUpTime())); }
-
-void Organizer::sendBack()
-{
-	Car* car;
-    int pri;
-	outCars.dequeue(car, pri);
-    car->pickUp();
-    backCars.enqueue(car, -(car->getDroppedOffTime()));
-}
-
-void Organizer::returnCar()
-{
-	Car* car;
-    int pri;
-	backCars.dequeue(car, pri);
-	car->dropOff();
-	sendCarToHospital(car);
-}
-
-void Organizer::sendCarToHospital(Car* car)
-{
-	hospitals[car->getHospitalID() - 1]->receive(car);
-}
 
 void Organizer::loadInputFile()
 {

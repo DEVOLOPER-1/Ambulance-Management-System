@@ -32,11 +32,11 @@ int main()
 	while (++timestep <= 100)
 	{
 		cout << "Timestep: " << timestep << endl;
-		ORG->sendRequests(timestep);
+		ORG->distributeRequests(timestep);
 		for (int i = 0; i < 2; i++)
 			hospitals[i]->handleRequests(timestep);
 
-		ORG->runSimulation(timestep);
+		ORG->handleCars(timestep);
 
 		//this_thread::sleep_for(2s);
 		cout << "\n====================" << endl;

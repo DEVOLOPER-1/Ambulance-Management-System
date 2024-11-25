@@ -28,59 +28,38 @@ private:
         , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;
-    
-    /*
-    void simulateTimeStep(int timeStep){}
 
-    void handleCarArrival(Car* car){}
+    // methods to handle cars
+    void sendBack();
 
-    // void assignPatientToCar(Patient* patient, Car* car){}
-
-    void collectStatistics(){}
-
-    void produceOutputFile(string fileName){}
-
-    void callUIUpdate(int timeStep){}
-    */
-
-
+    void returnCar();
 
 public:
     static Organizer* GetInstance();
 
-    /*
-	LinkedQueue<Request*> getRequests()      { return requests; }
-	LinkedQueue<Request*> getCancellations() { return cancellations; }
-	LinkedQueue<Car*>     getOutCars()       { return outCars; }
-	LinkedQueue<Car*>     getBackCars()      { return backCars; }
-    */
+	void setHospital(Hospital** hospitals) { this->hospitals = hospitals; } // will be removed later after
 
-	void setHospital(Hospital** hospitals) { this->hospitals = hospitals; }
-
-	void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; }
+	void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; } // will be removed later
 
     void printOutCars()
     {
-		outCars.print();
+		outCars.print(); // beta version
     }
 
     void printBackCars()
     {
-		backCars.print();
+		backCars.print(); // beta version
     }
 
-    void sendRequests(int timeStep);
+	// methods to handle requests
+    void distributeRequests(int timeStep);
 
-	void runSimulation(int timeSteps);
+	// methods to handle cars
+	void handleCars(int timeSteps);
 
     void receive(Car* car);
 
-	void sendBack();
-
-	void returnCar();
-
-	void sendCarToHospital(Car* car);
-
+	// methods to handle input file (Scenario)
     void loadInputFile();
 };
 
@@ -88,14 +67,31 @@ public:
 
 
 
+/*
+void simulateTimeStep(int timeStep){}
+
+void handleCarArrival(Car* car){}
+
+// void assignPatientToCar(Patient* patient, Car* car){}
+
+void collectStatistics(){}
+
+void produceOutputFile(string fileName){}
+
+void callUIUpdate(int timeStep){}
+*/
 
 
 
 
 
 
-
-
+/*
+LinkedQueue<Request*> getRequests()      { return requests; }
+LinkedQueue<Request*> getCancellations() { return cancellations; }
+LinkedQueue<Car*>     getOutCars()       { return outCars; }
+LinkedQueue<Car*>     getBackCars()      { return backCars; }
+*/
 
 
 

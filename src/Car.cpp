@@ -30,6 +30,13 @@ int Car::getPickedUpTime() { return nextPickupTime; }
 
 int Car::getDroppedOffTime() { return nextDropOffTime; }
 
+string Car::getCarID() { return CarID; }
+
+bool Car::isAssigned()
+{
+	return request != nullptr;
+}
+
 void Car::assign(int timestep, Request* request)
 {
 	this->request = request;
