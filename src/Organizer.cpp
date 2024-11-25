@@ -11,19 +11,25 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-void Organizer::SetHospitals(Hospital *&HospitalsArray) {
+void Organizer::setHospital(Hospital *&HospitalsArray) {
     this->hospitals = HospitalsArray;
 }
 
-void Organizer::SetRequestsL(LinkedList<Request> *&requests) {
-    this->requests_linked_list_ = requests;
+void Organizer::setRequests(LinkedQueue<Request> *&requests) {
+    this->requests = requests;
 }
 
-void Organizer::setCancellationRequestsL(LinkedList<CancellationRequest> *&CancellationRequests) {
-    this->cancellations_linked_list_ = CancellationRequests ;
+void Organizer::setCancellationRequestQ(LinkedQueue<CancellationRequest> *&CancellationRequests) {
+    this->cancellations = CancellationRequests ;
 }
 void Organizer::SetHospitalsCount(int HospitalsCount) {
     this->HospitalsCount = HospitalsCount;
+}
+void Organizer::SetCancellationsCount(int CancellationsCount) {
+    this->CancellationsCount = CancellationsCount;
+}
+void Organizer::SetPatientsCount(int PatientsCount) {
+    this->PatientsCount = PatientsCount;
 }
 
 void Organizer::SetHospitalsDistances(int **&hospitals_distances) {
@@ -55,9 +61,9 @@ void Organizer::distributeRequests(int timeStep)
 {
 	// if (requests.isEmpty()) return;
 	Request* request;
-	while (requests.peek(request) && request->getRequestTime() == timeStep) 
+	while (requests->peek(*request) && request->getRequestTime() == timeStep) 
     {
-		requests.dequeue(request);
+		requests->dequeue(*request);
 		int HospitalID = request->getNearestHospital();
 		hospitals[HospitalID - 1].receive(request);
 	}
@@ -146,11 +152,14 @@ void Organizer::loadInputFile()
 }
 
 void Organizer::SetDataMembersValues() {
-    SetHospitals(RH->GetHospitalsArray());
-    SetRequestsL(RH->GetRequestsLinkedList());
-    setCancellationRequestsL(RH->GetCancellationRequestsLinkedList());
+    setHospital(RH->GetHospitalsArray());
+    setRequests(RH->GetRequestsQueue());
+    setCancellationRequestQ(RH->GetCancellationRequestsQueue());
     SetHospitalsDistances(RH->GetDistancesMatrix());
     SetHospitalsCount(RH->GetNoOfHospitals());
+    SetPatientsCount(RH->GetNoOfPatients());
+    SetCancellationsCount(RH->GetNoOfCancellations());
+    cout<<"All Organizer Data Members are done !"<<endl;
     
 }
 
