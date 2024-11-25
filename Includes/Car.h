@@ -1,6 +1,7 @@
 #pragma once
 #include "Request.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -9,71 +10,45 @@ class Car
 	string CarType;
 	int speed;
 	int HospitalID;
+	string CarID;
 	string status;
 	Request* request;
 	int nextPickupTime;
 	int nextDropOffTime;
 
-	void setStatus(string status) { this->status = status; }
+	void setStatus(string status);
 
 public:
 	// Constructor
-	Car(string CarType, int speed, int HospitalID) : CarType(CarType), request(nullptr), speed(speed)
-		, HospitalID(HospitalID), status("Ready"), nextPickupTime(0), nextDropOffTime(0) {}
+	Car(string CarType, int speed, int HospitalID, int car_number);
 
 	// Getters
-	string getStatus() { return status; }
+	string getStatus();
 
-	string getCarType() { return CarType; }
+	string getCarType();
 
-	int getHospitalID() { return HospitalID; }
+	int getHospitalID();
 
-	int PatientID()
-	{
-		if (!request)
-			return -1;
+	int getPatientID();
 
-		return request->getPatientID();
-	}
+	int getPickedUpTime();
+
+	int getDroppedOffTime();
+
+	string getCarID();
+
+	bool isAssigned();
 
 	// methods
-	void assign(int timestep, Request* request)
-	{
-		this->request = request;
-		setStatus("Assigned");
-		nextPickupTime = timestep + (request->getDistance() / speed);
-		nextDropOffTime = nextPickupTime + (request->getDistance() / speed);
-	}
+	void assign(int timestep, Request* request);
 
-	void pickUp()
-	{
-		setStatus("Loaded");
 
-	}
+	void pickUp();
 
-	void cancel() { request = nullptr; }
+	void cancel(); // for NP requests only
 
-	void dropOff()
-	{
-		setStatus("Ready");
-		request = nullptr;
-	}
-
-	void work(Request* request, int timestep)
-	{
-		if (status == "Ready" && timestep == request->getRequestTime())
-		{
-			assign(timestep, request);
-		}
-		else if (status == "Assigned" && timestep == nextPickupTime)
-		{
-			pickUp();
-		}
-		else if (status == "Loaded" && timestep == nextDropOffTime)
-		{
-			dropOff();
-		}
-		cout << "Car status: " << status << endl;
-	}
+	void dropOff();
 
 };
+// ostream operators
+ostream& operator<<(ostream& os, Car& c);  

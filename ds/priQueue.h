@@ -1,6 +1,5 @@
 #pragma once
 
-
 template < typename T>
 class priNode
 {
@@ -60,7 +59,8 @@ public:
     void enqueue(const T& data, int priority) {
         priNode<T>* newNode = new priNode<T>(data, priority);
 
-        if (head == nullptr || priority > head->getPri()) {
+        if (head == nullptr || priority > head->getPri())
+        {
 
             newNode->setNext(head);
             head = newNode;
@@ -98,4 +98,14 @@ public:
     bool isEmpty() const {
         return head == nullptr;
     }
+
+	void print() {
+		priNode<T>* current = head;
+		int pri;
+		while (current) {
+			cout << valueOf(current->getItem(pri)) << ", ";
+			current = current->getNext();
+		}
+		cout << endl;
+	}
 };

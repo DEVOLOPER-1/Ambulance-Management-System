@@ -1,6 +1,18 @@
 #pragma once
 #include "Node.h"
 
+template <typename T>
+T valueOf(T item)
+{
+	return item;
+}
+
+template <typename T>
+T valueOf(T* item)
+{
+	return *item;
+}
+
 /*
 This is a program that implements the queue abstract data type using a linked list.
 The queue is implemented as a chain of linked nodes that has two pointers,
@@ -57,6 +69,7 @@ public:
 	bool enqueue(const T& newEntry);
 	bool dequeue(T& frntEntry);
 	bool peek(T& frntEntry)  const;
+	void print();
 	~LinkedQueue();
 
 	//copy constructor
@@ -184,6 +197,18 @@ copy constructor is provided
 Input: LinkedQueue<T>: The Queue to be copied
 Output: none
 */
+
+template <typename T>
+void LinkedQueue<T>::print()
+{
+	Node<T>* p = frontPtr;
+	while (p)
+	{
+		cout << valueOf(p->getItem()) << ", ";
+		p = p->getNext();
+	}
+	cout << endl;
+}
 
 template <typename T>
 LinkedQueue<T>::LinkedQueue(const LinkedQueue<T>& LQ)

@@ -77,6 +77,13 @@ build CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.obj: CXX_
   TARGET_COMPILE_PDB = CMakeFiles\Ambulance_Management_System.dir\
   TARGET_PDB = Ambulance_Management_System.pdb
 
+build CMakeFiles\Ambulance_Management_System.dir\src\Car.cpp.obj: CXX_COMPILER__Ambulance_Management_System_unscanned_Debug D$:\University\Year$ 2\Semester$ 1\data$ structure\Project\Ambulance-Management-System\src\Car.cpp || cmake_object_order_depends_target_Ambulance_Management_System
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\Ambulance_Management_System.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ambulance_Management_System.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Ambulance_Management_System.dir\
+  TARGET_PDB = Ambulance_Management_System.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Ambulance_Management_System
@@ -85,7 +92,7 @@ build CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.obj: CXX_
 #############################################
 # Link the executable Ambulance_Management_System.exe
 
-build Ambulance_Management_System.exe: CXX_EXECUTABLE_LINKER__Ambulance_Management_System_Debug CMakeFiles\Ambulance_Management_System.dir\Main.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\Hospital.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\Organizer.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.obj
+build Ambulance_Management_System.exe: CXX_EXECUTABLE_LINKER__Ambulance_Management_System_Debug CMakeFiles\Ambulance_Management_System.dir\Main.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\Hospital.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\Organizer.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\ReadingHelper.cpp.obj CMakeFiles\Ambulance_Management_System.dir\src\Car.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
