@@ -195,12 +195,12 @@ void ReadingHelper::DeleteMatrix( Hospital*array) {
 
 
 
-int **  ReadingHelper::GetDistancesMatrix() const{return DistancesMatrix;}
-Hospital* ReadingHelper::GetHospitalsArray() const{return HospitalsArray;}
+int **  &ReadingHelper::GetDistancesMatrix() {return DistancesMatrix;}
+Hospital* &ReadingHelper::GetHospitalsArray() {return HospitalsArray;}
 int ReadingHelper::GetScarSpeed() const{return SpecialCarSpeed;}
 int ReadingHelper::GetNcarSpeed() const{return NormalCarSpeed;}
-LinkedList<Request>* ReadingHelper::GetRequestsLinkedList() const{return Requests;}
-LinkedList<CancellationRequest>* ReadingHelper::GetCancellationRequestsLinkedList() const{return CancellationRequests;}
+LinkedList<Request>* &ReadingHelper::GetRequestsLinkedList() {return Requests;}
+LinkedList<CancellationRequest>* &ReadingHelper::GetCancellationRequestsLinkedList() {return CancellationRequests;}
 int ReadingHelper::GetNoOfCancellations() const {
     return NoOfCancellations;
 }

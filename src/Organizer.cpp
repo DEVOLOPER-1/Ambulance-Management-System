@@ -11,6 +11,26 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
+void Organizer::SetHospitals(Hospital *&HospitalsArray) {
+    this->hospitals = HospitalsArray;
+}
+
+void Organizer::SetRequestsL(LinkedList<Request> *&requests) {
+    this->requests_linked_list_ = requests;
+}
+
+void Organizer::setCancellationRequestsL(LinkedList<CancellationRequest> *&CancellationRequests) {
+    this->cancellations_linked_list_ = CancellationRequests ;
+}
+void Organizer::SetHospitalsCount(int HospitalsCount) {
+    this->HospitalsCount = HospitalsCount;
+}
+
+void Organizer::SetHospitalsDistances(int **&hospitals_distances) {
+    this->hospitals_distances = hospitals_distances;
+}
+
+
 // private methods
 void Organizer::sendBack()
 {
@@ -27,7 +47,7 @@ void Organizer::returnCar()
     int pri;
     backCars.dequeue(car, pri);
     car->dropOff();
-    hospitals[car->getHospitalID() - 1]->receive(car);
+    hospitals[car->getHospitalID() - 1].receive(car);
 }
 
 // public methods
@@ -39,7 +59,7 @@ void Organizer::distributeRequests(int timeStep)
     {
 		requests.dequeue(request);
 		int HospitalID = request->getNearestHospital();
-		hospitals[HospitalID - 1]->receive(request);
+		hospitals[HospitalID - 1].receive(request);
 	}
 }
 
@@ -120,9 +140,18 @@ void Organizer::loadInputFile()
 
         }
     }
-
+    SetDataMembersValues();
     InputFile.close();
     cout << "File Reading Completed." << endl;
+}
+
+void Organizer::SetDataMembersValues() {
+    SetHospitals(RH->GetHospitalsArray());
+    SetRequestsL(RH->GetRequestsLinkedList());
+    setCancellationRequestsL(RH->GetCancellationRequestsLinkedList());
+    SetHospitalsDistances(RH->GetDistancesMatrix());
+    SetHospitalsCount(RH->GetNoOfHospitals());
+    
 }
 
 // Request* Organizer::GenerateRequests(int timeStep) {

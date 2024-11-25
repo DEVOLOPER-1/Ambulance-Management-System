@@ -18,17 +18,20 @@ class Organizer {
 private:
     ifstream InputFile;
     string FileName;
-	Hospital** hospitals;
-    int hospital_count; //
+	int** hospitals_distances;
+	int HospitalsCount;
+	Hospital* hospitals;
+	LinkedList<Request>* requests_linked_list_;
+	LinkedList<CancellationRequest>* cancellations_linked_list_;
 	LinkedQueue<Request*> requests;
-	LinkedQueue<Request*> cancellations;
+	LinkedQueue<CancellationRequest*> cancellations;
 	priQueue<Car* > outCars;
     priQueue<Car* > backCars;
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("D:\\A.M.S\\Ambulance-Management-System\\Includes\\InputText.txt")
-        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), hospital_count(0){};
+        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\Includes\\InputText.txt")
+        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;
 
@@ -40,25 +43,11 @@ private:
 public:
     static Organizer* GetInstance();
 
-	void setHospital(Hospital** hospitals) { this->hospitals = hospitals; } // will be removed later after
-
-    
-    void setHospitals(Hospital** hospitals, int count); // initialize hospitals 2d array
-    
-    Hospital** getHospitals(){ 
-        
-        return hospitals; 
-    }
-    
-    int getHospitalCount(){ 
-        
-        return hospital_count; 
-        
-    }
-
-    
-	
-    void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; } // will be removed later
+	void SetHospitals( Hospital* &HospitalsArray);
+	void SetHospitalsDistances( int ** &hospitals_distances);
+	void SetHospitalsCount(int HospitalsCount);
+	void SetRequestsL( LinkedList<Request>* &requests);
+	void setCancellationRequestsL( LinkedList<CancellationRequest>* &CancellationRequests );
 
     void printOutCars()
     {
@@ -80,6 +69,9 @@ public:
 
 	// methods to handle input file (Scenario)
     void loadInputFile();
+	
+
+	void SetDataMembersValues();
 };
 
 
