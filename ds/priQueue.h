@@ -108,7 +108,7 @@ public:
 		priNode<T>* current = head;
 		int pri;
 		while (current) {
-			cout << valueOf(current->getItem(pri)) << ", ";
+			cout << current->getItem(pri) << ", ";
 			current = current->getNext();
 		}
 		cout << endl;

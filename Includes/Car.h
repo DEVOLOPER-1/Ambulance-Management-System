@@ -53,4 +53,4 @@ public:
 
 };
 // ostream operators
-ostream& operator<<(ostream& os, Car& c);  
+ostream& operator<<(ostream& os, Car* c);  
