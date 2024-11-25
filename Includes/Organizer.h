@@ -19,6 +19,7 @@ private:
     ifstream InputFile;
     string FileName;
 	Hospital** hospitals;
+    int hospital_count; //
 	LinkedQueue<Request*> requests;
 	LinkedQueue<Request*> cancellations;
 	priQueue<Car* > outCars;
@@ -26,8 +27,8 @@ private:
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\Includes\\InputText.txt")
-        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
+        : FileName("D:\\A.M.S\\Ambulance-Management-System\\Includes\\InputText.txt")
+        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), hospital_count(0){};
 
 	Organizer(const Organizer& other) = delete;
 
@@ -41,7 +42,23 @@ public:
 
 	void setHospital(Hospital** hospitals) { this->hospitals = hospitals; } // will be removed later after
 
-	void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; } // will be removed later
+    
+    void setHospitals(Hospital** hospitals, int count); // initialize hospitals 2d array
+    
+    Hospital** getHospitals(){ 
+        
+        return hospitals; 
+    }
+    
+    int getHospitalCount(){ 
+        
+        return hospital_count; 
+        
+    }
+
+    
+	
+    void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; } // will be removed later
 
     void printOutCars()
     {
