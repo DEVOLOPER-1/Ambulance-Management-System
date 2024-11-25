@@ -15,7 +15,7 @@ using namespace std;
 class ReadingHelper {
 private:
     LinkedList<Request>* Requests= new LinkedList<Request>;
-    LinkedList<CancellationRequest>* CancellationRequests = new LinkedList<CancellationRequest>;;
+    LinkedList<CancellationRequest> *CancellationRequests = new LinkedList<CancellationRequest>;
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
@@ -33,15 +33,15 @@ public:
     static ReadingHelper* getInstance();
     void Tokenizer(string& line, int SectionNumber);
     void SetNoOfHospitals(int Counts);
-    int** GetDistancesMatrix()const;
-    Hospital* GetHospitalsArray()const;
+    int** &GetDistancesMatrix();
+    Hospital* &GetHospitalsArray();
     int GetScarSpeed() const;
     int GetNcarSpeed()const;
     int GetNoOfHospitals()const;
     int GetNoOfCancellations()const;
     int GetNoOfPatients()const;
-    LinkedList<Request>* GetRequestsLinkedList()const;
-    LinkedList<CancellationRequest>* GetCancellationRequestsLinkedList()const;
+    LinkedList<Request>* &GetRequestsLinkedList();
+    LinkedList<CancellationRequest>* &GetCancellationRequestsLinkedList();
     
 
 private:
