@@ -20,11 +20,11 @@ private:
     string FileName;
 	int** hospitals_distances;
 	int HospitalsCount;
+	int PatientsCount;
+	int CancellationsCount;
 	Hospital* hospitals;
-	LinkedList<Request>* requests_linked_list_;
-	LinkedList<CancellationRequest>* cancellations_linked_list_;
-	LinkedQueue<Request*> requests;
-	LinkedQueue<CancellationRequest*> cancellations;
+	LinkedQueue<Request>* requests;
+	LinkedQueue<CancellationRequest>* cancellations;
 	priQueue<Car* > outCars;
     priQueue<Car* > backCars;
 	static Organizer* instance;  /// Singleton Design Pattern
@@ -43,11 +43,14 @@ private:
 public:
     static Organizer* GetInstance();
 
-	void SetHospitals( Hospital* &HospitalsArray);
+	void setHospital( Hospital* &HospitalsArray);
 	void SetHospitalsDistances( int ** &hospitals_distances);
 	void SetHospitalsCount(int HospitalsCount);
-	void SetRequestsL( LinkedList<Request>* &requests);
-	void setCancellationRequestsL( LinkedList<CancellationRequest>* &CancellationRequests );
+	void setRequests( LinkedQueue<Request>* &requests);
+	void setCancellationRequestQ( LinkedQueue<CancellationRequest>* &CancellationRequests );
+	void SetPatientsCount(int PatientsCount);
+	void SetCancellationsCount(int CancellationsCount);
+
 
     void printOutCars()
     {

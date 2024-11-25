@@ -10,12 +10,13 @@
 #include <sstream>
 #include<string>
 #include "../ds/LinkedList.h"
+#include "../ds/LinkedQueue.h"
 using namespace std;
 
 class ReadingHelper {
 private:
-    LinkedList<Request>* Requests= new LinkedList<Request>;
-    LinkedList<CancellationRequest> *CancellationRequests = new LinkedList<CancellationRequest>;
+    LinkedQueue<Request>* Requests= new LinkedQueue<Request>;
+    LinkedQueue<CancellationRequest> *CancellationRequests = new LinkedQueue<CancellationRequest>;
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
@@ -40,8 +41,8 @@ public:
     int GetNoOfHospitals()const;
     int GetNoOfCancellations()const;
     int GetNoOfPatients()const;
-    LinkedList<Request>* &GetRequestsLinkedList();
-    LinkedList<CancellationRequest>* &GetCancellationRequestsLinkedList();
+    LinkedQueue<Request>* &GetRequestsQueue();
+    LinkedQueue<CancellationRequest>* &GetCancellationRequestsQueue();
     
 
 private:

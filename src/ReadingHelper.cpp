@@ -115,7 +115,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                     stoi(PatientDataArray[4]),
                                     stoi(PatientDataArray[5])
                                 );
-                                Requests->InsertBeg(*temp);
+                                Requests->enqueue(*temp);
                                 cout << "Catched in EP\n";
                             }
                             else if (PatientDataArray[0] == "NP") {
@@ -126,7 +126,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                     stoi(PatientDataArray[3]),
                                     stoi(PatientDataArray[4])
                                 );
-                                Requests->InsertBeg(*temp);
+                                Requests->enqueue(*temp);
                                 cout << "Catched in NP\n";
                             }
                             else if (PatientDataArray[0] == "SP") {
@@ -137,7 +137,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                     stoi(PatientDataArray[3]),
                                     stoi(PatientDataArray[4])
                                 );
-                                Requests->InsertBeg(*temp);
+                                Requests->enqueue(*temp);
                                 cout << "Catched in SP\n";
                             }
                         }
@@ -162,7 +162,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                     CRId = stoi(token);
                     cout<<"Time "<<CRTime<<" ID "<<CRId<<endl;
                     CancellationRequest* temp = new CancellationRequest(CRTime , CRId);
-                    CancellationRequests->InsertBeg(*temp);
+                    CancellationRequests->enqueue(*temp);
                     cout<<"Time "<<temp->GETTime()<<" ID "<<temp->GetPID()<<endl;
 
                     cout<<"Catched in the list"<<endl;
@@ -199,8 +199,8 @@ int **  &ReadingHelper::GetDistancesMatrix() {return DistancesMatrix;}
 Hospital* &ReadingHelper::GetHospitalsArray() {return HospitalsArray;}
 int ReadingHelper::GetScarSpeed() const{return SpecialCarSpeed;}
 int ReadingHelper::GetNcarSpeed() const{return NormalCarSpeed;}
-LinkedList<Request>* &ReadingHelper::GetRequestsLinkedList() {return Requests;}
-LinkedList<CancellationRequest>* &ReadingHelper::GetCancellationRequestsLinkedList() {return CancellationRequests;}
+LinkedQueue<Request>* &ReadingHelper::GetRequestsQueue() {return Requests;}
+LinkedQueue<CancellationRequest>* &ReadingHelper::GetCancellationRequestsQueue() {return CancellationRequests;}
 int ReadingHelper::GetNoOfCancellations() const {
     return NoOfCancellations;
 }
