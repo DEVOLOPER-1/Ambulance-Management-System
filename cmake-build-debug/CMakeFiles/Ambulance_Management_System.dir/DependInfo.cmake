@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/Coding/C++/Ambulance-Management-System/main.cpp" "CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj" "gcc" "CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj.d"
+  "E:/Coding/C++/Ambulance-Management-System/src/Car.cpp" "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj" "gcc" "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj.d"
   "E:/Coding/C++/Ambulance-Management-System/src/Hospital.cpp" "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj" "gcc" "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj.d"
   "E:/Coding/C++/Ambulance-Management-System/src/Organizer.cpp" "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj" "gcc" "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj.d"
   "E:/Coding/C++/Ambulance-Management-System/src/ReadingHelper.cpp" "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj" "gcc" "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj.d"

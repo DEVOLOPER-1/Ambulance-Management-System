@@ -9,12 +9,9 @@ ReadingHelper* ReadingHelper::getInstance()
         instance = new ReadingHelper();
     return instance;
 }
-void ReadingHelper::InitializeRequestsList() {
-    Requests = new LinkedList<Request>;
-    CancellationRequests = new LinkedList<Request>;
-}
 
-void ReadingHelper::Build2DMatrix_and_HospitalsArray(int& token)
+
+void ReadingHelper::Build2DMatrix_and_HospitalsArray(int token)
 {
     // Allocate memory for the 2D matrix
     HospitalsArray = new Hospital[token]();
@@ -24,13 +21,13 @@ void ReadingHelper::Build2DMatrix_and_HospitalsArray(int& token)
     }
 }
 
-void ReadingHelper::SetNoOfHospitals(int& Counts)
+void ReadingHelper::SetNoOfHospitals(int Counts)
 {
     HospitalsCount = Counts;
     Build2DMatrix_and_HospitalsArray(HospitalsCount);
 }
 
-void ReadingHelper::Tokenizer(string& line, int& SectionNumber) {
+void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
     string token;
     istringstream stream(line);
     char delimiter{ ' ' };
@@ -164,8 +161,10 @@ void ReadingHelper::Tokenizer(string& line, int& SectionNumber) {
                 else{
                     CRId = stoi(token);
                     cout<<"Time "<<CRTime<<" ID "<<CRId<<endl;
-                    Request* temp = new Request(CRTime , CRId);
+                    CancellationRequest* temp = new CancellationRequest(CRTime , CRId);
                     CancellationRequests->InsertBeg(*temp);
+                    cout<<"Time "<<temp->GETTime()<<" ID "<<temp->GetPID()<<endl;
+
                     cout<<"Catched in the list"<<endl;
                 }
             }
@@ -192,4 +191,23 @@ void ReadingHelper::DeleteMatrix( Hospital*array) {
             delete [] array;
         
     }
+
+
+
+
+int **  ReadingHelper::GetDistancesMatrix() const{return DistancesMatrix;}
+Hospital* ReadingHelper::GetHospitalsArray() const{return HospitalsArray;}
+int ReadingHelper::GetScarSpeed() const{return SpecialCarSpeed;}
+int ReadingHelper::GetNcarSpeed() const{return NormalCarSpeed;}
+LinkedList<Request>* ReadingHelper::GetRequestsLinkedList() const{return Requests;}
+LinkedList<CancellationRequest>* ReadingHelper::GetCancellationRequestsLinkedList() const{return CancellationRequests;}
+int ReadingHelper::GetNoOfCancellations() const {
+    return NoOfCancellations;
+}
+int ReadingHelper::GetNoOfHospitals() const {
+    return HospitalsCount;
+}
+int ReadingHelper::GetNoOfPatients() const {
+    return NoOfPatients;
+}
 

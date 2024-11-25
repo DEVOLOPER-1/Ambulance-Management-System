@@ -2,6 +2,19 @@
 #include <iostream>
 using namespace std;
 
+class CancellationRequest {
+private:
+	int PID;
+	int Time;
+	
+public:
+	CancellationRequest();
+	CancellationRequest(int Time , int PID);
+	int GetPID()const;
+	int GETTime()const;
+};
+
+
 class Request
 {
 	string	PatientType;
@@ -14,8 +27,7 @@ class Request
 	int CancellationPatientID;
 	int CancellationTime;
 public:
-	Request() : PatientType(""), RequestTime(0), PatientID(0), NearestHospital(0), distance(0), severity(0), PickupTime(0) {}
-	Request(int CancellationTime , int CancellationPatientID);
+	Request();
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity);
 
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance);

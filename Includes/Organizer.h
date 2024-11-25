@@ -7,6 +7,8 @@
 #include "Car.h"
 #include "Hospital.h"
 #include "ReadingHelper.h"
+#include "../ds/Stack.h"
+#include"UI.h"
 #define ORG Organizer::GetInstance()
 using namespace std;
 
@@ -16,48 +18,50 @@ class Organizer {
 private:
     ifstream InputFile;
     string FileName;
+	Hospital** hospitals;
 	LinkedQueue<Request*> requests;
 	LinkedQueue<Request*> cancellations;
-	LinkedQueue<Car* > outCars;
-    LinkedQueue<Car* > backCars;
-    static Organizer* instance; 
+	priQueue<Car* > outCars;
+    priQueue<Car* > backCars;
+	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("D:\\A.M.S\\Ambulance-Management-System\\Includes\\InputText.txt")
-        , requests(), cancellations(), outCars(), backCars() {};
+        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\Includes\\InputText.txt")
+        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;
-    
-    /*
-    void simulateTimeStep(int timeStep){}
 
-    void handleCarArrival(Car* car){}
+    // methods to handle cars
+    void sendBack();
 
-    // void assignPatientToCar(Patient* patient, Car* car){}
-
-    void collectStatistics(){}
-
-    void produceOutputFile(string fileName){}
-
-    void callUIUpdate(int timeStep){}
-    */
-
-
+    void returnCar();
 
 public:
     static Organizer* GetInstance();
 
-    /*
-	LinkedQueue<Request*> getRequests()      { return requests; }
-	LinkedQueue<Request*> getCancellations() { return cancellations; }
-	LinkedQueue<Car*>     getOutCars()       { return outCars; }
-	LinkedQueue<Car*>     getBackCars()      { return backCars; }
-    */
+	void setHospital(Hospital** hospitals) { this->hospitals = hospitals; } // will be removed later after
+
+	void setRequests(const LinkedQueue<Request*>& requests) { this->requests = requests; } // will be removed later
+
+    void printOutCars()
+    {
+		outCars.print(); // beta version
+    }
+
+    void printBackCars()
+    {
+		backCars.print(); // beta version
+    }
+
+	// methods to handle requests
+    void distributeRequests(int timeStep);
+
+	// methods to handle cars
+	void handleCars(int timeSteps);
 
     void receive(Car* car);
 
-	void sendBack();
-
+	// methods to handle input file (Scenario)
     void loadInputFile();
 };
 
@@ -65,14 +69,31 @@ public:
 
 
 
+/*
+void simulateTimeStep(int timeStep){}
+
+void handleCarArrival(Car* car){}
+
+// void assignPatientToCar(Patient* patient, Car* car){}
+
+void collectStatistics(){}
+
+void produceOutputFile(string fileName){}
+
+void callUIUpdate(int timeStep){}
+*/
 
 
 
 
 
 
-
-
+/*
+LinkedQueue<Request*> getRequests()      { return requests; }
+LinkedQueue<Request*> getCancellations() { return cancellations; }
+LinkedQueue<Car*>     getOutCars()       { return outCars; }
+LinkedQueue<Car*>     getBackCars()      { return backCars; }
+*/
 
 
 

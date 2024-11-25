@@ -1,6 +1,18 @@
 #pragma once
 #include "Node.h"
 
+template <typename T>
+T valueOf(T item)
+{
+	return item;
+}
+
+template <typename T>
+T valueOf(T* item)
+{
+	return *item;
+}
+
 /*
 This is a program that implements the queue abstract data type using a linked list.
 The queue is implemented as a chain of linked nodes that has two pointers,
@@ -48,15 +60,18 @@ template <typename T>
 class LinkedQueue
 {
 private:
-
 	Node<T>* backPtr;
 	Node<T>* frontPtr;
+	int MembersCount;
+
 public:
 	LinkedQueue();
 	bool isEmpty() const;
 	bool enqueue(const T& newEntry);
 	bool dequeue(T& frntEntry);
 	bool peek(T& frntEntry)  const;
+	void print();
+	int GetMembersCount();
 	~LinkedQueue();
 
 	//copy constructor
@@ -111,6 +126,8 @@ bool LinkedQueue<T>::enqueue(const T& newEntry)
 	else
 		backPtr->setNext(newNodePtr); // The queue was not empty
 
+	MembersCount++;
+
 	backPtr = newNodePtr; // New node is the last node now
 	return true;
 } // end enqueue
@@ -140,6 +157,8 @@ bool LinkedQueue<T>::dequeue(T& frntEntry)
 		backPtr = nullptr;
 
 	// Free memory reserved for the dequeued node
+	MembersCount--;
+
 	delete nodeToDeletePtr;
 
 	return true;
@@ -186,6 +205,18 @@ Output: none
 */
 
 template <typename T>
+void LinkedQueue<T>::print()
+{
+	Node<T>* p = frontPtr;
+	while (p)
+	{
+		cout << valueOf(p->getItem()) << ", ";
+		p = p->getNext();
+	}
+	cout << endl;
+}
+
+template <typename T>
 LinkedQueue<T>::LinkedQueue(const LinkedQueue<T>& LQ)
 {
 	frontPtr = backPtr = nullptr;
@@ -195,6 +226,11 @@ LinkedQueue<T>::LinkedQueue(const LinkedQueue<T>& LQ)
 		enqueue(NodePtr->getItem());	//get data of each node and enqueue it in this queue 
 		NodePtr = NodePtr->getNext();
 	}
+}
+
+template <typename T>
+int LinkedQueue<T>::GetMembersCount() {
+	return MembersCount;
 }
 
 #endif

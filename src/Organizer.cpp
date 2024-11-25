@@ -11,19 +11,62 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-void Organizer::receive(Car* car) { outCars.enqueue(car); }
-
+// private methods
 void Organizer::sendBack()
 {
-	Car* car;
-	outCars.dequeue(car);
-	backCars.enqueue(car);
+    Car* car;
+    int pri;
+    outCars.dequeue(car, pri);
+    car->pickUp();
+    backCars.enqueue(car, -(car->getDroppedOffTime()));
 }
+
+void Organizer::returnCar()
+{
+    Car* car;
+    int pri;
+    backCars.dequeue(car, pri);
+    car->dropOff();
+    hospitals[car->getHospitalID() - 1]->receive(car);
+}
+
+// public methods
+void Organizer::distributeRequests(int timeStep)
+{
+	// if (requests.isEmpty()) return;
+	Request* request;
+	while (requests.peek(request) && request->getRequestTime() == timeStep) 
+    {
+		requests.dequeue(request);
+		int HospitalID = request->getNearestHospital();
+		hospitals[HospitalID - 1]->receive(request);
+	}
+}
+
+void Organizer::handleCars(int timeSteps)
+{
+	// sendRequests(timeSteps);
+	Car* car;
+	int pri;
+    cout << "\nOut Cars: ";
+	outCars.print();
+	cout << "\nBack Cars: ";
+	backCars.print();
+
+    while (outCars.peek(car, pri) && (car->getPickedUpTime() == timeSteps))
+    {
+        sendBack();
+    }
+    while (backCars.peek(car, pri) && (car->getDroppedOffTime() == timeSteps))
+	{
+		returnCar();
+	}
+}
+
+void Organizer::receive(Car* car) { outCars.enqueue(car, -(car->getPickedUpTime())); }
 
 void Organizer::loadInputFile()
 {
-    RH->InitializeRequestsList();
-
     cout << "Reading File....." << endl;
     this->InputFile.open(FileName);
     if (!InputFile.is_open()) {
@@ -81,3 +124,11 @@ void Organizer::loadInputFile()
     InputFile.close();
     cout << "File Reading Completed." << endl;
 }
+
+// Request* Organizer::GenerateRequests(int timeStep) {
+//     LinkedList<Request> *temp=  RH->GetRequestsLinkedList();
+//     Request* temp_request =  temp->TraverseReuests(timeStep);
+//     if (temp_request->getPickupTime() ==timeStep) {
+//         
+//     }
+// }

@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Car.obj: src/Car.cpp.obj
+.PHONY : src/Car.obj
+
+# target to build an object file
+src/Car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj
+.PHONY : src/Car.cpp.obj
+
+src/Car.i: src/Car.cpp.i
+.PHONY : src/Car.i
+
+# target to preprocess a source file
+src/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.i
+.PHONY : src/Car.cpp.i
+
+src/Car.s: src/Car.cpp.s
+.PHONY : src/Car.s
+
+# target to generate assembly for a file
+src/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.s
+.PHONY : src/Car.cpp.s
+
 src/Hospital.obj: src/Hospital.cpp.obj
 .PHONY : src/Hospital.obj
 
@@ -260,6 +284,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Car.obj
+	@echo ... src/Car.i
+	@echo ... src/Car.s
 	@echo ... src/Hospital.obj
 	@echo ... src/Hospital.i
 	@echo ... src/Hospital.s

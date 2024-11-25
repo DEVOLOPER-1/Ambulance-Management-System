@@ -23,9 +23,15 @@ public:
 	Hospital(int ID, int NumberOFsCars, int NumberOFnCars, const int ScarSpeed, const int NcarSpeed);
 
 	void receive(Request* request);
-
+	
 	void handleRequests(int timestep);
 
 	void receive(Car* car);
+	
+	int GetHospitalID() const;
+	
+	int GetSPRequestsCount();
+	int GetNPRequestsCount();
+	int GetEPRequestsCount();
 };
 

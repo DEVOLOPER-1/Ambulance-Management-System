@@ -1,5 +1,6 @@
 #pragma once
-
+#include <iostream>
+using namespace std;
 
 template < typename T>
 class priNode
@@ -46,6 +47,7 @@ public:
 template <typename T>
 class priQueue
 {
+    int MembersCount;
     priNode<T>* head;
 public:
     priQueue() : head(nullptr) {}
@@ -60,7 +62,8 @@ public:
     void enqueue(const T& data, int priority) {
         priNode<T>* newNode = new priNode<T>(data, priority);
 
-        if (head == nullptr || priority > head->getPri()) {
+        if (head == nullptr || priority > head->getPri())
+        {
 
             newNode->setNext(head);
             head = newNode;
@@ -73,6 +76,7 @@ public:
         }
         newNode->setNext(current->getNext());
         current->setNext(newNode);
+        MembersCount++;
     }
 
     bool dequeue(T& topEntry, int& pri) {
@@ -82,6 +86,7 @@ public:
         topEntry = head->getItem(pri);
         priNode<T>* temp = head;
         head = head->getNext();
+        MembersCount--;
         delete temp;
         return true;
     }
@@ -97,5 +102,19 @@ public:
 
     bool isEmpty() const {
         return head == nullptr;
+    }
+
+	void print() {
+		priNode<T>* current = head;
+		int pri;
+		while (current) {
+			cout << current->getItem(pri) << ", ";
+			current = current->getNext();
+		}
+		cout << endl;
+	}
+
+    int GetMembersCount() {
+        return MembersCount;
     }
 };

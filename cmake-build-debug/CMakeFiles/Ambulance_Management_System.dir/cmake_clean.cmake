@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "Ambulance_Management_System.pdb"
   "CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj.d"
+  "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj"
+  "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj"
