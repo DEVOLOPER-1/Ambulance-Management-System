@@ -122,7 +122,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "Main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -196,7 +196,11 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-Ambulance_Management_System-Debug-8fb43c0886ed916f2d0c.json
 			"path" : "src/Request.cpp",
+========
+			"path" : "src/Car.cpp",
+>>>>>>>> CarAssign-BetaVersion:cmake-build-debug/.cmake/api/v1/reply/target-Ambulance_Management_System-Debug-7711060c90430be71faf.json
 			"sourceGroupIndex" : 0
 		}
 	],

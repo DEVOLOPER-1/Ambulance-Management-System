@@ -8,34 +8,38 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe",
-			"cpack" : "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cpack.exe",
-			"ctest" : "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/ctest.exe",
-			"root" : "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29"
+			"cmake" : "C:/Program Files/JetBrains/CLion 2024.1.1/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "C:/Program Files/JetBrains/CLion 2024.1.1/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "C:/Program Files/JetBrains/CLion 2024.1.1/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "C:/Program Files/JetBrains/CLion 2024.1.1/bin/cmake/win/x64/share/cmake-3.28"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 29,
-			"patch" : 6,
-			"string" : "3.29.6",
+			"minor" : 28,
+			"patch" : 1,
+			"string" : "3.28.1",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2024-11-22T19-10-41-0724.json
 			"jsonFile" : "codemodel-v2-86165b616bebda4cd0a5.json",
+========
+			"jsonFile" : "codemodel-v2-f2c4e86cdcea52483863.json",
+>>>>>>>> CarAssign-BetaVersion:cmake-build-debug/.cmake/api/v1/reply/index-2024-11-23T13-10-44-0610.json
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 7
+				"minor" : 6
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-441d19e9e63b7d3e036b.json",
+			"jsonFile" : "cache-v2-6e079db1685d23349277.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +48,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-0d52944c92dab8404ab4.json",
+			"jsonFile" : "cmakeFiles-v1-3fe44eb0162d8e76b957.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +57,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-eac6a5e7fe98f2c81f90.json",
+			"jsonFile" : "toolchains-v1-e60ebe5105168df5c89c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -66,7 +70,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-441d19e9e63b7d3e036b.json",
+			"jsonFile" : "cache-v2-6e079db1685d23349277.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +80,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-0d52944c92dab8404ab4.json",
+			"jsonFile" : "cmakeFiles-v1-3fe44eb0162d8e76b957.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,17 +90,21 @@
 		},
 		"codemodel-v2" : 
 		{
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2024-11-22T19-10-41-0724.json
 			"jsonFile" : "codemodel-v2-86165b616bebda4cd0a5.json",
+========
+			"jsonFile" : "codemodel-v2-f2c4e86cdcea52483863.json",
+>>>>>>>> CarAssign-BetaVersion:cmake-build-debug/.cmake/api/v1/reply/index-2024-11-23T13-10-44-0610.json
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 7
+				"minor" : 6
 			}
 		},
 		"toolchains-v1" : 
 		{
-			"jsonFile" : "toolchains-v1-eac6a5e7fe98f2c81f90.json",
+			"jsonFile" : "toolchains-v1-e60ebe5105168df5c89c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
