@@ -15,8 +15,8 @@ using namespace std;
 
 class ReadingHelper {
 private:
-    LinkedQueue<Request>* Requests= new LinkedQueue<Request>;
-    LinkedQueue<CancellationRequest> *CancellationRequests = new LinkedQueue<CancellationRequest>;
+    LinkedQueue<Request*> Requests;
+    LinkedQueue<CancellationRequest*> CancellationRequests;
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
@@ -41,8 +41,8 @@ public:
     int GetNoOfHospitals()const;
     int GetNoOfCancellations()const;
     int GetNoOfPatients()const;
-    LinkedQueue<Request>* &GetRequestsQueue();
-    LinkedQueue<CancellationRequest>* &GetCancellationRequestsQueue();
+    LinkedQueue<Request*> &GetRequestsQueue();
+    LinkedQueue<CancellationRequest*> &GetCancellationRequestsQueue();
     
 
 private:

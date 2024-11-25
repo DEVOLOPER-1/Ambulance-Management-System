@@ -15,11 +15,11 @@ void Organizer::setHospital(Hospital *&HospitalsArray) {
     this->hospitals = HospitalsArray;
 }
 
-void Organizer::setRequests(LinkedQueue<Request> *&requests) {
+void Organizer::setRequests(LinkedQueue<Request*> &requests) {
     this->requests = requests;
 }
 
-void Organizer::setCancellationRequestQ(LinkedQueue<CancellationRequest> *&CancellationRequests) {
+void Organizer::setCancellationRequestQ(LinkedQueue<CancellationRequest*> &CancellationRequests) {
     this->cancellations = CancellationRequests ;
 }
 void Organizer::SetHospitalsCount(int HospitalsCount) {
@@ -61,9 +61,9 @@ void Organizer::distributeRequests(int timeStep)
 {
 	// if (requests.isEmpty()) return;
 	Request* request;
-	while (requests->peek(*request) && request->getRequestTime() == timeStep) 
+	while (requests.peek(request) && request->getRequestTime() == timeStep) 
     {
-		requests->dequeue(*request);
+		requests.dequeue(request);
 		int HospitalID = request->getNearestHospital();
 		hospitals[HospitalID - 1].receive(request);
 	}

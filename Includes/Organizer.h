@@ -23,8 +23,8 @@ private:
 	int PatientsCount;
 	int CancellationsCount;
 	Hospital* hospitals;
-	LinkedQueue<Request>* requests;
-	LinkedQueue<CancellationRequest>* cancellations;
+	LinkedQueue<Request*> requests;
+	LinkedQueue<CancellationRequest*> cancellations;
 	priQueue<Car* > outCars;
     priQueue<Car* > backCars;
 	static Organizer* instance;  /// Singleton Design Pattern
@@ -46,8 +46,8 @@ public:
 	void setHospital( Hospital* &HospitalsArray);
 	void SetHospitalsDistances( int ** &hospitals_distances);
 	void SetHospitalsCount(int HospitalsCount);
-	void setRequests( LinkedQueue<Request>* &requests);
-	void setCancellationRequestQ( LinkedQueue<CancellationRequest>* &CancellationRequests );
+	void setRequests( LinkedQueue<Request*> &requests);
+	void setCancellationRequestQ( LinkedQueue<CancellationRequest*> &CancellationRequests );
 	void SetPatientsCount(int PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
 
