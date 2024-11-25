@@ -22,8 +22,6 @@ void Organizer::sendBack()
 
 void Organizer::loadInputFile()
 {
-    RH->InitializeRequestsList();
-
     cout << "Reading File....." << endl;
     this->InputFile.open(FileName);
     if (!InputFile.is_open()) {
@@ -81,3 +79,11 @@ void Organizer::loadInputFile()
     InputFile.close();
     cout << "File Reading Completed." << endl;
 }
+
+// Request* Organizer::GenerateRequests(int timeStep) {
+//     LinkedList<Request> *temp=  RH->GetRequestsLinkedList();
+//     Request* temp_request =  temp->TraverseReuests(timeStep);
+//     if (temp_request->getPickupTime() ==timeStep) {
+//         
+//     }
+// }

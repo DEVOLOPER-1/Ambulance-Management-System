@@ -84,7 +84,25 @@ public:
 
 	//[2]Find 
 	//searches for a given value in the list, returns true if found; false otherwise.
+	bool FindValue(T& Value) {
+	    if (Head == nullptr) return false;
+	    Node<T>* temp = Head;
+	    while (temp != nullptr) {
+	        if (temp->getItem() == Value) return true;
+	        temp = temp->getNext();
+	    }
+	    return false;
+	}
 
+	// Request* TraverseReuests(int timestep) {
+	// 	if (Head == nullptr) return nullptr;
+	// 	Node<T>* temp = Head;
+	// 	while (temp != nullptr) {
+	// 		if (temp->getItem()->getRequestTime() == timestep) return &temp->getItem();
+	// 		temp = temp->getNext();
+	// 	}
+	// 	return nullptr;
+	// }
 	//[3]CountOccurance
 	//returns how many times a certain value appeared in the list
 
@@ -110,6 +128,13 @@ public:
 
 	//[9] Reverse
 	//Reverses the linked list (without allocating any new Nodes)
+
+	//[9] ReturnNode
+
+
+	//[10] Traverse
+
+	
 };
 
 #endif	

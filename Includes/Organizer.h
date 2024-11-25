@@ -7,6 +7,7 @@
 #include "Car.h"
 #include "Hospital.h"
 #include "ReadingHelper.h"
+#include"Request.h"
 #define ORG Organizer::GetInstance()
 using namespace std;
 
@@ -27,32 +28,30 @@ private:
         , requests(), cancellations(), outCars(), backCars() {};
 
 	Organizer(const Organizer& other) = delete;
-    
-    /*
-    void simulateTimeStep(int timeStep){}
-
-    void handleCarArrival(Car* car){}
-
-    // void assignPatientToCar(Patient* patient, Car* car){}
-
-    void collectStatistics(){}
-
-    void produceOutputFile(string fileName){}
-
-    void callUIUpdate(int timeStep){}
-    */
+	Hospital* FindAlternateHospital(Request* EPPatient) {
+		
+	}
+	// void assignPatientToCar(Request* patient, Car* car) {
+	// 	
+	// }
+	// void GenerateTimeStep(){}
+     
+     // Request* GenerateRequests(int timeStep);
+     //
+     // void handleCarArrival(Car* car){}
+     //
+     //
+     // void collectStatistics(){}
+     //
+     // void produceOutputFile(string fileName){}
+     //
+     // void callUIUpdate(int timeStep){}
+     
 
 
 
 public:
     static Organizer* GetInstance();
-
-    /*
-	LinkedQueue<Request*> getRequests()      { return requests; }
-	LinkedQueue<Request*> getCancellations() { return cancellations; }
-	LinkedQueue<Car*>     getOutCars()       { return outCars; }
-	LinkedQueue<Car*>     getBackCars()      { return backCars; }
-    */
 
     void receive(Car* car);
 
