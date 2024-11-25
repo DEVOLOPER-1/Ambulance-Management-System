@@ -65,3 +65,18 @@ void Hospital::receive(Car* car)
 	else
 		nCars.enqueue(car);
 }
+int Hospital::GetHospitalID() const{
+	return ID;
+}
+
+int Hospital::GetEPRequestsCount() {
+	return EP_Requests.GetMembersCount();
+}
+int Hospital::GetNPRequestsCount() {
+	return NP_Requests.GetMembersCount();
+}
+int Hospital::GetSPRequestsCount() {
+	return SP_Requests.GetMembersCount();
+}
+
+

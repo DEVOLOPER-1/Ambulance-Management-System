@@ -61,11 +61,25 @@ void Car::dropOff()
 	setStatus("Ready");
 	request = nullptr;
 }
+void Car::PrintCar(Car & c) {
+    cout << "Car: " << c.getCarID();
+    if (isAssigned()) {
+        cout << "_P" << c.getPatientID();
+    }
+}
 
-ostream& operator<<(ostream& os, Car& c)
-{
-	os << c.getCarID();
-	if (c.isAssigned())
-		os << "_P" << c.getPatientID();
-	return os;
+// ostream& operator<<(ostream& os, Car& c)
+// {
+// 	os << c.getCarID();
+// 	if (c.isAssigned())
+// 		os << "_P" << c.getPatientID();
+// 	return os;
+// }
+
+ostream& operator<<(ostream& os,  Car& c) {
+    os << "Car ID: " << c.getCarID();
+    if (c.isAssigned()) {
+        os << ", Patient ID: " << c.getPatientID();
+    }
+    return os;
 }

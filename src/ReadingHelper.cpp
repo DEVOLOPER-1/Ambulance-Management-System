@@ -201,3 +201,13 @@ int ReadingHelper::GetScarSpeed() const{return SpecialCarSpeed;}
 int ReadingHelper::GetNcarSpeed() const{return NormalCarSpeed;}
 LinkedList<Request>* ReadingHelper::GetRequestsLinkedList() const{return Requests;}
 LinkedList<CancellationRequest>* ReadingHelper::GetCancellationRequestsLinkedList() const{return CancellationRequests;}
+int ReadingHelper::GetNoOfCancellations() const {
+    return NoOfCancellations;
+}
+int ReadingHelper::GetNoOfHospitals() const {
+    return HospitalsCount;
+}
+int ReadingHelper::GetNoOfPatients() const {
+    return NoOfPatients;
+}
+

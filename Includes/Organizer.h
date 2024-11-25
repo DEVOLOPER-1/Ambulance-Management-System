@@ -7,6 +7,8 @@
 #include "Car.h"
 #include "Hospital.h"
 #include "ReadingHelper.h"
+#include "../ds/Stack.h"
+#include"UI.h"
 #define ORG Organizer::GetInstance()
 using namespace std;
 
@@ -24,7 +26,7 @@ private:
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/Includes/InputText.txt")
+        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\Includes\\InputText.txt")
         , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;

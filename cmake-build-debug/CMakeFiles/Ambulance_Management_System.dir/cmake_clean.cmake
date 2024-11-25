@@ -2,26 +2,18 @@ file(REMOVE_RECURSE
   "Ambulance_Management_System.exe"
   "Ambulance_Management_System.exe.manifest"
   "Ambulance_Management_System.pdb"
-<<<<<<< HEAD
   "CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/main.cpp.obj.d"
-=======
-  "CMakeFiles/Ambulance_Management_System.dir/Main.cpp.obj"
-  "CMakeFiles/Ambulance_Management_System.dir/Main.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj.d"
->>>>>>> CarAssign-BetaVersion
   "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj.d"
-<<<<<<< HEAD
   "CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Request.cpp.obj.d"
-=======
->>>>>>> CarAssign-BetaVersion
   "libAmbulance_Management_System.dll.a"
 )
 

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Ambulance_Management_System::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Ambulance_Management_System-Debug-7711060c90430be71faf.json",
+					"jsonFile" : "target-Ambulance_Management_System-Debug-3c0aef434e519e344b39.json",
 					"name" : "Ambulance_Management_System",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/cmake-build-debug",
-		"source" : "D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System"
+		"build" : "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug",
+		"source" : "E:/Coding/C++/Ambulance-Management-System"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

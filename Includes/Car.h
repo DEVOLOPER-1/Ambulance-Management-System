@@ -49,6 +49,8 @@ public:
 
 	void dropOff();
 
+	// void PrintCar(Car &c);
+
 };
 // ostream operators
 ostream& operator<<(ostream& os, Car& c);  

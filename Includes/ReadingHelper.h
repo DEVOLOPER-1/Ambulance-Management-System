@@ -37,12 +37,16 @@ public:
     Hospital* GetHospitalsArray()const;
     int GetScarSpeed() const;
     int GetNcarSpeed()const;
+    int GetNoOfHospitals()const;
+    int GetNoOfCancellations()const;
+    int GetNoOfPatients()const;
     LinkedList<Request>* GetRequestsLinkedList()const;
     LinkedList<CancellationRequest>* GetCancellationRequestsLinkedList()const;
     
 
 private:
-    ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) {}
+    ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) ,  SpecialCarSpeed( 0),NormalCarSpeed(0),
+    NoOfCancellations(0) , NoOfPatients(0) , HospitalsArray(nullptr){}
     // ReadingHelper(const ReadingHelper&) = delete;
     // ReadingHelper& operator=(const ReadingHelper&) = delete;
     void Build2DMatrix_and_HospitalsArray(int token);
