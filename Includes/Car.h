@@ -49,14 +49,6 @@ public:
 
 	void dropOff();
 
-
-	// stream operators
-	friend ostream& operator<<(ostream& os, Car& c)  // we need to remove the friendship becuase it is not allowed in the project
-	{
-		os << c.getCarID();
-		if (c.isAssigned())
-			os << "_P" << c.getPatientID();
-		return os;
-	}
-
 };
+// ostream operators
+ostream& operator<<(ostream& os, Car& c);  

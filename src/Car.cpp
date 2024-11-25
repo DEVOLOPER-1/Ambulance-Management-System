@@ -62,3 +62,10 @@ void Car::dropOff()
 	request = nullptr;
 }
 
+ostream& operator<<(ostream& os, Car& c)
+{
+	os << c.getCarID();
+	if (c.isAssigned())
+		os << "_P" << c.getPatientID();
+	return os;
+}
