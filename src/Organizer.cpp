@@ -49,10 +49,12 @@ void Organizer::sendBack()
 
 void Organizer::returnCar()
 {
+	Request* request;
     Car* car;
     int pri;
     backCars.dequeue(car, pri);
-    car->dropOff();
+    car->dropOff(request);
+	finishedRequests.enqueue(request);
     hospitals[car->getHospitalID() - 1]->receive(car);
 }
 
