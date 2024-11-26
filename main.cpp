@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	ORG->loadInputFile();
-	// Hospital* hospitals[2];
+	 Hospital* hospitals[2];
 	// hospitals[0] = new Hospital(1, 2, 2, 3, 2);
 	// hospitals[1] = new Hospital(2, 2, 2, 3, 2);
 	// ORG->setHospital(*hospitals);
@@ -29,19 +29,18 @@ int main()
 	// requests.enqueue(new Request("NP", 9, 10, 2, 5));
 	// ORG->setRequests(requests);
 	//
-	// int timestep = 0;
-	// while (++timestep <= 100)
-	// {
-	// 	cout << "Timestep: " << timestep << endl;
-	// 	ORG->distributeRequests(timestep);
-	// 	for (int i = 0; i < 2; i++)
-	// 		hospitals[i]->handleRequests(timestep);
-	//
-	// 	ORG->handleCars(timestep);
-	//
-	// 	//this_thread::sleep_for(2s);
-	// 	cout << "\n====================" << endl;
-	// }
+	 int timestep = 0;
+	 while (++timestep <= 100)
+	 {
+	 	cout << "Timestep: " << timestep << endl;
+	 	ORG->distributeRequests(timestep);
+
+	
+	 	ORG->handleCars(timestep);
+	
+	 	//this_thread::sleep_for(2s);
+	 	cout << "\n====================" << endl;
+	 }
 }
 
 

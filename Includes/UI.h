@@ -19,13 +19,26 @@ public:
         cout<<setw(120)<<setfill('-')<<""<<endl;
     }
 
-    void DisplayHospital(Hospital*h) {
-        cout<<setw(50)<<setfill('-')<<" Hospital #"<< h->GetHospitalID()<<" Data"<<setw(50)<<setfill('-')<<"";
-        cout<<h->GetEPRequestsCount()<<" EP Requests: "; //Will be continued later
-        cout<<h->GetSPRequestsCount()<<" SP Requests: ";
-        cout<<h->GetNPRequestsCount()<<" NP Requests: ";
+   void DisplayHospital(Hospital* h){
+        cout << "hospital ID : " << h->GetHospitalID()<< endl; 
+        cout << " status : " << endl;
+        cout << "  EP requests : " << h->GetEPRequestsCount() << endl;
+        cout << "  SP requests : " << h->GetSPRequestsCount() << endl;
+        cout << "  NP requests : " << h->GetNPRequestsCount() << endl;
     }
-    
+
+    void DisplaySystemStatus(LinkedQueue<Car*> availableCars, priQueue<Car*> busyCars, LinkedQueue<Request*> pendingRequests){
+        
+        cout << "available cars : " << endl;
+        availableCars.print(); // print linked queue of available cars
+        cout << endl;
+        cout << "busy cars : " << endl;
+        busyCars.print(); // print priority queue of busy cars
+        cout << endl;
+        cout << "pending requests:" << endl;
+        pendingRequests.print(); // print linked queue of pending requests
+        cout << endl;
+    }
 };
 
 
