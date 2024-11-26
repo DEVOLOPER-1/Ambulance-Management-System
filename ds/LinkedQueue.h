@@ -210,7 +210,7 @@ void LinkedQueue<T>::print()
 	Node<T>* p = frontPtr;
 	while (p)
 	{
-		cout << valueOf(p->getItem()) << ", ";
+		cout << p->getItem() << ", ";
 		p = p->getNext();
 	}
 	cout << endl;
