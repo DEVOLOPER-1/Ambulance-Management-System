@@ -11,7 +11,7 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-void Organizer::setHospital(Hospital *&HospitalsArray) {
+void Organizer::setHospital(Hospital **&HospitalsArray) {
     this->hospitals = HospitalsArray;
 }
 
@@ -53,7 +53,7 @@ void Organizer::returnCar()
     int pri;
     backCars.dequeue(car, pri);
     car->dropOff();
-    hospitals[car->getHospitalID() - 1].receive(car);
+    hospitals[car->getHospitalID() - 1]->receive(car);
 }
 
 // public methods
@@ -65,8 +65,14 @@ void Organizer::distributeRequests(int timeStep)
     {
 		requests.dequeue(request);
 		int HospitalID = request->getNearestHospital();
-		hospitals[HospitalID - 1].receive(request);
+		hospitals[HospitalID - 1]->receive(request);
 	}
+}
+
+void Organizer::handleHospitals(int timeStep)
+{
+    for (int i = 0; i < this->HospitalsCount; i++)
+        hospitals[i]->handleRequests(timeStep);
 }
 
 void Organizer::handleCars(int timeSteps)
@@ -139,9 +145,8 @@ void Organizer::loadInputFile()
                 RH->SetNoOfHospitals(Hospitals);
             }
             else {
-                int sec = -1;
                 cout << "Cars Speeds -> " << line << endl;
-                RH->Tokenizer(line, sec);
+                RH->Tokenizer(line, sectionCounter);
             }
 
         }

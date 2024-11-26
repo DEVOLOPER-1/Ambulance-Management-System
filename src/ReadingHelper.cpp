@@ -14,7 +14,7 @@ ReadingHelper* ReadingHelper::getInstance()
 void ReadingHelper::Build2DMatrix_and_HospitalsArray(int token)
 {
     // Allocate memory for the 2D matrix
-    HospitalsArray = new Hospital[token]();
+    HospitalsArray = new Hospital*[token];
     DistancesMatrix = new int* [token];
     for (int i = 0; i < token; i++) {
         DistancesMatrix[i] = new int[token];
@@ -78,7 +78,9 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
 
                 NcarNumber = stoi(token);
                 counter++;
-                HospitalsArray[HospitalsCounter] = Hospital(HospitalsCounter, ScarNumber, NcarNumber, SpecialCarSpeed, NormalCarSpeed);
+                HospitalsArray[HospitalsCounter] = new Hospital(
+                    HospitalsCounter, ScarNumber, NcarNumber, this->SpecialCarSpeed,
+                    this->NormalCarSpeed);
                 HospitalsCounter++;
 
             }
@@ -186,17 +188,20 @@ void ReadingHelper:: DeleteMatrix(int ** Matrix2D , int rows) {
 }
 
 
-void ReadingHelper::DeleteMatrix( Hospital*array) {
-    if (array) 
-            delete [] array;
-        
+void ReadingHelper::DeleteMatrix( Hospital**array) {
+    if (array) {
+        for (int i = 0; i < HospitalsCount; ++i) {
+            delete HospitalsArray[i];
+        }
+        delete[] HospitalsArray;
+    }
     }
 
 
 
 
 int **  &ReadingHelper::GetDistancesMatrix() {return DistancesMatrix;}
-Hospital* &ReadingHelper::GetHospitalsArray() {return HospitalsArray;}
+Hospital** &ReadingHelper::GetHospitalsArray() {return HospitalsArray;}
 int ReadingHelper::GetScarSpeed() const{return SpecialCarSpeed;}
 int ReadingHelper::GetNcarSpeed() const{return NormalCarSpeed;}
 LinkedQueue<Request*> &ReadingHelper::GetRequestsQueue() {return Requests;}

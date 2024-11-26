@@ -28,20 +28,18 @@ int main()
 	// requests.enqueue(new Request("EP", 9, 9, 2, 9, 6));
 	// requests.enqueue(new Request("NP", 9, 10, 2, 5));
 	// ORG->setRequests(requests);
-	//
-	// int timestep = 0;
-	// while (++timestep <= 100)
-	// {
-	// 	cout << "Timestep: " << timestep << endl;
-	// 	ORG->distributeRequests(timestep);
-	// 	for (int i = 0; i < 2; i++)
-	// 		hospitals[i]->handleRequests(timestep);
-	//
-	// 	ORG->handleCars(timestep);
-	//
-	// 	//this_thread::sleep_for(2s);
-	// 	cout << "\n====================" << endl;
-	// }
+	
+	int timestep = 0;
+	while (++timestep <= 100)
+	{
+		cout << "Timestep: " << timestep << endl;
+		ORG->distributeRequests(timestep);
+		ORG->handleHospitals(timestep);
+		ORG->handleCars(timestep);
+	
+		//this_thread::sleep_for(2s);
+		cout << "\n====================" << endl;
+	}
 }
 
 

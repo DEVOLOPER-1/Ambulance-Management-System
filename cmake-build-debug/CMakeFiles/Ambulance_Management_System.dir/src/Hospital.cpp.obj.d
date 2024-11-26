@@ -148,7 +148,6 @@ CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj: \
  E:/Coding/C++/Ambulance-Management-System/ds/LinkedQueue.h \
  E:/Coding/C++/Ambulance-Management-System/ds/Node.h \
  E:/Coding/C++/Ambulance-Management-System/ds/priQueue.h \
- E:/Coding/C++/Ambulance-Management-System/Includes/Organizer.h \
  E:/Coding/C++/Ambulance-Management-System/Includes/ReadingHelper.h \
  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
@@ -158,6 +157,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj: \
  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
  E:/Coding/C++/Ambulance-Management-System/ds/LinkedList.h \
+ E:/Coding/C++/Ambulance-Management-System/Includes/Organizer.h \
  E:/Coding/C++/Ambulance-Management-System/ds/Stack.h \
  E:/Coding/C++/Ambulance-Management-System/Includes/UI.h \
  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
