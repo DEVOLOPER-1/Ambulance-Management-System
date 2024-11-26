@@ -73,9 +73,9 @@ void Car::dropOff()
 // }
 
 ostream& operator<<(ostream& os,  Car* c) {
-    os << "Car ID: " << c->getCarID();
+    os << c->getCarID();
     if (c->isAssigned()) {
-        os << ", Patient ID: " << c->getPatientID();
+        os << "_P" << c->getPatientID();
     }
     return os;
 }
