@@ -4,8 +4,11 @@
 #include "../ds/LinkedQueue.h"
 #include "../ds/priQueue.h"
 #include <iostream>
+
+#include "ReadingHelper.h"
 using namespace std;
 
+class ReadingHelper;
 
 class Hospital
 {

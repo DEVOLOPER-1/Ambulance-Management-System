@@ -12,7 +12,7 @@
 #include "../ds/LinkedList.h"
 #include "../ds/LinkedQueue.h"
 using namespace std;
-
+class Hospital;
 class ReadingHelper {
 private:
     LinkedQueue<Request*> Requests;
@@ -20,7 +20,7 @@ private:
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
-    Hospital* HospitalsArray;
+    Hospital** HospitalsArray; //Hospital* HospitalsArray -> Hospital* HospitalsArray[] -> Hospital HospitalsArray[HospitalsCount]
     int row = 0 ;
     int col = 0;
     int HospitalsCounter = 0 ;
@@ -35,7 +35,7 @@ public:
     void Tokenizer(string& line, int SectionNumber);
     void SetNoOfHospitals(int Counts);
     int** &GetDistancesMatrix();
-    Hospital* &GetHospitalsArray();
+    Hospital** &GetHospitalsArray();
     int GetScarSpeed() const;
     int GetNcarSpeed()const;
     int GetNoOfHospitals()const;
@@ -47,19 +47,17 @@ public:
 
 private:
     ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) ,  SpecialCarSpeed( 0),NormalCarSpeed(0),
-    NoOfCancellations(0) , NoOfPatients(0) , HospitalsArray(nullptr){}
+    NoOfCancellations(0) , NoOfPatients(0) , HospitalsArray(nullptr) {}
     // ReadingHelper(const ReadingHelper&) = delete;
     // ReadingHelper& operator=(const ReadingHelper&) = delete;
     void Build2DMatrix_and_HospitalsArray(int token);
 
     void DeleteMatrix(int ** Matrix2D , int rows);
-    void DeleteMatrix(Hospital*array );
+    void DeleteMatrix(Hospital**array );
     ~ReadingHelper() {
         DeleteMatrix(DistancesMatrix , HospitalsCount);
-        DeleteMatrix(HospitalsArray);
+        // DeleteMatrix(HospitalsArray);
     }
-        
-    
 
 
 };
