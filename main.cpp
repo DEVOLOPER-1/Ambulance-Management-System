@@ -35,8 +35,10 @@ int main()
 		cout << "Timestep: " << timestep << endl;
 		ORG->distributeRequests(timestep);
 		ORG->handleHospitals(timestep);
+		if(timestep == 13)
+			cout << "here\n";
 		ORG->handleCars(timestep);
-	
+		
 		//this_thread::sleep_for(2s);
 		cout << "\n====================" << endl;
 	}

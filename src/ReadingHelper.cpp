@@ -14,7 +14,7 @@ ReadingHelper* ReadingHelper::getInstance()
 void ReadingHelper::Build2DMatrix_and_HospitalsArray(int token)
 {
     // Allocate memory for the 2D matrix
-    HospitalsArray = new Hospital*[token];
+    HospitalsArray = new Hospital*[token+1];
     DistancesMatrix = new int* [token];
     for (int i = 0; i < token; i++) {
         DistancesMatrix[i] = new int[token];
@@ -79,8 +79,11 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                 NcarNumber = stoi(token);
                 counter++;
                 HospitalsArray[HospitalsCounter] = new Hospital(
-                    HospitalsCounter, ScarNumber, NcarNumber, this->SpecialCarSpeed,
-                    this->NormalCarSpeed);
+                    HospitalsCounter + 1,
+                    ScarNumber,
+                    NcarNumber,
+                    SpecialCarSpeed,
+                    NormalCarSpeed);
                 HospitalsCounter++;
 
             }
