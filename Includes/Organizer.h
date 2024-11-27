@@ -24,6 +24,7 @@ private:
 	int CancellationsCount;
 	Hospital** hospitals;
 	LinkedQueue<Request*> requests;
+	LinkedQueue<Request*> finishedRequests;
 	LinkedQueue<CancellationRequest*> cancellations;
 	priQueue<Car* > outCars;
     priQueue<Car* > backCars;

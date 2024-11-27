@@ -56,11 +56,12 @@ void Car::cancel()
 	request = nullptr;
 }
 
-void Car::dropOff()
-{
+void Car::dropOff(Request* &request){
+	request = this->request;
 	setStatus("Ready");
-	request = nullptr;
+	this->request = nullptr;
 }
+
 
 
 

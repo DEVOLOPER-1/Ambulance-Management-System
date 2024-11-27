@@ -51,12 +51,15 @@ void Organizer::sendBack()
 
 void Organizer::returnCar()
 {
+    Request* request;
     Car* car;
     int pri;
     backCars.dequeue(car, pri);
-    car->dropOff();
+    car->dropOff(request);
+    finishedRequests.enqueue(request);
     hospitals[car->getHospitalID() - 1]->receive(car);
 }
+
 
 // public methods
 void Organizer::distributeRequests(int timeStep)
@@ -101,7 +104,7 @@ void Organizer::runSimulation() {
 
 bool Organizer::isSimulationComplete() {
     // Check if all requests are processed and no cars are in transit
-    return requests.isEmpty() && outCars.isEmpty() && backCars.isEmpty();
+    return finishedRequests.GetMembersCount() == PatientsCount;
 }
 
 
