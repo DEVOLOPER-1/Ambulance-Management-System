@@ -133,7 +133,7 @@ void Organizer::runSimulation() {
         handleCars(timestep);
 
         
-        //this_thread::sleep_for(2s);
+        this_thread::sleep_for(2s);
 
         
         if (isSimulationComplete()) break;
