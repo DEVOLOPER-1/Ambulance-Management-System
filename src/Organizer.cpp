@@ -75,14 +75,15 @@ void Organizer::distributeRequests(int timeStep)
 }
 void Organizer::runSimulation() {
     int timestep = 1; 
-    UI ui;            
-
+    UI ui;
     cout << "Simulation Starts...\n";
 
     while (true) { 
         // cout << "\nCurrent Timestep: " << timestep << endl;
-        ui.DisplayTimeStep(timestep);
-        
+
+        ui.DisplayTimestep(timestep);
+        ui.DisplayHospital(hospitals[1]);
+
         distributeRequests(timestep);
 
         handleHospitals(timestep);
@@ -152,39 +153,39 @@ void Organizer::loadInputFile()
 
         if (line.empty()) {
             sectionCounter++;
-            cout << "Section Counter -> " << sectionCounter << endl;
+            // cout << "Section Counter -> " << sectionCounter << endl;
             continue;
         }
 
         if (sectionCounter == 0) {
-            cout << "DISTANCE_MATRIX" << endl;
+            // cout << "DISTANCE_MATRIX" << endl;
             RH->Tokenizer(line, sectionCounter);
-            cout << line << endl;
+            // cout << line << endl;
         }
         else if (sectionCounter == 1) {
-            cout << "CAR_DISTRIBUTION" << endl;
+            // cout << "CAR_DISTRIBUTION" << endl;
             RH->Tokenizer(line, sectionCounter);
             // cout << line << endl;
         }
         else if (sectionCounter == 2) {
-            cout << "REQUESTS" << endl;
+            // cout << "REQUESTS" << endl;
             RH->Tokenizer(line , sectionCounter);
             // cout << line << endl;
         }
         else if (sectionCounter == 3) {
-            cout << "CANCELLATIONS" << endl;
+            // cout << "CANCELLATIONS" << endl;
             RH->Tokenizer(line , sectionCounter);
         }
         else {
-            cout << line.length() << " -> " << line << endl;
+            // cout << line.length() << " -> " << line << endl;
             if (line.length() <= 2) {
                 int Hospitals;
                 Hospitals = stoi(line);
-                cout << "Hospitals Count -> " << Hospitals << endl;
+                // cout << "Hospitals Count -> " << Hospitals << endl;
                 RH->SetNoOfHospitals(Hospitals);
             }
             else {
-                cout << "Cars Speeds -> " << line << endl;
+                // cout << "Cars Speeds -> " << line << endl;
                 RH->Tokenizer(line, sectionCounter);
             }
 

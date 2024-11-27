@@ -24,8 +24,7 @@ class Request
 	int     NearestHospital;
 	int		distance;
 	int		severity;
-	int CancellationPatientID;
-	int CancellationTime;
+
 public:
 	Request();
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity);

@@ -33,10 +33,10 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
     char delimiter{ ' ' };
     if (SectionNumber == 0) {
         while (getline(stream, token, delimiter)) {
-            cout << "Token"
-                << " -> " << token << endl;
+            // cout << "Token"
+            //     << " -> " << token << endl;
             int distance = stoi(token);
-            cout << distance << " -> " << row << col << endl;
+            // cout << distance << " -> " << row << col << endl;
             DistancesMatrix[row][col] = distance;
             col++;
             if (col == HospitalsCount) {
@@ -50,12 +50,12 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
         while (getline(stream, token, delimiter)) {
             if (count == 0) {
                 SpecialCarSpeed = stoi(token);
-                cout << "SpecialCarSpeed -> " << SpecialCarSpeed << endl; ;
+                // cout << "SpecialCarSpeed -> " << SpecialCarSpeed << endl; ;
                 count += 1;
             }
             else if (count == 1) {
                 NormalCarSpeed = stoi(token);
-                cout << "NormalCarSpeed -> " << NormalCarSpeed << endl; ;
+                // cout << "NormalCarSpeed -> " << NormalCarSpeed << endl; ;
             }
 
 
@@ -68,13 +68,13 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
         int NcarNumber = 0;
         while (getline(stream, token, delimiter)) {
             if (counter % 2 == 0) {
-                cout << "Scars " << token << endl;
+                // cout << "Scars " << token << endl;
 
                 ScarNumber = stoi(token);
                 counter++;
             }
             else {
-                cout << "Ncars " << token << endl;
+                // cout << "Ncars " << token << endl;
 
                 NcarNumber = stoi(token);
                 counter++;
@@ -105,7 +105,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
 
                     if (TokenCounter < 6) {
 
-                        cout << TokenCounter << " -> " << token << endl;
+                        // cout << TokenCounter << " -> " << token << endl;
                         PatientDataArray[TokenCounter] = token;
                         TokenCounter++;
                     }
@@ -121,7 +121,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                     stoi(PatientDataArray[5])
                                 );
                                 Requests.enqueue(temp);
-                                cout << "Catched in EP\n";
+                                // cout << "Catched in EP\n";
                             }
                             else if (PatientDataArray[0] == "NP") {
                                 Request* temp = new Request(
@@ -132,7 +132,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                     stoi(PatientDataArray[4])
                                 );
                                 Requests.enqueue(temp);
-                                cout << "Catched in NP\n";
+                                // cout << "Catched in NP\n";
                             }
                             else if (PatientDataArray[0] == "SP") {
                                 Request* temp = new Request(
@@ -143,7 +143,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                     stoi(PatientDataArray[4])
                                 );
                                 Requests.enqueue(temp);
-                                cout << "Catched in SP\n";
+                                // cout << "Catched in SP\n";
                             }
                         }
 
@@ -165,12 +165,12 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                 }
                 else{
                     CRId = stoi(token);
-                    cout<<"Time "<<CRTime<<" ID "<<CRId<<endl;
+                    // cout<<"Time "<<CRTime<<" ID "<<CRId<<endl;
                     CancellationRequest* temp = new CancellationRequest(CRTime , CRId);
                     CancellationRequests.enqueue(temp);
-                    cout<<"Time "<<temp->GETTime()<<" ID "<<temp->GetPID()<<endl;
+                    // cout<<"Time "<<temp->GETTime()<<" ID "<<temp->GetPID()<<endl;
 
-                    cout<<"Catched in the list"<<endl;
+                    // cout<<"Catched in the list"<<endl;
                 }
             }
         }

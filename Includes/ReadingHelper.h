@@ -21,8 +21,8 @@ private:
     int** DistancesMatrix;
     int NoOfPatients;
     Hospital** HospitalsArray; //Hospital* HospitalsArray -> Hospital* HospitalsArray[] -> Hospital HospitalsArray[HospitalsCount]
-    int row = 0 ;
-    int col = 0;
+    int row ;
+    int col ;
     int HospitalsCounter ;
     int SpecialCarSpeed;
     int NormalCarSpeed;
@@ -47,7 +47,7 @@ public:
 
 private:
     ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) ,  SpecialCarSpeed( 0),NormalCarSpeed(0),
-    NoOfCancellations(0) , NoOfPatients(0) , HospitalsArray(nullptr) , HospitalsCounter(0) {}
+    NoOfCancellations(0) , NoOfPatients(0) , HospitalsArray(nullptr) , HospitalsCounter(0) ,row(0) , col(0) {}
     // ReadingHelper(const ReadingHelper&) = delete;
     // ReadingHelper& operator=(const ReadingHelper&) = delete;
     void Build2DMatrix_and_HospitalsArray(int token);
