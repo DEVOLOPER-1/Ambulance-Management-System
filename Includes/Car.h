@@ -47,7 +47,7 @@ public:
 
 	void cancel(); // for NP requests only
 
-	void dropOff(Request* request);
+	void dropOff(Request* &request);
 
 	// void PrintCar(Car &c);
 

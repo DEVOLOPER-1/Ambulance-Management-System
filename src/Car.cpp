@@ -56,7 +56,7 @@ void Car::cancel()
 	request = nullptr;
 }
 
-void Car::dropOff(Request* request)
+void Car::dropOff(Request* &request)
 {
 	request = this->request;
 	setStatus("Ready");
