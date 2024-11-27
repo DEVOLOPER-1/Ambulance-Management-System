@@ -204,7 +204,7 @@ void Organizer::SetDataMembersValues() {
     SetHospitalsCount(RH->GetNoOfHospitals());
     SetPatientsCount(RH->GetNoOfPatients());
     SetCancellationsCount(RH->GetNoOfCancellations());
-    cout<<"All Organizer Data Members are done !"<<endl;
+    //cout<<"All Organizer Data Members are done !"<<endl;
     
 }
 

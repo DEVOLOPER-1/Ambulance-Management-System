@@ -50,7 +50,7 @@ class priQueue
     int MembersCount;
     priNode<T>* head;
 public:
-    priQueue() : head(nullptr) {}
+    priQueue() : head(nullptr) , MembersCount(0) {}
 
     ~priQueue() {
         T tmp;
@@ -107,8 +107,12 @@ public:
 	void print() {
 		priNode<T>* current = head;
 		int pri;
-		while (current) {
-			cout << current->getItem(pri) << ", ";
+		while (current) 
+        {
+			if (current->getNext() == nullptr)
+				cout << current->getItem(pri);
+			else
+				cout << current->getItem(pri) << ", ";
 			current = current->getNext();
 		}
 		cout << endl;
