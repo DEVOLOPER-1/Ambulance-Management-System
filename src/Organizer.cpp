@@ -1,6 +1,8 @@
 #pragma once
 #include "../Includes/Organizer.h"
 #include <iostream>
+#include<thread>
+
 using namespace std;
 
 Organizer* Organizer::instance = nullptr;
@@ -86,7 +88,7 @@ void Organizer::runSimulation() {
         handleCars(timestep);
 
         
-
+        this_thread::sleep_for(2s);
 
         
         if (isSimulationComplete()) break;

@@ -523,6 +523,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
@@ -553,6 +554,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
@@ -562,6 +564,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
@@ -573,6 +576,8 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -580,6 +585,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
@@ -600,10 +606,12 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
@@ -611,6 +619,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
@@ -632,6 +641,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -662,6 +672,7 @@ CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj: E:/Coding/C++/
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/signal.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
   E:/Setup\ Files/CLion/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \

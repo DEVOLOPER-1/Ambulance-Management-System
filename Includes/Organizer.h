@@ -30,7 +30,7 @@ private:
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\Includes\\InputText.txt")
+        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
         , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;
