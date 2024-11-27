@@ -68,6 +68,40 @@ void Organizer::distributeRequests(int timeStep)
 		hospitals[HospitalID - 1]->receive(request);
 	}
 }
+void Organizer::runSimulation() {
+    int timestep = 1; 
+    UI ui;            
+
+    cout << "Simulation Starts...\n";
+
+    while (true) { 
+        cout << "\nCurrent Timestep: " << timestep << endl;
+
+        
+        distributeRequests(timestep);
+
+        handleHospitals(timestep);
+
+       
+        handleCars(timestep);
+
+        
+        ui.DisplayTimeStep(timestep);
+
+        
+        if (isSimulationComplete()) break;
+
+        timestep++;
+    }
+
+   
+}
+
+bool Organizer::isSimulationComplete() {
+    // Check if all requests are processed and no cars are in transit
+    return requests.isEmpty() && outCars.isEmpty() && backCars.isEmpty();
+}
+
 
 void Organizer::handleHospitals(int timeStep)
 {
@@ -167,6 +201,8 @@ void Organizer::SetDataMembersValues() {
     cout<<"All Organizer Data Members are done !"<<endl;
     
 }
+
+
 
 // Request* Organizer::GenerateRequests(int timeStep) {
 //     LinkedList<Request> *temp=  RH->GetRequestsLinkedList();

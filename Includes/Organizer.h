@@ -50,6 +50,8 @@ public:
 	void setCancellationRequestQ( LinkedQueue<CancellationRequest*> &CancellationRequests );
 	void SetPatientsCount(int PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
+	void runSimulation();  // Method to run the timestep simulation
+	bool isSimulationComplete();  // Method to check if the simulation is done
 
 
     void printOutCars()
