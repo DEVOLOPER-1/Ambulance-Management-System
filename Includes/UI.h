@@ -15,8 +15,14 @@ using namespace std;
 class UI {
 public:
     void DisplayTimeStep(int TimeStep) {
-        cout<<"Time Step: "<< TimeStep<<endl;
         cout<<setw(120)<<setfill('-')<<""<<endl;
+
+        cout<<"Time Step: "<< TimeStep<<endl;
+    }
+
+    void DisplaySeparator() {
+        cout<<"\n"<<setw(50)<<setfill('-')<<setw(50)<<""<<endl;
+    
     }
 
    void DisplayHospital(Hospital* h){

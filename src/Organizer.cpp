@@ -75,8 +75,8 @@ void Organizer::runSimulation() {
     cout << "Simulation Starts...\n";
 
     while (true) { 
-        cout << "\nCurrent Timestep: " << timestep << endl;
-
+        // cout << "\nCurrent Timestep: " << timestep << endl;
+        ui.DisplayTimeStep(timestep);
         
         distributeRequests(timestep);
 
@@ -86,7 +86,7 @@ void Organizer::runSimulation() {
         handleCars(timestep);
 
         
-        ui.DisplayTimeStep(timestep);
+
 
         
         if (isSimulationComplete()) break;
