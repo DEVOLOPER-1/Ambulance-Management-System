@@ -63,7 +63,7 @@ void Organizer::returnCar()
 
 void Organizer::printCars()
 {
-	cout << "------------------------------------" << endl;
+	cout << "----------------------------------------------" << endl;
 	cout << outCars.GetMembersCount() << " ==> Out Cars";
 	if (outCars.GetMembersCount())
 	{
@@ -76,7 +76,7 @@ void Organizer::printCars()
 		cout << ": ";
 		backCars.print();
     }
-	cout << "\n------------------------------------" << endl;
+	cout << "\n----------------------------------------------" << endl;
 }
 
 void Organizer::printFinishedRequests()
