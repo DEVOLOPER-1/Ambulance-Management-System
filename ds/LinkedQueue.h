@@ -220,7 +220,7 @@ void LinkedQueue<T>::print()
 		}
 		p = p->getNext();
 	}
-	cout << endl;
+	//cout << endl;
 }
 
 template <typename T>

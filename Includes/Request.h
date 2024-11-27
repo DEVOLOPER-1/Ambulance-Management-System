@@ -44,6 +44,9 @@ public:
 	void setPickupTime(int time) ;
 };
 
+// stream operators
+ostream& operator<<(ostream& os, Request* r);
+
 // comparison operators (based on severity)
 
 /*

@@ -61,6 +61,46 @@ void Organizer::returnCar()
 }
 
 
+void Organizer::printCars()
+{
+	cout << "------------------------------------" << endl;
+	cout << outCars.GetMembersCount() << " ==> Out Cars";
+	if (outCars.GetMembersCount())
+	{
+		cout << ": ";
+		outCars.print();
+	}
+    cout << "\n" << backCars.GetMembersCount() << " <== Back Cars";
+    if (backCars.GetMembersCount())
+    {
+		cout << ": ";
+		backCars.print();
+    }
+	cout << "\n------------------------------------" << endl;
+}
+
+void Organizer::printFinishedRequests()
+{
+	cout << finishedRequests.GetMembersCount() << " Finished Requests";
+	if (finishedRequests.GetMembersCount())
+	{
+		cout << ": ";
+		finishedRequests.print();
+	}
+	cout << endl;
+}
+
+void Organizer::print()
+{
+	printCars();
+	printFinishedRequests();
+}
+
+Hospital* Organizer::getHospital(int index)
+{
+	return hospitals[index];
+}
+
 // public methods
 void Organizer::distributeRequests(int timeStep)
 {
@@ -81,18 +121,19 @@ void Organizer::runSimulation() {
     while (true) { 
         // cout << "\nCurrent Timestep: " << timestep << endl;
 
-        ui.DisplayTimestep(timestep);
-        ui.DisplayHospital(hospitals[1]);
+        //ui.DisplayTimestep(timestep);
+        //ui.DisplayHospital(hospitals[1]);
 
         distributeRequests(timestep);
 
-        handleHospitals(timestep);
+		ui.display(timestep);
 
+        handleHospitals(timestep);
        
         handleCars(timestep);
 
         
-        this_thread::sleep_for(2s);
+        //this_thread::sleep_for(2s);
 
         
         if (isSimulationComplete()) break;
@@ -120,10 +161,6 @@ void Organizer::handleCars(int timeSteps)
 	// sendRequests(timeSteps);
 	Car* car;
 	int pri;
-    cout << "\nOut Cars: ";
-	outCars.print();
-	cout << "\nBack Cars: ";
-	backCars.print();
 
     while (outCars.peek(car, pri) && (car->getPickedUpTime() == timeSteps))
     {

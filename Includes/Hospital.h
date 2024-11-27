@@ -31,6 +31,8 @@ public:
 
 	void receive(Car* car);
 	
+	void print();
+
 	int GetHospitalID() const;
 	
 	int GetSPRequestsCount();

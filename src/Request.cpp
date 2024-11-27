@@ -33,3 +33,8 @@ CancellationRequest::CancellationRequest(int Time, int PID) :PID(PID) , Time(Tim
 int CancellationRequest::GETTime()const{return Time;}
 int CancellationRequest::GetPID()const{return PID;}
 
+ostream& operator<<(ostream& os, Request* r)
+{
+    os << r->getPatientID();
+	return os;
+}

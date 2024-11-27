@@ -67,6 +67,7 @@ public:
 
             newNode->setNext(head);
             head = newNode;
+            MembersCount++;
             return;
         }
 
@@ -115,7 +116,7 @@ public:
 				cout << current->getItem(pri) << ", ";
 			current = current->getNext();
 		}
-		cout << endl;
+		//cout << endl;
 	}
 
     int GetMembersCount() {

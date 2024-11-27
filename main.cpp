@@ -11,9 +11,10 @@ int main()
 {
 	ORG->loadInputFile();
 	ORG->runSimulation();
-	// Hospital* hospitals[2];
-	// hospitals[0] = new Hospital(1, 2, 2, 3, 2);
-	// hospitals[1] = new Hospital(2, 2, 2, 3, 2);
+	//Hospital* hospitals[2];
+	//hospitals[0] = new Hospital(1, 2, 2, 3, 2);
+	//hospitals[1] = new Hospital(2, 2, 2, 3, 2);
+
 	// ORG->setHospital(*hospitals);
 	//
 	// LinkedQueue<Request*> requests;

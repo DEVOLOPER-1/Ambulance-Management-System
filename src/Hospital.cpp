@@ -65,6 +65,36 @@ void Hospital::receive(Car* car)
 	else
 		nCars.enqueue(car);
 }
+
+void Hospital::print()
+{
+	cout << "\n============== Hospital #" << ID << " data ==============\n";
+	cout << EP_Requests.GetMembersCount() << " EP Requests";
+	if (EP_Requests.GetMembersCount())
+	{
+		cout << ": ";
+		EP_Requests.print();
+	}
+
+	cout << "\n" << NP_Requests.GetMembersCount() << " NP Requests";
+	if (NP_Requests.GetMembersCount())
+	{
+		cout << ": ";
+		NP_Requests.print();
+	}
+
+	cout << "\n" << SP_Requests.GetMembersCount() << " SP Requests";
+	if (SP_Requests.GetMembersCount())
+	{
+		cout << ": ";
+		SP_Requests.print();
+	}
+
+	cout << "\nFree Cars: " << sCars.GetMembersCount() << " SCars, " << nCars.GetMembersCount() << " NCars";
+
+	cout << "\n============ Hospital #" << ID << " data end ============\n";
+}
+
 int Hospital::GetHospitalID() const{
 	return ID;
 }

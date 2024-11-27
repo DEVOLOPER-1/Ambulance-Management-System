@@ -54,7 +54,7 @@ public:
 	void runSimulation();  // Method to run the timestep simulation
 	bool isSimulationComplete();  // Method to check if the simulation is done
 
-
+	/*
     void printOutCars()
     {
 		outCars.print(); // beta version
@@ -64,6 +64,16 @@ public:
     {
 		backCars.print(); // beta version
     }
+	*/
+
+	// methods to print data
+	void printCars();
+
+	void printFinishedRequests();
+
+	void print();
+
+	Hospital* getHospital(int index); // test sample for phase 1.2
 
 	// methods to handle requests
     void distributeRequests(int timeStep);

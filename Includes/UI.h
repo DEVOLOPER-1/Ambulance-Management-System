@@ -7,19 +7,15 @@
 // #include "Decorators.h"
 #include<iostream>
 #include <iomanip>
-#include "Hospital.h"
-#include "../ds/LinkedQueue.h"
 using namespace std;
 
 class UI {
 public:
     
-    void DisplayTimestep(int timestep) {
-        cout << setw(120) << setfill('-') << "" << endl;
-        cout << "Timestep: "<< timestep << endl;
+    void display(int timestep);
 
-    }
-
+    void DisplayTimestep(int timestep);
+    /*
     void DisplayHospital(Hospital* hosp){
         cout<<endl;
         cout << "Hospital ID : " << hosp->GetHospitalID()<< endl; 
@@ -55,7 +51,7 @@ public:
         display_back_cars(back_cars); // Show back cars
     }
 
- 
+ */
 };
 
 #endif //UI_H
