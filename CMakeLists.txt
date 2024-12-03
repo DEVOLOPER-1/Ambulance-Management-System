@@ -4,7 +4,7 @@ project(Ambulance_Management_System)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(Ambulance_Management_System "Main.cpp"
+add_executable(Ambulance_Management_System "main.cpp"
          "Includes/Car.h" "Includes/Request.h" "ds/LinkedQueue.h" "ds/priQueue.h" "ds/Node.h" "ds/LinkedList.h"
         Includes/Organizer.h "Includes/Hospital.h"
         Includes/ReadingHelper.h
@@ -15,6 +15,7 @@ add_executable(Ambulance_Management_System "Main.cpp"
         ds/Stack.h
         Includes/Decorators.h
         Includes/UI.h
+        src/UI.cpp
 )
 
 

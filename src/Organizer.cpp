@@ -1,7 +1,9 @@
 #pragma once
+#include <Windows.h>
+#include "../Includes/UI.h"
 #include "../Includes/Organizer.h"
 #include <iostream>
-#include<thread>
+#include <thread>
 
 using namespace std;
 
@@ -114,16 +116,24 @@ void Organizer::distributeRequests(int timeStep)
 	}
 }
 void Organizer::runSimulation() {
+
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD coord = { 0,0 };
+
+    CONSOLE_CURSOR_INFO CursorInfo;
+    GetConsoleCursorInfo(hConsole, &CursorInfo);
+    CursorInfo.bVisible = 0;
+    SetConsoleCursorInfo(hConsole, &CursorInfo);
+
     int timestep = 1; 
     UI ui;
-    cout << "Simulation Starts...\n";
 
     while (true) { 
         // cout << "\nCurrent Timestep: " << timestep << endl;
 
         //ui.DisplayTimestep(timestep);
         //ui.DisplayHospital(hospitals[1]);
-
+        cout << "Simulation Starts...\n";
         distributeRequests(timestep);
 
 		ui.display(timestep);
@@ -132,8 +142,11 @@ void Organizer::runSimulation() {
        
         handleCars(timestep);
 
-        
-        this_thread::sleep_for(2s);
+        SetConsoleCursorPosition(hConsole, coord);
+
+        //this_thread::sleep_for(2s);
+        cin.get();
+        system("cls");
 
         
         if (isSimulationComplete()) break;
@@ -176,7 +189,7 @@ void Organizer::receive(Car* car) { outCars.enqueue(car, -(car->getPickedUpTime(
 
 void Organizer::loadInputFile()
 {
-    cout << "Reading File....." << endl;
+    //cout << "Reading File....." << endl;
     this->InputFile.open(FileName);
     if (!InputFile.is_open()) {
         cout << "Failed Opening!" << endl;
@@ -230,7 +243,7 @@ void Organizer::loadInputFile()
     }
     SetDataMembersValues();
     InputFile.close();
-    cout << "File Reading Completed." << endl;
+    //cout << "File Reading Completed." << endl;
 }
 
 void Organizer::SetDataMembersValues() {
