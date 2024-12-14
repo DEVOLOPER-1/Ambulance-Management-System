@@ -28,7 +28,7 @@ private:
 	LinkedQueue<CancellationRequest*> cancellations;
 	priQueue<Car* > outCars;
     priQueue<Car* > backCars;
-	static Organizer* instance;  /// Singleton Design Pattern
+	static Organizer* instance;  // Singleton Design Pattern
 private:
 	Organizer();
 

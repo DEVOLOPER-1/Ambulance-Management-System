@@ -125,9 +125,9 @@ void Organizer::distributeRequests(int timeStep)
 	}
 }
 void Organizer::runSimulation() {
-
+    
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD coord = { 0,0 };
+    //COORD coord = { 0,0 };
 
     CONSOLE_CURSOR_INFO CursorInfo;
     GetConsoleCursorInfo(hConsole, &CursorInfo);
@@ -142,20 +142,23 @@ void Organizer::runSimulation() {
 
         //ui.DisplayTimestep(timestep);
         //ui.DisplayHospital(hospitals[1]);
-        cout << "Simulation Starts...\n";
+         
+        
+        //cout << "Simulation Starts...\n";
         distributeRequests(timestep);
 
+        system("cls");
 		ui.display(timestep);
 
         handleHospitals(timestep);
        
         handleCars(timestep);
 
-        SetConsoleCursorPosition(hConsole, coord);
+        //SetConsoleCursorPosition(hConsole, coord);
 
         //this_thread::sleep_for(2s);
         cin.get();
-        system("cls");
+        
 
         
         if (isSimulationComplete()) break;

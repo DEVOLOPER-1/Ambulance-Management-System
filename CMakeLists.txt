@@ -17,7 +17,3 @@ add_executable(Ambulance_Management_System "main.cpp"
         Includes/UI.h
         src/UI.cpp
 )
-
-
-#>>>>>>> CarAssign-BetaVersion
-#<<<<<<< HEAD "src/Car.cpp"
