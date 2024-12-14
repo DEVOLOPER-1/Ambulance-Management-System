@@ -30,9 +30,7 @@ private:
     priQueue<Car* > backCars;
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
-    Organizer()
-        : FileName("D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\InputText.txt")
-        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
+	Organizer();
 
 	Organizer(const Organizer& other) = delete;
 

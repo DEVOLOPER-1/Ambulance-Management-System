@@ -9,6 +9,15 @@ using namespace std;
 
 Organizer* Organizer::instance = nullptr;
 
+
+
+Organizer::Organizer() : FileName("../../../InputText.txt")
+, requests(), cancellations(), outCars(), backCars(), hospitals(nullptr)
+, CancellationsCount(0), HospitalsCount(0), hospitals_distances(nullptr)
+, PatientsCount(0) {};
+
+
+
 Organizer* Organizer::GetInstance()
 {
     if (!instance) instance = new Organizer();
@@ -122,7 +131,7 @@ void Organizer::runSimulation() {
 
     CONSOLE_CURSOR_INFO CursorInfo;
     GetConsoleCursorInfo(hConsole, &CursorInfo);
-    CursorInfo.bVisible = 0;
+    CursorInfo.bVisible = FALSE;
     SetConsoleCursorInfo(hConsole, &CursorInfo);
 
     int timestep = 1; 
