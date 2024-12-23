@@ -33,6 +33,13 @@ void Hospital::handleRequests(int timestep)
 	int priority;
 	Request* request;
 	Car* car;
+	
+	// EP has no ncars or scars case
+	while (EP_Requests.peek(request , priority) && !(nCars.peek(car)) && !(sCars.peek(car))) {
+			EP_Requests.dequeue(request , priority);
+			ORG->ReAssignBetterHospital(request);
+	}
+	
 	while (EP_Requests.peek(request, priority) && (nCars.peek(car) || sCars.peek(car)))
 	{
 		EP_Requests.dequeue(request, priority);

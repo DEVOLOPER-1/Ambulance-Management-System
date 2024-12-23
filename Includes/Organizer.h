@@ -31,10 +31,17 @@ private:
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\InputText.txt")
+        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
         , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
 
 	Organizer(const Organizer& other) = delete;
+
+	struct I_H_M_R {
+		int min_index;
+		int * collisioned_Hospitals_indices;
+		int CollisionsCount;
+	};
+	I_H_M_R GetI_H_M_R(int * array , int length); // ALias ===>    index of Hospital With Min Requests = I_H_M_R
 
     // methods to handle cars
     void sendBack();
@@ -89,7 +96,7 @@ public:
 	// methods to handle input file (Scenario)
     void loadInputFile();
 	
-
+	void ReAssignBetterHospital(Request* request);
 	void SetDataMembersValues();
 };
 
