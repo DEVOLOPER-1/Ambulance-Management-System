@@ -27,9 +27,9 @@ class Request
 
 public:
 	Request();
-	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity);
+	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity); // EP
 
-	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance);
+	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance); // NP , SP
 
 	// getters
 	string getPatientType();

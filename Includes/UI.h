@@ -5,7 +5,7 @@
 #ifndef UI_H
 #define UI_H
 // #include "Decorators.h"
-#include<iostream>
+#include <iostream>
 #include <iomanip>
 using namespace std;
 
@@ -13,7 +13,6 @@ class UI {
 public:
     
     void display(int timestep);
-
     void DisplayTimestep(int timestep);
     /*
     void DisplayHospital(Hospital* hosp){
