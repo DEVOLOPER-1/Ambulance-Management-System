@@ -133,7 +133,7 @@ void Organizer::runSimulation() {
         handleCars(timestep);
 
         
-        this_thread::sleep_for(2s);
+        this_thread::sleep_for(5s);
 
         
         if (isSimulationComplete()) break;
@@ -245,7 +245,63 @@ void Organizer::SetDataMembersValues() {
     
 }
 
+Organizer::I_H_M_R Organizer::GetI_H_M_R(int *array, int length) {
+    I_H_M_R ihmr;
+    int min = INT_MAX;
+    ihmr.min_index = 0;
+    ihmr.CollisionsCount = 0;
+    ihmr.collisioned_Hospitals_indices = new int[length];
+    for (int i = 0; i < length; i++) {
+        if (array[i] < min) {
+            min = array[i];
+            ihmr.min_index = i;
+            ihmr.CollisionsCount = 0; // reset collisions count
+        } else if (array[i] == min) {
+            ihmr.collisioned_Hospitals_indices[ihmr.CollisionsCount] = i;
+            ihmr.CollisionsCount++;
+        }
+    }
+    if (ihmr.CollisionsCount > 0 ) ihmr.min_index = -1 ;
+    return ihmr;
+}
 
+
+void Organizer::ReAssignBetterHospital(Request *request) {
+    int CurrentAssignedHospitalID = request->getNearestHospital() -1 ; // zero based indexing as r. is counting from 1  // Alias OldAssignedHospitalID = C_A_H_I_D
+    int * DistancesAwayOfC_A_H_I_D = hospitals_distances[CurrentAssignedHospitalID];
+    int * EpRequestsCountsForEachHospital = new int[HospitalsCount]; //iam not considering the hospital we are in already
+
+    for (int i = 0 ; i<HospitalsCount ; i++) {
+        if (DistancesAwayOfC_A_H_I_D[i] == 0 || i == CurrentAssignedHospitalID) {
+            EpRequestsCountsForEachHospital[i] = INT_MAX; 
+            continue;
+        }
+        EpRequestsCountsForEachHospital[i] = hospitals[i]->GetEPRequestsCount();
+    }
+    
+    I_H_M_R result = GetI_H_M_R(EpRequestsCountsForEachHospital , HospitalsCount-1);
+
+    if (result.min_index!= -1)
+        hospitals[result.min_index]->receive(request);
+
+    else {
+        int nearest_hospital = -1;
+        int min_distance = INT_MAX;
+
+        for (int j = 0; j < result.CollisionsCount; j++) {
+            int hospital_index = result.collisioned_Hospitals_indices[j];
+            if (DistancesAwayOfC_A_H_I_D[hospital_index] < min_distance) {
+                min_distance = DistancesAwayOfC_A_H_I_D[hospital_index];
+                nearest_hospital = hospital_index;
+            }
+        }
+        if (nearest_hospital != -1) {
+            hospitals[nearest_hospital]->receive(request);
+        }
+    }
+    delete[] EpRequestsCountsForEachHospital;
+    delete[] result.collisioned_Hospitals_indices;
+}
 
 // Request* Organizer::GenerateRequests(int timeStep) {
 //     LinkedList<Request> *temp=  RH->GetRequestsLinkedList();

@@ -4,16 +4,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Windows - 10.0.22631 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -28,14 +28,14 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
       The C compiler identification is GNU, found in:
-        E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.exe
+        E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -50,19 +50,19 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/a.exe
+        E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/a.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud"
-      binary: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud"
+      source: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag"
+      binary: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -71,13 +71,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud'
+        Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag'
         
-        Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_ed04d/fast
-        E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ed04d.dir\\build.make CMakeFiles/cmTC_ed04d.dir/build
-        mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud'
-        Building C object CMakeFiles/cmTC_ed04d.dir/CMakeCCompilerABI.c.obj
-        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_29e9d/fast
+        E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_29e9d.dir\\build.make CMakeFiles/cmTC_29e9d.dir/build
+        mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag'
+        Building C object CMakeFiles/cmTC_29e9d.dir/CMakeCCompilerABI.c.obj
+        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -85,8 +85,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ed04d.dir\\'
-         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_ed04d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\cczLngSP.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_29e9d.dir\\'
+         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_29e9d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\cc3pnK1p.s
         GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -104,17 +104,17 @@ events:
          E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ed04d.dir\\'
-         as -v -o CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\youss\\AppData\\Local\\Temp\\cczLngSP.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_29e9d.dir\\'
+         as -v -o CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\youss\\AppData\\Local\\Temp\\cc3pnK1p.s
         GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_ed04d.exe
-        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ed04d.dir\\link.txt --verbose=1
-        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ed04d.dir/objects.a
-        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_ed04d.dir/objects.a @CMakeFiles\\cmTC_ed04d.dir\\objects1.rsp
-        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_ed04d.dir/objects.a -Wl,--no-whole-archive -o cmTC_ed04d.exe -Wl,--out-implib,libcmTC_ed04d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_29e9d.exe
+        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_29e9d.dir\\link.txt --verbose=1
+        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_29e9d.dir/objects.a
+        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_29e9d.dir/objects.a @CMakeFiles\\cmTC_29e9d.dir\\objects1.rsp
+        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_29e9d.dir/objects.a -Wl,--no-whole-archive -o cmTC_29e9d.exe -Wl,--out-implib,libcmTC_29e9d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
         COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=E:/Setup\\ Files/CLion/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -125,20 +125,20 @@ events:
         gcc version 13.1.0 (GCC) 
         COMPILER_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed04d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ed04d.'
-         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ed04d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ed04d.dir/objects.a --no-whole-archive --out-implib libcmTC_ed04d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_29e9d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_29e9d.'
+         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_29e9d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_29e9d.dir/objects.a --no-whole-archive --out-implib libcmTC_29e9d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         collect2 version 13.1.0
-        E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_ed04d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ed04d.dir/objects.a --no-whole-archive --out-implib libcmTC_ed04d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_29e9d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_29e9d.dir/objects.a --no-whole-archive --out-implib libcmTC_29e9d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed04d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ed04d.'
-        mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_29e9d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_29e9d.'
+        mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
@@ -159,20 +159,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud']
+        ignore line: [Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag']
         ignore line: []
-        ignore line: [Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_ed04d/fast]
-        ignore line: [E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_ed04d.dir\\build.make CMakeFiles/cmTC_ed04d.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud']
-        ignore line: [Building C object CMakeFiles/cmTC_ed04d.dir/CMakeCCompilerABI.c.obj]
-        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_29e9d/fast]
+        ignore line: [E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_29e9d.dir\\build.make CMakeFiles/cmTC_29e9d.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag']
+        ignore line: [Building C object CMakeFiles/cmTC_29e9d.dir/CMakeCCompilerABI.c.obj]
+        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -180,8 +180,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ed04d.dir\\']
-        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_ed04d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\cczLngSP.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_29e9d.dir\\']
+        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_29e9d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\cc3pnK1p.s]
         ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -199,8 +199,8 @@ events:
         ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ed04d.dir\\']
-        ignore line: [ as -v -o CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\youss\\AppData\\Local\\Temp\\cczLngSP.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_29e9d.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\youss\\AppData\\Local\\Temp\\cc3pnK1p.s]
         ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/]
@@ -210,12 +210,12 @@ events:
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_ed04d.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_ed04d.exe]
-        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_ed04d.dir\\link.txt --verbose=1]
-        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_ed04d.dir/objects.a]
-        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_ed04d.dir/objects.a @CMakeFiles\\cmTC_ed04d.dir\\objects1.rsp]
-        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_ed04d.dir/objects.a -Wl --no-whole-archive -o cmTC_ed04d.exe -Wl --out-implib libcmTC_ed04d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_29e9d.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_29e9d.exe]
+        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_29e9d.dir\\link.txt --verbose=1]
+        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_29e9d.dir/objects.a]
+        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_29e9d.dir/objects.a @CMakeFiles\\cmTC_29e9d.dir\\objects1.rsp]
+        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_29e9d.dir/objects.a -Wl --no-whole-archive -o cmTC_29e9d.exe -Wl --out-implib libcmTC_29e9d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=E:/Setup\\ Files/CLion/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -232,13 +232,13 @@ events:
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed04d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ed04d.']
-        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_ed04d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ed04d.dir/objects.a --no-whole-archive --out-implib libcmTC_ed04d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_29e9d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_29e9d.']
+        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_29e9d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_29e9d.dir/objects.a --no-whole-archive --out-implib libcmTC_29e9d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
         ignore line: [collect2 version 13.1.0]
-        ignore line: [E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_ed04d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_ed04d.dir/objects.a --no-whole-archive --out-implib libcmTC_ed04d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_29e9d.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_29e9d.dir/objects.a --no-whole-archive --out-implib libcmTC_29e9d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
         ignore line: [GNU ld (GNU Binutils) 2.40]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ed04d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_ed04d.']
-        ignore line: [mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-d6sgud']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_29e9d.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_29e9d.']
+        ignore line: [mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jl30ag']
         ignore line: []
         ignore line: []
         linker tool for 'C': E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/ld.exe
@@ -251,9 +251,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the C compiler's linker: "E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/ld.exe" "-v"
@@ -261,14 +261,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5"
-      binary: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5"
+      source: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p"
+      binary: "E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -278,13 +278,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5'
+        Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p'
         
-        Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_f97c5/fast
-        E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f97c5.dir\\build.make CMakeFiles/cmTC_f97c5.dir/build
-        mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5'
-        Building CXX object CMakeFiles/cmTC_f97c5.dir/CMakeCXXCompilerABI.cpp.obj
-        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_c5b01/fast
+        E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c5b01.dir\\build.make CMakeFiles/cmTC_c5b01.dir/build
+        mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p'
+        Building CXX object CMakeFiles/cmTC_c5b01.dir/CMakeCXXCompilerABI.cpp.obj
+        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE
         Target: x86_64-w64-mingw32
@@ -292,8 +292,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f97c5.dir\\'
-         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_f97c5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\cccdeVRN.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_c5b01.dir\\'
+         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_c5b01.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\ccXoPnrZ.s
         GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -317,17 +317,17 @@ events:
          E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: e75de627edc3c57e31324b930b15b056
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f97c5.dir\\'
-         as -v -o CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\youss\\AppData\\Local\\Temp\\cccdeVRN.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_c5b01.dir\\'
+         as -v -o CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\youss\\AppData\\Local\\Temp\\ccXoPnrZ.s
         GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
         COMPILER_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_f97c5.exe
-        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f97c5.dir\\link.txt --verbose=1
-        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f97c5.dir/objects.a
-        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_f97c5.dir/objects.a @CMakeFiles\\cmTC_f97c5.dir\\objects1.rsp
-        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_f97c5.dir/objects.a -Wl,--no-whole-archive -o cmTC_f97c5.exe -Wl,--out-implib,libcmTC_f97c5.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c5b01.exe
+        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c5b01.dir\\link.txt --verbose=1
+        "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c5b01.dir/objects.a
+        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_c5b01.dir/objects.a @CMakeFiles\\cmTC_c5b01.dir\\objects1.rsp
+        "E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_c5b01.dir/objects.a -Wl,--no-whole-archive -o cmTC_c5b01.exe -Wl,--out-implib,libcmTC_c5b01.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
         COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE
         COLLECT_LTO_WRAPPER=E:/Setup\\ Files/CLion/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -338,20 +338,20 @@ events:
         gcc version 13.1.0 (GCC) 
         COMPILER_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/
         LIBRARY_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97c5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f97c5.'
-         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f97c5.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f97c5.dir/objects.a --no-whole-archive --out-implib libcmTC_f97c5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5b01.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_c5b01.'
+         E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_c5b01.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c5b01.dir/objects.a --no-whole-archive --out-implib libcmTC_c5b01.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         collect2 version 13.1.0
-        E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_f97c5.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f97c5.dir/objects.a --no-whole-archive --out-implib libcmTC_f97c5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_c5b01.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c5b01.dir/objects.a --no-whole-archive --out-implib libcmTC_c5b01.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         GNU ld (GNU Binutils) 2.40
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97c5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f97c5.'
-        mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5b01.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_c5b01.'
+        mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
@@ -378,20 +378,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5']
+        ignore line: [Change Dir: 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p']
         ignore line: []
-        ignore line: [Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_f97c5/fast]
-        ignore line: [E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f97c5.dir\\build.make CMakeFiles/cmTC_f97c5.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5']
-        ignore line: [Building CXX object CMakeFiles/cmTC_f97c5.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_c5b01/fast]
+        ignore line: [E:/Setup Files/CLion/CLION2~1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c5b01.dir\\build.make CMakeFiles/cmTC_c5b01.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c5b01.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj -c "E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -399,8 +399,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f97c5.dir\\']
-        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_f97c5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\cccdeVRN.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_c5b01.dir\\']
+        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_c5b01.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\youss\\AppData\\Local\\Temp\\ccXoPnrZ.s]
         ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -424,8 +424,8 @@ events:
         ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f97c5.dir\\']
-        ignore line: [ as -v -o CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\youss\\AppData\\Local\\Temp\\cccdeVRN.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_c5b01.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\youss\\AppData\\Local\\Temp\\ccXoPnrZ.s]
         ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
         ignore line: [COMPILER_PATH=E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/]
@@ -435,12 +435,12 @@ events:
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f97c5.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_f97c5.exe]
-        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f97c5.dir\\link.txt --verbose=1]
-        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f97c5.dir/objects.a]
-        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_f97c5.dir/objects.a @CMakeFiles\\cmTC_f97c5.dir\\objects1.rsp]
-        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_f97c5.dir/objects.a -Wl --no-whole-archive -o cmTC_f97c5.exe -Wl --out-implib libcmTC_f97c5.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_c5b01.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c5b01.exe]
+        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c5b01.dir\\link.txt --verbose=1]
+        ignore line: ["E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c5b01.dir/objects.a]
+        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\ar.exe" qc CMakeFiles\\cmTC_c5b01.dir/objects.a @CMakeFiles\\cmTC_c5b01.dir\\objects1.rsp]
+        ignore line: ["E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE"  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_c5b01.dir/objects.a -Wl --no-whole-archive -o cmTC_c5b01.exe -Wl --out-implib libcmTC_c5b01.dll.a -Wl --major-image-version 0 --minor-image-version 0]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=E:\\Setup Files\\CLion\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE]
         ignore line: [COLLECT_LTO_WRAPPER=E:/Setup\\ Files/CLion/CLion\\ 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -457,13 +457,13 @@ events:
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97c5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f97c5.']
-        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f97c5.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f97c5.dir/objects.a --no-whole-archive --out-implib libcmTC_f97c5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5b01.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_c5b01.']
+        ignore line: [ E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_c5b01.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c5b01.dir/objects.a --no-whole-archive --out-implib libcmTC_c5b01.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
         ignore line: [collect2 version 13.1.0]
-        ignore line: [E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_f97c5.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f97c5.dir/objects.a --no-whole-archive --out-implib libcmTC_f97c5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [E:\\Setup Files\\CLion\\CLion 2024.2.2\\bin\\mingw\\bin/ld.exe -m i386pep -Bdynamic -o cmTC_c5b01.exe E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_c5b01.dir/objects.a --no-whole-archive --out-implib libcmTC_c5b01.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
         ignore line: [GNU ld (GNU Binutils) 2.40]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f97c5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f97c5.']
-        ignore line: [mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2qre5']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5b01.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_c5b01.']
+        ignore line: [mingw32-make[1]: Leaving directory 'E:/Coding/C++/Ambulance-Management-System/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mem64p']
         ignore line: []
         ignore line: []
         linker tool for 'CXX': E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/ld.exe
@@ -476,9 +476,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
-      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "E:/Setup Files/CLion/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the CXX compiler's linker: "E:/Setup Files/CLion/CLion 2024.2.2/bin/mingw/bin/ld.exe" "-v"
