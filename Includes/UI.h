@@ -14,7 +14,6 @@ public:
     
     void display(int timestep, int index);
     void DisplayTimestep(int timestep);
-    
     // void DisplayHospital(Hospital* hosp){
     //     cout<<endl;
     //     cout << "Hospital ID : " << hosp->GetHospitalID()<< endl; 
