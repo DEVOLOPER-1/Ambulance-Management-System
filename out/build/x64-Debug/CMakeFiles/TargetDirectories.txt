@@ -1,3 +1,0 @@
-D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/out/build/x64-Debug/CMakeFiles/Ambulance_Management_System.dir
-D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-D:/University/Year 2/Semester 1/data structure/Project/Ambulance-Management-System/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
