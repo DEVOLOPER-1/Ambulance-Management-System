@@ -147,7 +147,6 @@ void Organizer::runSimulation() {
         //cout << "Simulation Starts...\n";
         distributeRequests(timestep);
 
-        system("cls");
 		ui.display(timestep);
 
         handleHospitals(timestep);
