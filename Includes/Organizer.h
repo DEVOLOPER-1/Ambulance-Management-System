@@ -22,6 +22,8 @@ private:
 	int HospitalsCount;
 	int PatientsCount;
 	int CancellationsCount;
+	int TotalCars_in_AllHospitals;
+	int TotalSimulationTime;
 	Hospital** hospitals;
 	LinkedQueue<Request*> requests;
 	LinkedQueue<Request*> finishedRequests;
@@ -32,7 +34,8 @@ private:
 private:
     Organizer()
         : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
-        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr){};
+        , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr) , TotalSimulationTime(0),
+		HospitalsCount(0) , PatientsCount(0) , CancellationsCount(0) , TotalCars_in_AllHospitals(0) {};
 
 	Organizer(const Organizer& other) = delete;
 
@@ -42,6 +45,8 @@ private:
 		int CollisionsCount;
 	};
 	I_H_M_R GetI_H_M_R(int * array , int length); // ALias ===>    index of Hospital With Min Requests = I_H_M_R
+
+	void collectStatistics();
 
     // methods to handle cars
     void sendBack();
@@ -58,6 +63,7 @@ public:
 	void setCancellationRequestQ( LinkedQueue<CancellationRequest*> &CancellationRequests );
 	void SetPatientsCount(int PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
+	void setTotalCars_in_AllHospitals(int TotalCars_in_AllHospitals);
 	void runSimulation();  // Method to run the timestep simulation
 	bool isSimulationComplete();  // Method to check if the simulation is done
 
@@ -98,25 +104,26 @@ public:
 	
 	void ReAssignBetterHospital(Request* request);
 	void SetDataMembersValues();
+
+
 };
 
 
 
 
 
-/*
-void simulateTimeStep(int timeStep){}
 
-void handleCarArrival(Car* car){}
+// void simulateTimeStep(int timeStep){}
+//
+// void handleCarArrival(Car* car){}
+//
+// // void assignPatientToCar(Patient* patient, Car* car){}
+//
+//
+// void produceOutputFile(string fileName){}
+//
+// void callUIUpdate(int timeStep){}
 
-// void assignPatientToCar(Patient* patient, Car* car){}
-
-void collectStatistics(){}
-
-void produceOutputFile(string fileName){}
-
-void callUIUpdate(int timeStep){}
-*/
 
 
 

@@ -16,6 +16,8 @@ add_executable(Ambulance_Management_System "Main.cpp"
         Includes/Decorators.h
         Includes/UI.h
         src/UI.cpp
+        src/Logger.cpp
+        Includes/Logger.h
 )
 
 

@@ -41,6 +41,14 @@ void Car::assign(int timestep, Request* request)
 {
 	this->request = request;
 	setStatus("Assigned");
+	Logger* logger =  request->GetLogger();
+	logger->setAT(timestep);
+	//calculations
+	logger->CalcPickupTime(timestep, request->getDistance(), speed);
+	logger->CalcWaitingTime(logger->getPT(), logger->getQT());
+	logger->CalcFinishTime(logger->getPT(), request->getDistance(), speed);
+	logger->CalcBusyTime();
+	
 	nextPickupTime = timestep + (request->getDistance() / speed);
 	nextDropOffTime = nextPickupTime + (request->getDistance() / speed);
 }
@@ -58,6 +66,7 @@ void Car::cancel()
 
 void Car::dropOff(Request* &request){
 	request = this->request;
+	request->GetLogger()->setFT(nextDropOffTime);
 	setStatus("Ready");
 	this->request = nullptr;
 }

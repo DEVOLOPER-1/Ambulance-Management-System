@@ -78,6 +78,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
 
                 NcarNumber = stoi(token);
                 counter++;
+                TotalCars_in_AllHospitals = ScarNumber + NcarNumber;
                 HospitalsArray[HospitalsCounter] = new Hospital(
                     HospitalsCounter + 1,
                     ScarNumber,
@@ -219,3 +220,6 @@ int ReadingHelper::GetNoOfPatients() const {
     return NoOfPatients;
 }
 
+int ReadingHelper::GetTotalCars_in_AllHospitals() const {
+    return TotalCars_in_AllHospitals;
+}

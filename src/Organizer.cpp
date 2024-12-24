@@ -30,6 +30,11 @@ void Organizer::SetHospitalsCount(int HospitalsCount) {
 void Organizer::SetCancellationsCount(int CancellationsCount) {
     this->CancellationsCount = CancellationsCount;
 }
+
+void Organizer::setTotalCars_in_AllHospitals(int TotalCars_in_AllHospitals) {
+    this->TotalCars_in_AllHospitals = TotalCars_in_AllHospitals;
+}
+
 void Organizer::SetPatientsCount(int PatientsCount) {
     this->PatientsCount = PatientsCount;
 }
@@ -136,7 +141,7 @@ void Organizer::runSimulation() {
         this_thread::sleep_for(5s);
 
         
-        if (isSimulationComplete()) break;
+        if (isSimulationComplete()) {TotalSimulationTime = timestep;  break;}
 
         timestep++;
     }
@@ -241,6 +246,8 @@ void Organizer::SetDataMembersValues() {
     SetHospitalsCount(RH->GetNoOfHospitals());
     SetPatientsCount(RH->GetNoOfPatients());
     SetCancellationsCount(RH->GetNoOfCancellations());
+    setTotalCars_in_AllHospitals(RH->GetTotalCars_in_AllHospitals());
+    // RH->
     //cout<<"All Organizer Data Members are done !"<<endl;
     
 }
@@ -301,6 +308,24 @@ void Organizer::ReAssignBetterHospital(Request *request) {
     }
     delete[] EpRequestsCountsForEachHospital;
     delete[] result.collisioned_Hospitals_indices;
+}
+
+void Organizer::collectStatistics() {
+    cout << "Collecting Statistics..." << endl;
+    int total_waiting_time = 0;
+    int total_busy_time = 0;
+    Request* request;
+    LinkedQueue<Request*> temp_queue = finishedRequests;
+    while (!temp_queue.isEmpty()) {
+        temp_queue.dequeue(request);
+        Logger* logger = request->GetLogger();
+        total_waiting_time += logger->getWT();
+        total_busy_time += logger->getBusynessTime();
+    }
+    int avgWaitingTime = total_waiting_time / PatientsCount;
+    int avgCarsBusynessTime = total_busy_time / TotalCars_in_AllHospitals ;
+    int average_utilization = (avgCarsBusynessTime / TotalSimulationTime)*100;
+    cout << "Statistics Collected." << endl;
 }
 
 // Request* Organizer::GenerateRequests(int timeStep) {

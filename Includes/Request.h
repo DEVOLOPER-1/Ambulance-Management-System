@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Logger.h"
 using namespace std;
 
 class CancellationRequest {
@@ -24,13 +25,13 @@ class Request
 	int     NearestHospital;
 	int		distance;
 	int		severity;
+	Logger * logger;
 
 public:
 	Request();
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity); // EP
 
 	Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance); // NP , SP
-
 	// getters
 	string getPatientType();
 	int    getRequestTime();
@@ -39,7 +40,7 @@ public:
 	int    getNearestHospital() ;
 	int    getDistance() ;
 	int    getSeverity() ;
-
+	Logger* GetLogger();
 	// setters
 	void setPickupTime(int time) ;
 };

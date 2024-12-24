@@ -5,11 +5,20 @@
 #include "../Includes/Request.h"
 #include <iostream>
 using namespace std;
-Request::Request() : PatientType(""), RequestTime(0), PatientID(0), NearestHospital(0), distance(0), severity(0), PickupTime(0) {}
+Request::Request() : PatientType(""), RequestTime(0), PatientID(0), NearestHospital(0), distance(0), severity(0), PickupTime(0) {
+    logger = new Logger();
+    logger->setQT(RequestTime);
+    logger->setDistanceBetPatientHospital(distance);
+}
 
 Request::Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance, int severity)
         : PatientType(PatientType), RequestTime(RequestTime), PatientID(PatientID), NearestHospital(NearestHospital)
-        , distance(distance), severity(severity), PickupTime(0) {}
+        , distance(distance), severity(severity), PickupTime(0) {
+        logger = new Logger();
+        logger->setQT(RequestTime);
+        logger->setDistanceBetPatientHospital(distance);
+
+}
 
 Request::Request(string	PatientType, int RequestTime, int PatientID, int NearestHospital, int distance)
                 : Request(PatientType, RequestTime, PatientID, NearestHospital, distance, 0) {}
@@ -24,7 +33,7 @@ int Request::getDistance() { return distance; }
 int Request::getSeverity() { return severity; }
 void Request::setPickupTime(int time) { PickupTime = time; }
 
-
+Logger* Request::GetLogger() { return logger; }
 
 
 
