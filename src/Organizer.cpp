@@ -275,17 +275,17 @@ void Organizer::getInputs()
 {
     while (running)
     {
-        if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
+        if (GetAsyncKeyState(VK_RIGHT) & 0b1)
         {
             if (variableIndex < HospitalsCount-1)
                 variableIndex++;
         }
-        else if (GetAsyncKeyState(VK_LEFT) & 0x8000)
+        else if (GetAsyncKeyState(VK_LEFT) & 0b1)
         {
             if (variableIndex > 0)
                 variableIndex--;
         }
-        else if (GetAsyncKeyState(VK_RETURN) & 0x8000)
+        else if (GetAsyncKeyState(VK_RETURN) & 0b1)
         {
             running = false;
         }
