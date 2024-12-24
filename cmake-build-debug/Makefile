@@ -200,6 +200,30 @@ src/Hospital.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.s
 .PHONY : src/Hospital.cpp.s
 
+src/Logger.obj: src/Logger.cpp.obj
+.PHONY : src/Logger.obj
+
+# target to build an object file
+src/Logger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Logger.cpp.obj
+.PHONY : src/Logger.cpp.obj
+
+src/Logger.i: src/Logger.cpp.i
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Ambulance_Management_System.dir\build.make CMakeFiles/Ambulance_Management_System.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
 src/Organizer.obj: src/Organizer.cpp.obj
 .PHONY : src/Organizer.obj
 
@@ -314,6 +338,9 @@ help:
 	@echo ... src/Hospital.obj
 	@echo ... src/Hospital.i
 	@echo ... src/Hospital.s
+	@echo ... src/Logger.obj
+	@echo ... src/Logger.i
+	@echo ... src/Logger.s
 	@echo ... src/Organizer.obj
 	@echo ... src/Organizer.i
 	@echo ... src/Organizer.s

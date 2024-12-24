@@ -28,7 +28,11 @@ private:
     int NormalCarSpeed;
     string PatientDataArray[6];
     int NoOfCancellations;
-    int TotalCars_in_AllHospitals;
+    int Total_S_Cars_in_AllHospitals;
+    int Total_N_Cars_in_AllHospitals;
+    int Total_EP_Patients_in_AllHospitals;
+    int Total_NP_Patients_in_AllHospitals;
+    int Total_SP_Patients_in_AllHospitals;
     static ReadingHelper* instance;
 
 public:
@@ -41,8 +45,8 @@ public:
     int GetNcarSpeed()const;
     int GetNoOfHospitals()const;
     int GetNoOfCancellations()const;
-    int GetNoOfPatients()const;
-    int GetTotalCars_in_AllHospitals()const;
+    int* GetTotalNoOfPatients()const;
+    int* GetTotalCars_in_AllHospitals() const;
     LinkedQueue<Request*> &GetRequestsQueue();
     LinkedQueue<CancellationRequest*> &GetCancellationRequestsQueue();
     
@@ -50,7 +54,8 @@ public:
 private:
     ReadingHelper() : HospitalsCount(0), DistancesMatrix(nullptr) ,  SpecialCarSpeed( 0),NormalCarSpeed(0),
     NoOfCancellations(0) , NoOfPatients(0) , HospitalsArray(nullptr) , HospitalsCounter(0) ,row(0) , col(0) ,
-    TotalCars_in_AllHospitals(0) {}
+    Total_S_Cars_in_AllHospitals(0) , Total_N_Cars_in_AllHospitals(0) , Total_EP_Patients_in_AllHospitals(0) ,
+    Total_NP_Patients_in_AllHospitals(0) , Total_SP_Patients_in_AllHospitals(0){}
     // ReadingHelper(const ReadingHelper&) = delete;
     // ReadingHelper& operator=(const ReadingHelper&) = delete;
     void Build2DMatrix_and_HospitalsArray(int token);

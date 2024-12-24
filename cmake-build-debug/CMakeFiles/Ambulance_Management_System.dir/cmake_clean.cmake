@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Ambulance_Management_System.dir/src/Car.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Hospital.cpp.obj.d"
+  "CMakeFiles/Ambulance_Management_System.dir/src/Logger.cpp.obj"
+  "CMakeFiles/Ambulance_Management_System.dir/src/Logger.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj"
   "CMakeFiles/Ambulance_Management_System.dir/src/Organizer.cpp.obj.d"
   "CMakeFiles/Ambulance_Management_System.dir/src/ReadingHelper.cpp.obj"

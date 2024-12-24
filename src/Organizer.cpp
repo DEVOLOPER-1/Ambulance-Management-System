@@ -31,12 +31,15 @@ void Organizer::SetCancellationsCount(int CancellationsCount) {
     this->CancellationsCount = CancellationsCount;
 }
 
-void Organizer::setTotalCars_in_AllHospitals(int TotalCars_in_AllHospitals) {
-    this->TotalCars_in_AllHospitals = TotalCars_in_AllHospitals;
+void Organizer::setTotalCars_in_AllHospitals(int Total_S_Cars_in_AllHospitals , int Total_N_Cars_in_AllHospitals) {
+    this->Total_S_Cars_in_AllHospitals = Total_S_Cars_in_AllHospitals;
+    this->Total_N_Cars_in_AllHospitals = Total_N_Cars_in_AllHospitals;
 }
 
-void Organizer::SetPatientsCount(int PatientsCount) {
-    this->PatientsCount = PatientsCount;
+void Organizer::SetPatientsCount(int * PatientsCount) {
+    this->Total_EP_Patients_in_AllHospitals = PatientsCount[0];
+    this->Total_SP_Patients_in_AllHospitals = PatientsCount[1];
+    this->Total_NP_Patients_in_AllHospitals = PatientsCount[2];
 }
 
 void Organizer::SetHospitalsDistances(int **&hospitals_distances) {
@@ -138,10 +141,10 @@ void Organizer::runSimulation() {
         handleCars(timestep);
 
         
-        this_thread::sleep_for(5s);
+        // this_thread::sleep_for(5s);
 
         
-        if (isSimulationComplete()) {TotalSimulationTime = timestep;  break;}
+        if (isSimulationComplete()) {TotalSimulationTime = timestep; collectStatistics();  break;}
 
         timestep++;
     }
@@ -151,7 +154,7 @@ void Organizer::runSimulation() {
 
 bool Organizer::isSimulationComplete() {
     // Check if all requests are processed and no cars are in transit
-    return finishedRequests.GetMembersCount() == PatientsCount;
+    return finishedRequests.GetMembersCount() == (Total_EP_Patients_in_AllHospitals+Total_NP_Patients_in_AllHospitals+Total_SP_Patients_in_AllHospitals);
 }
 
 
@@ -244,9 +247,9 @@ void Organizer::SetDataMembersValues() {
     setCancellationRequestQ(RH->GetCancellationRequestsQueue());
     SetHospitalsDistances(RH->GetDistancesMatrix());
     SetHospitalsCount(RH->GetNoOfHospitals());
-    SetPatientsCount(RH->GetNoOfPatients());
+    SetPatientsCount(RH->GetTotalNoOfPatients());
     SetCancellationsCount(RH->GetNoOfCancellations());
-    setTotalCars_in_AllHospitals(RH->GetTotalCars_in_AllHospitals());
+    setTotalCars_in_AllHospitals(RH->GetTotalCars_in_AllHospitals()[0] , RH->GetTotalCars_in_AllHospitals()[1]);
     // RH->
     //cout<<"All Organizer Data Members are done !"<<endl;
     
@@ -310,21 +313,40 @@ void Organizer::ReAssignBetterHospital(Request *request) {
     delete[] result.collisioned_Hospitals_indices;
 }
 
+
+
 void Organizer::collectStatistics() {
     cout << "Collecting Statistics..." << endl;
     int total_waiting_time = 0;
     int total_busy_time = 0;
+    int finished_ones[4] = {0};
     Request* request;
     LinkedQueue<Request*> temp_queue = finishedRequests;
+    bool isPatientArray = true;
+    int CallCounter = 0;
     while (!temp_queue.isEmpty()) {
         temp_queue.dequeue(request);
         Logger* logger = request->GetLogger();
+        if (isPatientArray) {
+            finished_ones[0] = logger->getFT();
+            finished_ones[1] = request->getPatientID();
+            finished_ones[2] = logger->getQT();
+            finished_ones[3] = logger->getWT();
+            produceOutputFile(isPatientArray, finished_ones , CallCounter);
+            CallCounter++;
+            // cout << "Output File Produced." << endl;
+        }
         total_waiting_time += logger->getWT();
         total_busy_time += logger->getBusynessTime();
     }
-    int avgWaitingTime = total_waiting_time / PatientsCount;
-    int avgCarsBusynessTime = total_busy_time / TotalCars_in_AllHospitals ;
-    int average_utilization = (avgCarsBusynessTime / TotalSimulationTime)*100;
+    isPatientArray = false;
+    double statistics[4] = {0.0};
+    double avgWaitingTime = static_cast<double>(total_waiting_time) /( Total_EP_Patients_in_AllHospitals+Total_SP_Patients_in_AllHospitals+Total_NP_Patients_in_AllHospitals);
+    double avgCarsBusynessTime = total_busy_time / static_cast<double>(Total_S_Cars_in_AllHospitals + Total_N_Cars_in_AllHospitals); ;
+    double average_utilization = static_cast<double>(avgCarsBusynessTime / TotalSimulationTime)*100;
+    statistics[0] = avgWaitingTime; statistics[1] = avgCarsBusynessTime; statistics[2] = average_utilization;
+    produceOutputFile(isPatientArray , statistics , CallCounter);
+    
     cout << "Statistics Collected." << endl;
 }
 

@@ -7,6 +7,7 @@
 #include "Car.h"
 #include "Hospital.h"
 #include "ReadingHelper.h"
+#include <fstream>
 #include "../ds/Stack.h"
 #include"UI.h"
 #define ORG Organizer::GetInstance()
@@ -20,9 +21,12 @@ private:
     string FileName;
 	int** hospitals_distances;
 	int HospitalsCount;
-	int PatientsCount;
+	int Total_EP_Patients_in_AllHospitals;
+	int Total_SP_Patients_in_AllHospitals;
+	int Total_NP_Patients_in_AllHospitals;
 	int CancellationsCount;
-	int TotalCars_in_AllHospitals;
+	int Total_S_Cars_in_AllHospitals;
+	int Total_N_Cars_in_AllHospitals;
 	int TotalSimulationTime;
 	Hospital** hospitals;
 	LinkedQueue<Request*> requests;
@@ -35,7 +39,9 @@ private:
     Organizer()
         : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
         , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr) , TotalSimulationTime(0),
-		HospitalsCount(0) , PatientsCount(0) , CancellationsCount(0) , TotalCars_in_AllHospitals(0) {};
+		HospitalsCount(0) , Total_EP_Patients_in_AllHospitals(0),Total_SP_Patients_in_AllHospitals(0),
+		Total_NP_Patients_in_AllHospitals(0) , CancellationsCount(0) , Total_N_Cars_in_AllHospitals(0) ,
+		Total_S_Cars_in_AllHospitals(0){};
 
 	Organizer(const Organizer& other) = delete;
 
@@ -53,6 +59,41 @@ private:
 
     void returnCar();
 
+	template<typename T>
+	void produceOutputFile(bool IsPatientArray , T (& array)[4] , int CallCounter) {
+		fstream OutputFile;
+		if (CallCounter == 0) {
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::out); //write mode
+		}
+		else
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //write mode
+		if (OutputFile.is_open()){
+			if (IsPatientArray) {
+				if ( CallCounter == 0) {
+					OutputFile << "FT" << " " << "PatientID" << " " << "QT" << " " << "WT" << endl<<endl;
+					OutputFile << array[0] << " " << array[1] << " " << array[2] << " " << array[3] << endl;
+
+				}
+				OutputFile << array[0] << " " << array[1] << " " << array[2] << " " << array[3] << endl;
+			}
+			else {
+				OutputFile<<endl;
+				OutputFile <<"Patients: "<< (Total_EP_Patients_in_AllHospitals + Total_NP_Patients_in_AllHospitals + Total_SP_Patients_in_AllHospitals) 
+				<<" [EP: " << Total_EP_Patients_in_AllHospitals << ", SP: " << Total_SP_Patients_in_AllHospitals << ", NP: " << Total_NP_Patients_in_AllHospitals << "]" << endl;
+				OutputFile <<"Hospitals: "<< HospitalsCount << endl;
+
+				OutputFile <<"Hospitals: "<< HospitalsCount <<endl;
+
+				OutputFile <<"Cars: "<< Total_N_Cars_in_AllHospitals+Total_S_Cars_in_AllHospitals <<" [ Scars: "<<Total_S_Cars_in_AllHospitals<<", Ncars: "<<Total_N_Cars_in_AllHospitals<<" ]"<<endl;
+
+				OutputFile<<"Average Waiting Time: "<< array[0] << endl;
+				OutputFile<<"Average Cars Busyness Time: "<< array[1] << endl;
+				OutputFile<<"Average Utilization: "<< array[2] << "%" << endl;
+			}
+		}
+		OutputFile.close();
+	}
+
 public:
     static Organizer* GetInstance();
 
@@ -61,9 +102,9 @@ public:
 	void SetHospitalsCount(int HospitalsCount);
 	void setRequests( LinkedQueue<Request*> &requests);
 	void setCancellationRequestQ( LinkedQueue<CancellationRequest*> &CancellationRequests );
-	void SetPatientsCount(int PatientsCount);
+	void SetPatientsCount(int * PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
-	void setTotalCars_in_AllHospitals(int TotalCars_in_AllHospitals);
+	void setTotalCars_in_AllHospitals(int Total_S_Cars_in_AllHospitals , int Total_N_Cars_in_AllHospitals);
 	void runSimulation();  // Method to run the timestep simulation
 	bool isSimulationComplete();  // Method to check if the simulation is done
 
@@ -104,6 +145,7 @@ public:
 	
 	void ReAssignBetterHospital(Request* request);
 	void SetDataMembersValues();
+	
 
 
 };
@@ -120,7 +162,6 @@ public:
 // // void assignPatientToCar(Patient* patient, Car* car){}
 //
 //
-// void produceOutputFile(string fileName){}
 //
 // void callUIUpdate(int timeStep){}
 

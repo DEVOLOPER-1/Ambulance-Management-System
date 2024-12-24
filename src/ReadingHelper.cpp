@@ -71,6 +71,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                 // cout << "Scars " << token << endl;
 
                 ScarNumber = stoi(token);
+                Total_S_Cars_in_AllHospitals += ScarNumber ;
                 counter++;
             }
             else {
@@ -78,7 +79,7 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
 
                 NcarNumber = stoi(token);
                 counter++;
-                TotalCars_in_AllHospitals = ScarNumber + NcarNumber;
+                Total_N_Cars_in_AllHospitals += NcarNumber;
                 HospitalsArray[HospitalsCounter] = new Hospital(
                     HospitalsCounter + 1,
                     ScarNumber,
@@ -113,6 +114,8 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                     if ((PatientDataArray[0] == "EP" && TokenCounter == 6)|| (PatientDataArray[0] != "EP"&&TokenCounter==5)) {
                         // Ensure that we have enough data to create a request
                             if (PatientDataArray[0] == "EP") {
+                                Total_EP_Patients_in_AllHospitals+=1;
+                                
                                 Request* temp = new Request(
                                     PatientDataArray[0],
                                     stoi(PatientDataArray[1]),
@@ -125,6 +128,9 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                 // cout << "Catched in EP\n";
                             }
                             else if (PatientDataArray[0] == "NP") {
+                                
+                                Total_NP_Patients_in_AllHospitals++;
+                                
                                 Request* temp = new Request(
                                     PatientDataArray[0],
                                     stoi(PatientDataArray[1]),
@@ -136,6 +142,9 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
                                 // cout << "Catched in NP\n";
                             }
                             else if (PatientDataArray[0] == "SP") {
+
+                                Total_SP_Patients_in_AllHospitals++;
+                                
                                 Request* temp = new Request(
                                     PatientDataArray[0],
                                     stoi(PatientDataArray[1]),
@@ -216,10 +225,17 @@ int ReadingHelper::GetNoOfCancellations() const {
 int ReadingHelper::GetNoOfHospitals() const {
     return HospitalsCount;
 }
-int ReadingHelper::GetNoOfPatients() const {
-    return NoOfPatients;
+int * ReadingHelper::GetTotalNoOfPatients() const {
+    int* totalpatients = new int [3];
+    totalpatients[0] = Total_EP_Patients_in_AllHospitals;
+    totalpatients[1] = Total_SP_Patients_in_AllHospitals;
+    totalpatients[2] = Total_NP_Patients_in_AllHospitals;
+    return totalpatients;
 }
 
-int ReadingHelper::GetTotalCars_in_AllHospitals() const {
-    return TotalCars_in_AllHospitals;
+int* ReadingHelper::GetTotalCars_in_AllHospitals() const {
+    int* totalCars = new int[2];
+    totalCars[0] = Total_S_Cars_in_AllHospitals;
+    totalCars[1] = Total_N_Cars_in_AllHospitals;
+    return totalCars;
 }
