@@ -1,7 +1,9 @@
 #pragma once
+#include <windows.h>
 #include "../Includes/Organizer.h"
 #include <iostream>
-#include<thread>
+#include <thread>
+#include <atomic>
 
 using namespace std;
 
@@ -130,8 +132,26 @@ void Organizer::runSimulation(bool SilentMode ) {
 
         distributeRequests(timestep);
         if (SilentMode == false)
-		    ui.display(timestep);
-            this_thread::sleep_for(0.5s);
+        {
+            thread inputThread([this]() { this->getInputs(); });
+            ui.display(timestep, index);
+            while (running)
+
+            {
+                if (index != variableIndex)
+                {
+                    //system("cls");
+                    removeLastTimestep();
+                    index = variableIndex;
+					ui.display(timestep, index);
+                }
+                this_thread::sleep_for(50ms);
+            }
+            inputThread.join();
+            running = true;
+
+        }
+            
 
         handleHospitals(timestep);
        
@@ -249,6 +269,65 @@ void Organizer::SetDataMembersValues() {
     // RH->
     //cout<<"All Organizer Data Members are done !"<<endl;
     
+}
+
+void Organizer::getInputs()
+{
+    while (running)
+    {
+        if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
+        {
+            if (variableIndex < HospitalsCount-1)
+                variableIndex++;
+        }
+        else if (GetAsyncKeyState(VK_LEFT) & 0x8000)
+        {
+            if (variableIndex > 0)
+                variableIndex--;
+        }
+        else if (GetAsyncKeyState(VK_RETURN) & 0x8000)
+        {
+            running = false;
+        }
+        this_thread::sleep_for(50ms);
+    }
+}
+
+void Organizer::removeLastTimestep()
+{
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    GetConsoleScreenBufferInfo(hConsole, &csbi);
+
+    COORD EndPos = csbi.dwCursorPosition;
+    COORD StartPos = csbi.dwCursorPosition;
+
+    while (StartPos.Y > 0)
+    {
+        StartPos.Y -= 1;
+        StartPos.X = 0; // Move to the start of the line
+
+        // Read the first character of the previous line
+        wchar_t firstChar;
+        DWORD charsRead;
+        ReadConsoleOutputCharacterW(hConsole, &firstChar, 1, StartPos, &charsRead);
+
+        // Check if the first character is '#'
+        if (firstChar == L'#')
+            break;
+    }
+
+    SetConsoleCursorPosition(hConsole, StartPos);
+
+    int num_of_lines_to_delete = EndPos.Y - StartPos.Y;
+    DWORD dwCharsWritten;
+
+    for (int i = 0; i < num_of_lines_to_delete; i++)
+    {
+        FillConsoleOutputCharacterW(hConsole, L' ', csbi.dwSize.X, StartPos, &dwCharsWritten);
+        FillConsoleOutputAttribute(hConsole, 0, csbi.dwSize.X, StartPos, &dwCharsWritten);
+        StartPos.Y++;
+    }
 }
 
 Organizer::I_H_M_R Organizer::GetI_H_M_R(int *array, int length) {

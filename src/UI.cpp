@@ -1,10 +1,10 @@
 #include "../Includes/UI.h"
 #include "../Includes/Organizer.h"
 
-void UI::display(int timestep)
+void UI::display(int timestep, int index)
 {
 	DisplayTimestep(timestep);
-	ORG->getHospital(0)->print();
+	ORG->getHospital(index)->print();
 	ORG->print();
 	cout << endl;
 }

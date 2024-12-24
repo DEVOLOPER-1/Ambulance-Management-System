@@ -12,7 +12,7 @@ using namespace std;
 class UI {
 public:
     
-    void display(int timestep);
+    void display(int timestep, int index);
     void DisplayTimestep(int timestep);
     
     // void DisplayHospital(Hospital* hosp){
