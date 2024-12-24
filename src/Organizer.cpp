@@ -135,7 +135,7 @@ void Organizer::runSimulation(bool SilentMode ) {
         distributeRequests(timestep);
         if (SilentMode == false)
 		    ui.display(timestep);
-            this_thread::sleep_for(5s);
+            this_thread::sleep_for(0.5s);
 
         handleHospitals(timestep);
        

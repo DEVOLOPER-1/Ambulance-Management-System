@@ -37,7 +37,7 @@ private:
 	static Organizer* instance;  /// Singleton Design Pattern
 private:
     Organizer()
-        : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
+        : FileName("../../../InputText.txt")
         , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr) , TotalSimulationTime(0),
 		HospitalsCount(0) , Total_EP_Patients_in_AllHospitals(0),Total_SP_Patients_in_AllHospitals(0),
 		Total_NP_Patients_in_AllHospitals(0) , CancellationsCount(0) , Total_N_Cars_in_AllHospitals(0) ,
@@ -63,10 +63,10 @@ private:
 	void produceOutputFile(bool IsPatientArray , T (& array)[4] , int CallCounter) {
 		fstream OutputFile;
 		if (CallCounter == 0) {
-			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::out); //write mode
+			OutputFile.open("../../../OutputFile.txt", ios::out); //write mode
 		}
 		else
-			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //write mode
+			OutputFile.open("../../../OutputFile.txt", ios::app); //write mode
 		if (OutputFile.is_open()){
 			if (IsPatientArray) {
 				if ( CallCounter == 0) {

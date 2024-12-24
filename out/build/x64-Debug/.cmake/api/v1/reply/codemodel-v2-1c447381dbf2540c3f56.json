@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.29"
+						"string" : "3.28.1"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Ambulance_Management_System::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Ambulance_Management_System-Debug-991f62addbfa4cf00db3.json",
+					"jsonFile" : "target-Ambulance_Management_System-Debug-b3b0173622094b3f4d46.json",
 					"name" : "Ambulance_Management_System",
 					"projectIndex" : 0
 				}

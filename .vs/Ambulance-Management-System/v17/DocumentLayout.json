@@ -3,79 +3,48 @@
   "WorkspaceRootPath": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F57F8DB-8456-4BC5-A7AF-5404000C5B91}|C:\\Users\\compumarts\\AppData\\Roaming\\Microsoft\\VisualStudio\\17.0_dada6b22\\SingleFileISense\\_sfi_48f5f842-6cae-4804-8d06-09e4d8775f4e_.vcxproj|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Organizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3F57F8DB-8456-4BC5-A7AF-5404000C5B91}|C:\\Users\\compumarts\\AppData\\Roaming\\Microsoft\\VisualStudio\\17.0_dada6b22\\SingleFileISense\\_sfi_48f5f842-6cae-4804-8d06-09e4d8775f4e_.vcxproj|solutionrelative:src\\Organizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\OutputFile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OutputFile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Organizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Organizer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Hospital.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Hospital.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Request.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\InputText.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:InputText.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Hospital.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Hospital.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\LinkedQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ds\\LinkedQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Car.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Car.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\priQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ds\\priQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ds\\Node.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\InputText.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\InputText.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\ReadingHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\ReadingHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\ReadingHelper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ReadingHelper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Hospital.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Includes\\Hospital.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\CppProperties.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CppProperties.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Request.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Request.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\LinkedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ds\\LinkedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\ReadingHelper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ReadingHelper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 394,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -100,237 +69,141 @@
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Organizer.cpp",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Organizer.cpp",
-              "RelativeDocumentMoniker": "src\\Organizer.cpp",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Organizer.cpp",
-              "RelativeToolTip": "src\\Organizer.cpp",
-              "ViewState": "AgIAAEcAAAAAAAAAAAASwEMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T05:19:19.443Z",
+              "Title": "OutputFile.txt",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\OutputFile.txt",
+              "RelativeDocumentMoniker": "OutputFile.txt",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\OutputFile.txt",
+              "RelativeToolTip": "OutputFile.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-24T11:30:15.142Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Car.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h",
-              "RelativeDocumentMoniker": "Includes\\Car.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Car.h",
-              "RelativeToolTip": "Includes\\Car.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADUAAAB+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T08:45:38.711Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Hospital.cpp",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Hospital.cpp",
-              "RelativeDocumentMoniker": "src\\Hospital.cpp",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Hospital.cpp",
-              "RelativeToolTip": "src\\Hospital.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T04:11:19.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Organizer.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h",
-              "RelativeDocumentMoniker": "Includes\\Organizer.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h",
-              "RelativeToolTip": "Includes\\Organizer.h",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T08:41:22.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Hospital.h",
               "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Hospital.h",
               "RelativeDocumentMoniker": "Includes\\Hospital.h",
               "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Hospital.h",
               "RelativeToolTip": "Includes\\Hospital.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T17:47:33.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Request.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h",
-              "RelativeDocumentMoniker": "Includes\\Request.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Request.h",
-              "RelativeToolTip": "Includes\\Request.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwB0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T08:41:38.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Car.cpp",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Car.cpp",
-              "RelativeDocumentMoniker": "src\\Car.cpp",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Car.cpp",
-              "RelativeToolTip": "src\\Car.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T19:21:05.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LinkedQueue.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\LinkedQueue.h",
-              "RelativeDocumentMoniker": "ds\\LinkedQueue.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\LinkedQueue.h",
-              "RelativeToolTip": "ds\\LinkedQueue.h",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAAK0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:43:09.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T08:42:10.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T16:54:22.539Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UI.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\UI.h",
-              "RelativeDocumentMoniker": "Includes\\UI.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\UI.h",
-              "RelativeToolTip": "Includes\\UI.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Hospital.cpp",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Hospital.cpp",
+              "RelativeDocumentMoniker": "src\\Hospital.cpp",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Hospital.cpp",
+              "RelativeToolTip": "src\\Hospital.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-23T16:36:27.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Organizer.h",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h",
+              "RelativeDocumentMoniker": "Includes\\Organizer.h",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\Organizer.h",
+              "RelativeToolTip": "Includes\\Organizer.h",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:56:34.909Z"
+              "WhenOpened": "2024-12-14T15:13:44.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Organizer.cpp",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Organizer.cpp",
+              "RelativeDocumentMoniker": "src\\Organizer.cpp",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Organizer.cpp",
+              "RelativeToolTip": "src\\Organizer.cpp",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAmwIgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T15:10:50.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "priQueue.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\priQueue.h",
-              "RelativeDocumentMoniker": "ds\\priQueue.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\priQueue.h",
-              "RelativeToolTip": "ds\\priQueue.h",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAABsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:42:59.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "delete_scalar.cpp",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp",
-              "ViewState": "AgIAABEAAAAAAAAAAAAjwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-23T21:03:19.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Node.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\Node.h",
-              "RelativeDocumentMoniker": "ds\\Node.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\Node.h",
-              "RelativeToolTip": "ds\\Node.h",
-              "ViewState": "AgIAACcAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:43:51.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InputText.txt",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\InputText.txt",
-              "RelativeDocumentMoniker": "Includes\\InputText.txt",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\InputText.txt",
-              "RelativeToolTip": "Includes\\InputText.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-11-19T21:39:04.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "ReadingHelper.cpp",
               "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\ReadingHelper.cpp",
               "RelativeDocumentMoniker": "src\\ReadingHelper.cpp",
               "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\ReadingHelper.cpp",
               "RelativeToolTip": "src\\ReadingHelper.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-22T06:31:42.286Z"
+              "WhenOpened": "2024-12-14T15:10:48.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ReadingHelper.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\ReadingHelper.h",
-              "RelativeDocumentMoniker": "Includes\\ReadingHelper.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\Includes\\ReadingHelper.h",
-              "RelativeToolTip": "Includes\\ReadingHelper.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-19T23:12:41.396Z"
+              "DocumentIndex": 5,
+              "Title": "InputText.txt",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\InputText.txt",
+              "RelativeDocumentMoniker": "InputText.txt",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\InputText.txt",
+              "RelativeToolTip": "InputText.txt",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-14T15:10:46.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T15:03:10.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\CMakeLists.txt",
               "RelativeDocumentMoniker": "CMakeLists.txt",
               "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\CMakeLists.txt",
               "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-11-19T21:40:07.351Z"
+              "WhenOpened": "2024-12-14T15:20:13.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CppProperties.json",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\CppProperties.json",
-              "RelativeDocumentMoniker": "CppProperties.json",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\CppProperties.json",
-              "RelativeToolTip": "CppProperties.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-19T21:39:00.527Z"
+              "DocumentIndex": 4,
+              "Title": "UI.cpp",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\UI.cpp",
+              "RelativeDocumentMoniker": "src\\UI.cpp",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\UI.cpp",
+              "RelativeToolTip": "src\\UI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T15:20:30.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "LinkedList.h",
-              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\LinkedList.h",
-              "RelativeDocumentMoniker": "ds\\LinkedList.h",
-              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\ds\\LinkedList.h",
-              "RelativeToolTip": "ds\\LinkedList.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:43:53.974Z"
+              "DocumentIndex": 9,
+              "Title": "Request.cpp",
+              "DocumentMoniker": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Request.cpp",
+              "RelativeDocumentMoniker": "src\\Request.cpp",
+              "ToolTip": "D:\\University\\Year 2\\Semester 1\\data structure\\Project\\Ambulance-Management-System\\src\\Request.cpp",
+              "RelativeToolTip": "src\\Request.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T15:05:56.851Z"
             }
           ]
         },
