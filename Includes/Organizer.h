@@ -84,7 +84,7 @@ private:
 
 				OutputFile <<"Hospitals: "<< HospitalsCount <<endl;
 
-				OutputFile <<"Cars: "<< Total_N_Cars_in_AllHospitals+Total_S_Cars_in_AllHospitals <<" [ Scars: "<<Total_S_Cars_in_AllHospitals<<", Ncars: "<<Total_N_Cars_in_AllHospitals<<" ]"<<endl;
+				OutputFile <<"Cars: "<< Total_N_Cars_in_AllHospitals+Total_S_Cars_in_AllHospitals <<" [Scars: "<<Total_S_Cars_in_AllHospitals<<", Ncars: "<<Total_N_Cars_in_AllHospitals<<"]"<<endl;
 
 				OutputFile<<"Average Waiting Time: "<< array[0] << endl;
 				OutputFile<<"Average Cars Busyness Time: "<< array[1] << endl;
