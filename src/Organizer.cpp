@@ -121,7 +121,7 @@ void Organizer::distributeRequests(int timeStep)
 		hospitals[HospitalID - 1]->receive(request);
 	}
 }
-void Organizer::runSimulation() {
+void Organizer::runSimulation(bool SilentMode ) {
     int timestep = 1; 
     UI ui;
     cout << "Simulation Starts...\n";
@@ -133,15 +133,15 @@ void Organizer::runSimulation() {
         //ui.DisplayHospital(hospitals[1]);
 
         distributeRequests(timestep);
-
-		ui.display(timestep);
+        if (SilentMode == false)
+		    ui.display(timestep);
+            this_thread::sleep_for(5s);
 
         handleHospitals(timestep);
        
         handleCars(timestep);
 
         
-        // this_thread::sleep_for(5s);
 
         
         if (isSimulationComplete()) {TotalSimulationTime = timestep; collectStatistics();  break;}
@@ -348,6 +348,7 @@ void Organizer::collectStatistics() {
     produceOutputFile(isPatientArray , statistics , CallCounter);
     
     cout << "Statistics Collected." << endl;
+    cout <<"Output File Produced."<<endl;
 }
 
 // Request* Organizer::GenerateRequests(int timeStep) {

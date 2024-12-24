@@ -105,7 +105,7 @@ public:
 	void SetPatientsCount(int * PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
 	void setTotalCars_in_AllHospitals(int Total_S_Cars_in_AllHospitals , int Total_N_Cars_in_AllHospitals);
-	void runSimulation();  // Method to run the timestep simulation
+	void runSimulation(bool SilentMode);  // Method to run the timestep simulation
 	bool isSimulationComplete();  // Method to check if the simulation is done
 
 	/*
