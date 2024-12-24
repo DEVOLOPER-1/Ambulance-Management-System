@@ -124,13 +124,9 @@ void Organizer::distributeRequests(int timeStep)
 void Organizer::runSimulation(bool SilentMode ) {
     int timestep = 1; 
     UI ui;
-    cout << "Simulation Starts...\n";
+
 
     while (true) { 
-        // cout << "\nCurrent Timestep: " << timestep << endl;
-
-        //ui.DisplayTimestep(timestep);
-        //ui.DisplayHospital(hospitals[1]);
 
         distributeRequests(timestep);
         if (SilentMode == false)
@@ -184,7 +180,7 @@ void Organizer::receive(Car* car) { outCars.enqueue(car, -(car->getPickedUpTime(
 
 void Organizer::loadInputFile()
 {
-    cout << "Reading File....." << endl;
+    //cout << "Reading File....." << endl;
     this->InputFile.open(FileName);
     if (!InputFile.is_open()) {
         cout << "Failed Opening!" << endl;
@@ -238,7 +234,7 @@ void Organizer::loadInputFile()
     }
     SetDataMembersValues();
     InputFile.close();
-    cout << "File Reading Completed." << endl;
+    //cout << "File Reading Completed." << endl;
 }
 
 void Organizer::SetDataMembersValues() {
