@@ -7,10 +7,31 @@
 #include "Includes/Organizer.h"
 using namespace std;
 
+bool getProgramMode(){
+	char answer;
+	cout << "Please choose the way the Output file will be displayed\n(Y or y) for time step simulation\n(N or n) for silent mode: ";
+	cin >> answer;
+	while(answer != 'Y' && answer != 'y' && answer != 'N' && answer != 'n'){
+			cout << "Invalid input, please enter (Y) for time step simulation, (N) for silent mode: ";
+			cin >> answer;
+	}
+	if(answer == 'Y' || answer == 'y'){
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+
 int main()
 {
 	ORG->loadInputFile();
-	ORG->runSimulation(false);
+	bool SilentMode = getProgramMode();
+	ORG->runSimulation(SilentMode);
+	
+
 	//Hospital* hospitals[2];
 	//hospitals[0] = new Hospital(1, 2, 2, 3, 2);
 	//hospitals[1] = new Hospital(2, 2, 2, 3, 2);
