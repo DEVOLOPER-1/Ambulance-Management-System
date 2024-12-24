@@ -84,7 +84,6 @@ private:
 				OutputFile<<endl;
 				OutputFile <<"Patients: "<< (Total_EP_Patients_in_AllHospitals + Total_NP_Patients_in_AllHospitals + Total_SP_Patients_in_AllHospitals) 
 				<<" [EP: " << Total_EP_Patients_in_AllHospitals << ", SP: " << Total_SP_Patients_in_AllHospitals << ", NP: " << Total_NP_Patients_in_AllHospitals << "]" << endl;
-				OutputFile <<"Hospitals: "<< HospitalsCount << endl;
 
 				OutputFile <<"Hospitals: "<< HospitalsCount <<endl;
 
