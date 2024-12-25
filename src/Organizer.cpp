@@ -15,7 +15,7 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
+Organizer::Organizer() : FileName("../../../InputText.txt")
 , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
 HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
 Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
@@ -363,6 +363,13 @@ void Organizer::removeLastTimestep()
         FillConsoleOutputAttribute(hConsole, 0, csbi.dwSize.X, StartPos, &dwCharsWritten);
         StartPos.Y++;
     }
+}
+
+void Organizer::run()
+{
+	loadInputFile();
+	getProgramMode();
+	runSimulation();
 }
 
 Organizer::I_H_M_R Organizer::GetI_H_M_R(int *array, int length) {

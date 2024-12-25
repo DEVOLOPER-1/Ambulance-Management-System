@@ -11,8 +11,8 @@ using namespace std;
 
 int main()
 {
-	ORG->loadInputFile();
-	ORG->getProgramMode();
-	ORG->runSimulation();
 
+	ORG->run();
+
+	return 0;
 }
