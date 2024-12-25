@@ -240,5 +240,55 @@ int LinkedQueue<T>::GetMembersCount() {
 	return MembersCount;
 }
 
+
+// SpecialLinkedQueue
+
+
+template <typename T>
+class SpecialLinkedQueue<T> : public LinkedQueue<T> {
+public:
+	SpecialLinkedQueue() : LinkedQueue<T>() {}
+	bool RemovePatientNode(const int patientID);
+	
+};
+
+
+
+// Remove NP Patient for cancellation
+template <typename T>
+bool  SpecialLinkedQueue<T>::RemovePatientNode(const int patientID) {
+    if (this->isEmpty()) return false;
+    
+    Node<T>* current = this->frontPtr;
+    Node<T>* previous = nullptr;
+    
+
+    if (current && current->getItem()->getPatientID() == patientID) {
+        this->frontPtr = current->getNext();
+        if (this->frontPtr == nullptr) 
+            this->backPtr = nullptr;
+        delete current;
+        this->MembersCount--;
+        return true;
+    }
+    
+    while (current && current->getItem()->getPatientID() != patientID) {
+        previous = current;
+        current = current->getNext();
+    }
+
+	
+    if (current) {
+        previous->setNext(current->getNext());
+        if (current == this->backPtr)
+            this->backPtr = previous;
+        delete current;
+        this->MembersCount--;
+        return true;
+    }
+    
+    return false;
+}
+
 #endif
 
