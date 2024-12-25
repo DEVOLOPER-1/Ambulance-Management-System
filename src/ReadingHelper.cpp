@@ -213,7 +213,7 @@ Hospital** &ReadingHelper::GetHospitalsArray() {return HospitalsArray;}
 int ReadingHelper::GetScarSpeed() const{return SpecialCarSpeed;}
 int ReadingHelper::GetNcarSpeed() const{return NormalCarSpeed;}
 LinkedQueue<Request*> &ReadingHelper::GetRequestsQueue() {return Requests;}
-LinkedQueue<CancellationRequest*> &ReadingHelper::GetCancellationRequestsQueue() {return CancellationRequests;}
+SpecialLinkedQueue<CancellationRequest *> &ReadingHelper::GetCancellationRequestsQueue() {return CancellationRequests;}
 int ReadingHelper::GetNoOfCancellations() const {
     return NoOfCancellations;
 }

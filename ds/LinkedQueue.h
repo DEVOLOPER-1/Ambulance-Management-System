@@ -59,7 +59,7 @@ Single Node Case:
 template <typename T>
 class LinkedQueue
 {
-private:
+protected:
 	Node<T>* backPtr;
 	Node<T>* frontPtr;
 	int MembersCount;
@@ -245,24 +245,20 @@ int LinkedQueue<T>::GetMembersCount() {
 
 
 template <typename T>
-class SpecialLinkedQueue<T> : public LinkedQueue<T> {
+class SpecialLinkedQueue : public LinkedQueue<T> {  // Remove <T> after SpecialLinkedQueue
 public:
-	SpecialLinkedQueue() : LinkedQueue<T>() {}
-	bool RemovePatientNode(const int patientID);
-	
+    SpecialLinkedQueue() : LinkedQueue<T>() {}
+    bool RemovePatientNode(const int patientID);
 };
 
-
-
-// Remove NP Patient for cancellation
+// Implementation remains the same
 template <typename T>
-bool  SpecialLinkedQueue<T>::RemovePatientNode(const int patientID) {
+bool SpecialLinkedQueue<T>::RemovePatientNode(const int patientID) {
     if (this->isEmpty()) return false;
     
     Node<T>* current = this->frontPtr;
     Node<T>* previous = nullptr;
     
-
     if (current && current->getItem()->getPatientID() == patientID) {
         this->frontPtr = current->getNext();
         if (this->frontPtr == nullptr) 
@@ -276,8 +272,7 @@ bool  SpecialLinkedQueue<T>::RemovePatientNode(const int patientID) {
         previous = current;
         current = current->getNext();
     }
-
-	
+    
     if (current) {
         previous->setNext(current->getNext());
         if (current == this->backPtr)

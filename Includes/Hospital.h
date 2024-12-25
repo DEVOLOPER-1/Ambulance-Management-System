@@ -14,7 +14,7 @@ class Hospital
 {
 	int ID;
 	LinkedQueue<Request*> SP_Requests;
-	LinkedQueue<Request*> NP_Requests; // We will change the data structure to a derived class of LinkedQueue with the ability to cancel
+	SpecialLinkedQueue<Request*> NP_Requests;
 	priQueue<Request*>    EP_Requests;
 	LinkedQueue<Car*>     sCars;
 	LinkedQueue<Car*>     nCars;
@@ -26,6 +26,8 @@ public:
 	Hospital(int ID, int NumberOFsCars, int NumberOFnCars, const int ScarSpeed, const int NcarSpeed);
 
 	void receive(Request* request);
+
+	bool handleNPCancellations(int PatientID);
 	
 	void handleRequests(int timestep);
 

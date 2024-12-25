@@ -28,6 +28,26 @@ void Hospital::receive(Request* request)
 		EP_Requests.enqueue(request, request->getSeverity());
 }
 
+bool Hospital::handleNPCancellations(int patientID) {
+	
+    if (NP_Requests.RemovePatientNode(patientID)) { //request in np_queue
+        return true;
+    }
+    
+	// request assigned to car in nCars
+	Car* car;
+    LinkedQueue<Car*> tempNCars = nCars;
+    while (!tempNCars.isEmpty()) {
+        tempNCars.dequeue(car);
+        if (car->getPatientID() == patientID) {
+            car->cancel();  // reseting car state
+            return true;
+        }
+    }
+    
+    return false;
+}
+
 void Hospital::handleRequests(int timestep)
 {
 	int priority;
