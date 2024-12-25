@@ -439,6 +439,70 @@ void Organizer::collectStatistics() {
     cout <<"Output File Produced."<<endl;
 }
 
+
+
+//cancel request if found (aml)
+void Organizer::cancelRequestAndReturnCar(int patientID) {
+    Request* targetRequest = nullptr; // Pointer to hold the matching request
+    int priority = 0;
+    bool requestFound = false;
+
+    priQueue<Request*> tempQueue; // Temporary queue to hold non-canceled requests
+
+    
+    while (requests.peek(targetRequest, priority)) {
+        if (targetRequest->getPatientID() == patientID) {
+            requests.dequeue(targetRequest, priority);
+            requestFound = true;
+            break;
+        }
+        
+        requests.dequeue(targetRequest, priority);
+        tempQueue.enqueue(targetRequest, priority);
+    }
+
+    
+    while (tempQueue.peek(targetRequest, priority)) {
+        tempQueue.dequeue(targetRequest, priority);
+        requests.enqueue(targetRequest, priority);
+    }
+
+    if (!requestFound) {
+        std::cout << "Request with Patient ID " << patientID << " not found.\n";
+        return;
+    }
+
+    
+    Car* car = nullptr;
+    int carPriority = 0;
+    priQueue<Car*> tempCarQueue;
+
+    while (outCars.peek(car, carPriority)) {
+        if (car->getPatientID() == patientID) {
+            outCars.dequeue(car, carPriority); 
+            car->cancel(); 
+            backCars.enqueue(car, -car->getDroppedOffTime()); 
+            std::cout << "Car associated with Patient ID " << patientID
+                << " is returning to its hospital.\n";
+            break;
+        }
+        outCars.dequeue(car, carPriority);
+        tempCarQueue.enqueue(car, carPriority);
+    }
+
+    
+    while (tempCarQueue.peek(car, carPriority)) {
+        tempCarQueue.dequeue(car, carPriority);
+        outCars.enqueue(car, carPriority);
+    }
+
+    if (!car) {
+        std::cout << "No car associated with Patient ID " << patientID << " was found in outCars.\n";
+    }
+}
+
+
+
 // Request* Organizer::GenerateRequests(int timeStep) {
 //     LinkedList<Request> *temp=  RH->GetRequestsLinkedList();
 //     Request* temp_request =  temp->TraverseReuests(timeStep);

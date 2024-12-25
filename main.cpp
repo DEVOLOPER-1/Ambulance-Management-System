@@ -29,6 +29,17 @@ int main()
 {
 	ORG->loadInputFile();
 	bool SilentMode = getProgramMode();
+
+
+	//// Example: Manual testing of `cancelRequestAndReturnCar`
+	//int testPatientID;
+	//cout << "Enter a Patient ID to cancel their request and return the associated car: ";
+	//cin >> testPatientID;
+	//ORG->cancelRequestAndReturnCar(testPatientID);
+
+	//Automated Testing
+
+
 	ORG->runSimulation(SilentMode);
 	
 
