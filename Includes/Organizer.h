@@ -64,10 +64,10 @@ private:
 	void produceOutputFile(bool IsPatientArray , T (& array)[4] , int CallCounter) {
 		fstream OutputFile;
 		if (CallCounter == 0) {
-			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::out); //write mode
+			OutputFile.open("../../../OutputFile.txt", ios::out); //write mode
 		}
 		else
-			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //write mode
+			OutputFile.open("../../../OutputFile.txt", ios::app); //write mode
 		if (OutputFile.is_open()){
 			if (IsPatientArray) {
 				if ( CallCounter == 0) {
@@ -108,17 +108,6 @@ public:
 	void runSimulation();
 	bool isSimulationComplete();  // Method to check if the simulation is done
 
-	/*
-    void printOutCars()
-    {
-		outCars.print(); // beta version
-    }
-
-    void printBackCars()
-    {
-		backCars.print(); // beta version
-    }
-	*/
 
 	// methods to print data
 	void printCars();
@@ -148,10 +137,13 @@ public:
 	void ReAssignBetterHospital(Request* request);
 	void SetDataMembersValues();
 
-
+	// methods to handle output file
 	void getInputs();
 	
 	void removeLastTimestep();
+
+	// methods to run the program
+	void run();
 
 };
 
