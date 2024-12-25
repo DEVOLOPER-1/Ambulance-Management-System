@@ -31,7 +31,7 @@ private:
 	Hospital** hospitals;
 	LinkedQueue<Request*> requests;
 	LinkedQueue<Request*> finishedRequests;
-	LinkedQueue<CancellationRequest*> cancellations;
+	SpecialLinkedQueue<CancellationRequest*> cancellations;
 	priQueue<Car* > outCars;
     priQueue<Car* > backCars;
 	static Organizer* instance;  /// Singleton Design Pattern
@@ -64,10 +64,10 @@ private:
 	void produceOutputFile(bool IsPatientArray , T (& array)[4] , int CallCounter) {
 		fstream OutputFile;
 		if (CallCounter == 0) {
-			OutputFile.open("../../../OutputFile.txt", ios::out); //write mode
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::out); //write mode
 		}
 		else
-			OutputFile.open("../../../OutputFile.txt", ios::app); //write mode
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //write mode
 		if (OutputFile.is_open()){
 			if (IsPatientArray) {
 				if ( CallCounter == 0) {
@@ -101,7 +101,7 @@ public:
 	void SetHospitalsDistances( int ** &hospitals_distances);
 	void SetHospitalsCount(int HospitalsCount);
 	void setRequests( LinkedQueue<Request*> &requests);
-	void setCancellationRequestQ( LinkedQueue<CancellationRequest*> &CancellationRequests );
+	void setCancellationRequests( SpecialLinkedQueue<CancellationRequest*> &CancellationRequests );
 	void SetPatientsCount(int * PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
 	void setTotalCars_in_AllHospitals(int Total_S_Cars_in_AllHospitals , int Total_N_Cars_in_AllHospitals);
@@ -118,6 +118,8 @@ public:
 
 	Hospital* getHospital(int index); // test sample for phase 1.2
 
+	void handleCancellations(int timeStep); //method to handle cancellations
+	
 	// methods to handle requests
     void distributeRequests(int timeStep);
 

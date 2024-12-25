@@ -16,7 +16,7 @@ class Hospital;
 class ReadingHelper {
 private:
     LinkedQueue<Request*> Requests;
-    LinkedQueue<CancellationRequest*> CancellationRequests;
+    SpecialLinkedQueue<CancellationRequest*> CancellationRequests;
     int HospitalsCount;
     int** DistancesMatrix;
     int NoOfPatients;
@@ -48,7 +48,7 @@ public:
     int* GetTotalNoOfPatients()const;
     int* GetTotalCars_in_AllHospitals() const;
     LinkedQueue<Request*> &GetRequestsQueue();
-    LinkedQueue<CancellationRequest*> &GetCancellationRequestsQueue();
+    SpecialLinkedQueue<CancellationRequest*> &GetCancellationRequestsQueue();
     
 
 private:

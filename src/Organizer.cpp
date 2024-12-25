@@ -15,7 +15,7 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-Organizer::Organizer() : FileName("../../../InputText.txt")
+Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
 , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
 HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
 Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
@@ -36,7 +36,7 @@ void Organizer::setRequests(LinkedQueue<Request*> &requests) {
     this->requests = requests;
 }
 
-void Organizer::setCancellationRequestQ(LinkedQueue<CancellationRequest*> &CancellationRequests) {
+void Organizer::setCancellationRequests(SpecialLinkedQueue<CancellationRequest*> &CancellationRequests) {
     this->cancellations = CancellationRequests ;
 }
 void Organizer::SetHospitalsCount(int HospitalsCount) {
@@ -59,6 +59,22 @@ void Organizer::SetPatientsCount(int * PatientsCount) {
 
 void Organizer::SetHospitalsDistances(int **&hospitals_distances) {
     this->hospitals_distances = hospitals_distances;
+}
+
+
+
+void Organizer::handleCancellations(int timeStep) {
+    CancellationRequest * temp_cancel_req;
+    while (!cancellations.isEmpty() &&
+        cancellations.peek(temp_cancel_req) &&
+        temp_cancel_req->GeTTime() == timeStep) {
+
+        cancellations.dequeue(temp_cancel_req);
+        int patientID = temp_cancel_req->GetPID();
+        int hospitalID = temp_cancel_req->GetHID()-1; // converting to zero based indexing as r. wanted this
+        hospitals[hospitalID]->handleNPCancellations(patientID);
+        delete temp_cancel_req;
+        }
 }
 
 
@@ -143,7 +159,7 @@ void Organizer::runSimulation() {
 
 
     while (true) { 
-
+        handleCancellations(timestep);
         distributeRequests(timestep);
         if (silentMode == false)
         {
@@ -296,7 +312,7 @@ void Organizer::loadInputFile()
 void Organizer::SetDataMembersValues() {
     setHospital(RH->GetHospitalsArray());
     setRequests(RH->GetRequestsQueue());
-    setCancellationRequestQ(RH->GetCancellationRequestsQueue());
+    setCancellationRequests(RH->GetCancellationRequestsQueue());
     SetHospitalsDistances(RH->GetDistancesMatrix());
     SetHospitalsCount(RH->GetNoOfHospitals());
     SetPatientsCount(RH->GetTotalNoOfPatients());
