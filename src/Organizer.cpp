@@ -15,6 +15,19 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
+Organizer::Organizer() : FileName("../../../InputText.txt")
+, requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
+HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
+Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
+Total_S_Cars_in_AllHospitals(0), variableIndex(0), index(0), running(true) 
+{
+	HANDLE hWindows = GetStdHandle(STD_OUTPUT_HANDLE);
+	CONSOLE_CURSOR_INFO cursorInfo;
+	GetConsoleCursorInfo(hWindows, &cursorInfo);
+	cursorInfo.bVisible = false;
+	SetConsoleCursorInfo(hWindows, &cursorInfo);
+};
+
 void Organizer::setHospital(Hospital **&HospitalsArray) {
     this->hospitals = HospitalsArray;
 }
@@ -123,6 +136,7 @@ void Organizer::distributeRequests(int timeStep)
 		hospitals[HospitalID - 1]->receive(request);
 	}
 }
+
 void Organizer::runSimulation(bool SilentMode ) {
     int timestep = 1; 
     UI ui;
@@ -305,14 +319,13 @@ void Organizer::removeLastTimestep()
     while (StartPos.Y > 0)
     {
         StartPos.Y -= 1;
-        StartPos.X = 0; // Move to the start of the line
+        StartPos.X = 0; 
 
-        // Read the first character of the previous line
+
         wchar_t firstChar;
         DWORD charsRead;
         ReadConsoleOutputCharacterW(hConsole, &firstChar, 1, StartPos, &charsRead);
 
-        // Check if the first character is '#'
         if (firstChar == L'#')
             break;
     }

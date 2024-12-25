@@ -40,12 +40,7 @@ private:
 	int index;
 	bool running;
 private:
-	Organizer()
-		: FileName("../../../InputText.txt")
-		, requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
-		HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
-		Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
-		Total_S_Cars_in_AllHospitals(0), variableIndex(0), index(0), running(true) {};
+	Organizer();
 
 	Organizer(const Organizer& other) = delete;
 

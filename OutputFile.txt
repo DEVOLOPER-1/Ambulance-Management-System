@@ -39,7 +39,6 @@ FT PatientID QT WT
 
 Patients: 35 [EP: 11, SP: 12, NP: 12]
 Hospitals: 5
-Hospitals: 5
 Cars: 62 [Scars: 20, Ncars: 42]
 Average Waiting Time: 9.17143
 Average Cars Busyness Time: 10.3548
