@@ -163,24 +163,19 @@ void ReadingHelper::Tokenizer(string& line, int SectionNumber) {
         }
     else if(SectionNumber == 3) {
         int counter = 0;
-        int CRTime = 0;
-        int CRId = 0;
+        int cancel_request[3] = {0}; // [0] -> Time , [1] -> PID , [2] -> HID
         while(getline(stream , token , delimiter)) {
             if (line.length()<=2) NoOfCancellations = stoi(token);
             else {
-
-                if (counter%2 == 0) {
-                    CRTime = stoi(token);
+                if (counter < 3) {
+                    cancel_request[counter] = stoi(token);
                     counter++;
                 }
-                else{
-                    CRId = stoi(token);
-                    // cout<<"Time "<<CRTime<<" ID "<<CRId<<endl;
-                    CancellationRequest* temp = new CancellationRequest(CRTime , CRId);
+                if (counter == 3) {
+                    CancellationRequest* temp = new CancellationRequest(cancel_request[0] , cancel_request[1] , cancel_request[2]);
                     CancellationRequests.enqueue(temp);
-                    // cout<<"Time "<<temp->GETTime()<<" ID "<<temp->GetPID()<<endl;
-
-                    // cout<<"Catched in the list"<<endl;
+                    // cout<<cancel_request[0]<<" "<<cancel_request[1]<<" "<<cancel_request[2]<<endl;
+                    counter = 0;
                 }
             }
         }

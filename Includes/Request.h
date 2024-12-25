@@ -7,12 +7,14 @@ class CancellationRequest {
 private:
 	int PID;
 	int Time;
+	int HID;
 	
 public:
 	CancellationRequest();
-	CancellationRequest(int Time , int PID);
+	CancellationRequest(int Time , int PID , int HID);
 	int GetPID()const;
-	int GETTime()const;
+	int GeTTime()const;
+	int GetHID()const;
 };
 
 

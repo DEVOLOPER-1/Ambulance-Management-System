@@ -62,10 +62,10 @@ private:
 	void produceOutputFile(bool IsPatientArray , T (& array)[4] , int CallCounter) {
 		fstream OutputFile;
 		if (CallCounter == 0) {
-			OutputFile.open("../../../OutputFile.txt", ios::out); //write mode
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::out); //write mode
 		}
 		else
-			OutputFile.open("../../../OutputFile.txt", ios::app); //write mode
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //write mode
 		if (OutputFile.is_open()){
 			if (IsPatientArray) {
 				if ( CallCounter == 0) {

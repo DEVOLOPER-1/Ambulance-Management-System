@@ -15,7 +15,7 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-Organizer::Organizer() : FileName("../../../InputText.txt")
+Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
 , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
 HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
 Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),

@@ -38,9 +38,10 @@ Logger* Request::GetLogger() { return logger; }
 
 
 CancellationRequest::CancellationRequest():PID(0) , Time(0){}
-CancellationRequest::CancellationRequest(int Time, int PID) :PID(PID) , Time(Time){}
-int CancellationRequest::GETTime()const{return Time;}
+CancellationRequest::CancellationRequest(int Time, int PID , int HID) :PID(PID) , Time(Time) , HID(HID){}
+int CancellationRequest::GeTTime()const{return Time;}
 int CancellationRequest::GetPID()const{return PID;}
+int CancellationRequest::GetHID()const{return HID;}
 
 ostream& operator<<(ostream& os, Request* r)
 {
