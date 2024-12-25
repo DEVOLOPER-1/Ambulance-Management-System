@@ -19,7 +19,7 @@ Organizer::Organizer() : FileName("../../../InputText.txt")
 , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
 HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
 Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
-Total_S_Cars_in_AllHospitals(0), variableIndex(0), index(0), running(true) 
+Total_S_Cars_in_AllHospitals(0), variableIndex(0), index(0), running(true), silentMode(false)
 {
 	HANDLE hWindows = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO cursorInfo;
@@ -137,7 +137,7 @@ void Organizer::distributeRequests(int timeStep)
 	}
 }
 
-void Organizer::runSimulation(bool SilentMode ) {
+void Organizer::runSimulation() {
     int timestep = 1; 
     UI ui;
 
@@ -145,7 +145,7 @@ void Organizer::runSimulation(bool SilentMode ) {
     while (true) { 
 
         distributeRequests(timestep);
-        if (SilentMode == false)
+        if (silentMode == false)
         {
             thread inputThread([this]() { this->getInputs(); });
             ui.display(timestep, index);
@@ -211,6 +211,28 @@ void Organizer::handleCars(int timeSteps)
 }
 
 void Organizer::receive(Car* car) { outCars.enqueue(car, -(car->getPickedUpTime())); }
+
+void Organizer::getProgramMode()
+{
+    char answer;
+
+    cout << "Please choose the way the Output file will be displayed\n(Y or y) for time step simulation\n(N or n) for silent mode: ";
+    cin >> answer;
+
+    while (answer != 'Y' && answer != 'y' && answer != 'N' && answer != 'n') {
+        cout << "Invalid input, please enter (Y) for time step simulation, (N) for silent mode: ";
+        cin >> answer;
+    }
+    
+    if (answer == 'Y' || answer == 'y') {
+        silentMode = false;
+    }
+
+    else
+    {
+        silentMode = true;
+    }
+}
 
 void Organizer::loadInputFile()
 {
