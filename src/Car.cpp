@@ -1,8 +1,15 @@
+#pragma once
 #include "../Includes/Car.h"
+#include <cmath>
 
 void Car::setStatus(string status)
 {
 	this->status = status;
+}
+
+int Car::calcDuration(int distance)
+{
+	return ceil( (double)distance / (double)speed );
 }
 
 Car::Car(string CarType, int speed, int HospitalID, int car_number) : CarType(CarType), speed(speed)
@@ -49,14 +56,13 @@ void Car::assign(int timestep, Request* request)
 	logger->CalcFinishTime(logger->getPT(), request->getDistance(), speed);
 	logger->CalcBusyTime();
 	
-	nextPickupTime = timestep + (request->getDistance() / speed);
-	nextDropOffTime = nextPickupTime + (request->getDistance() / speed);
+	nextPickupTime = timestep + calcDuration(request->getDistance());
 }
 
 void Car::pickUp()
 {
 	setStatus("Loaded");
-
+	nextDropOffTime = nextPickupTime + calcDuration(request->getDistance());
 }
 
 void Car::cancel()

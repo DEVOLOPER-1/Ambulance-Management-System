@@ -39,6 +39,8 @@ private:
 	int variableIndex;
 	int index;
 	bool running;
+	bool silentMode;
+
 private:
 	Organizer();
 
@@ -103,7 +105,7 @@ public:
 	void SetPatientsCount(int * PatientsCount);
 	void SetCancellationsCount(int CancellationsCount);
 	void setTotalCars_in_AllHospitals(int Total_S_Cars_in_AllHospitals , int Total_N_Cars_in_AllHospitals);
-	void runSimulation(bool SilentMode);  // Method to run the timestep simulation
+	void runSimulation();
 	bool isSimulationComplete();  // Method to check if the simulation is done
 
 	/*
@@ -139,6 +141,8 @@ public:
     void receive(Car* car);
 
 	// methods to handle input file (Scenario)
+	void getProgramMode();
+
     void loadInputFile();
 	
 	void ReAssignBetterHospital(Request* request);
@@ -150,80 +154,4 @@ public:
 	void removeLastTimestep();
 
 };
-
-
-
-
-
-
-// void simulateTimeStep(int timeStep){}
-//
-// void handleCarArrival(Car* car){}
-//
-// // void assignPatientToCar(Patient* patient, Car* car){}
-//
-//
-//
-// void callUIUpdate(int timeStep){}
-
-
-
-
-
-
-
-/*
-LinkedQueue<Request*> getRequests()      { return requests; }
-LinkedQueue<Request*> getCancellations() { return cancellations; }
-LinkedQueue<Car*>     getOutCars()       { return outCars; }
-LinkedQueue<Car*>     getBackCars()      { return backCars; }
-*/
-
-
-
-
-
-//Deprecated
-    
-//     void loadInputFile() {
-//         
-//         cout<<"Reading File....."<<endl;
-//         this->InputFile.open(FileName);
-//         if (InputFile.is_open()) {
-//             string Currentline,NextLine;
-//             int SectionCounter{0};
-//
-//             while (getline(InputFile, Currentline)) {
-//                 while (getline(InputFile, NextLine, ' ')) {
-//                     if (Currentline.empty()) {
-//                         SectionCounter++;
-//                         cout << "Section Counter -> " << SectionCounter << endl;
-//                         continue;
-//                     }
-//
-//                     // Process sections based on the SectionCounter
-//                     if (SectionCounter == 0) {
-//                         cout << "### HOSPITALS ###" << endl;
-//                         cout << Currentline << endl;
-//                     } else if (SectionCounter == 1) {
-//                         cout << "### DISTANCE_MATRIX ###" << endl;
-//                         cout << Currentline << endl;
-//                     } else if (SectionCounter == 2) {
-//                         cout << "### CAR_DISTRIBUTION ###" << endl;
-//                         cout << Currentline << endl;
-//                     } else if (SectionCounter == 3) {
-//                         cout << "### REQUESTS ###" << endl;
-//                         cout << Currentline << endl;
-//                     } else if (SectionCounter == 4) {
-//                         cout << "### CANCELLATIONS ###" << endl;
-//                         cout << Currentline << endl;
-//                     }
-//     }
-// }
-//             InputFile.close();
-//         }
-//         
-//     }
-
-
 

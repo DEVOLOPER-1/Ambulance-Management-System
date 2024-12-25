@@ -17,7 +17,7 @@ class Car
 	int nextDropOffTime;
 
 	void setStatus(string status);
-
+	int calcDuration(int distance);
 public:
 	// Constructor
 	Car(string CarType, int speed, int HospitalID, int car_number);
