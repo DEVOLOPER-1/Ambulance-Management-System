@@ -15,7 +15,7 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText.txt")
+Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText_2.txt")
 , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
 HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
 Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
@@ -61,22 +61,33 @@ void Organizer::SetHospitalsDistances(int **&hospitals_distances) {
     this->hospitals_distances = hospitals_distances;
 }
 
-
-
 void Organizer::handleCancellations(int timeStep) {
-    CancellationRequest * temp_cancel_req;
+    CancellationRequest* temp_cancel_req;
     while (!cancellations.isEmpty() &&
-        cancellations.peek(temp_cancel_req) &&
-        temp_cancel_req->GeTTime() == timeStep) {
-
+           cancellations.peek(temp_cancel_req) &&
+           temp_cancel_req->GeTTime() == timeStep) {
+        
         cancellations.dequeue(temp_cancel_req);
         int patientID = temp_cancel_req->GetPID();
-        int hospitalID = temp_cancel_req->GetHID()-1; // converting to zero based indexing as r. wanted this
-        hospitals[hospitalID]->handleNPCancellations(patientID);
-        delete temp_cancel_req;
-        }
-}
+        int hospitalID = temp_cancel_req->GetHID() - 1;
 
+        // patient  picked up ?
+        bool isPickedUp = outCars.isPatientPickedUp(patientID);
+        
+        if (!isPickedUp) {
+            isPickedUp = backCars.findIf([patientID](Car* car) {
+                return car->getPatientID() == patientID;
+            });
+        }
+
+        // patient not picked up -> handle cancellation
+        if (!isPickedUp) {
+            hospitals[hospitalID]->handleNPCancellations(patientID);
+        }
+        
+        delete temp_cancel_req;
+    }
+}
 
 // private methods
 void Organizer::sendBack()

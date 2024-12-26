@@ -45,14 +45,15 @@ public:
 //This class impelements the priority queue as a sorted list (Linked List)
 //The item with highest priority is at the front of the queue
 template <typename T>
-class priQueue
+class PriQueue
 {
+protected:
     int MembersCount;
     priNode<T>* head;
 public:
-    priQueue() : head(nullptr) , MembersCount(0) {}
+    PriQueue() : head(nullptr) , MembersCount(0) {}
 
-    ~priQueue() {
+    ~PriQueue() {
         T tmp;
         int p;
         while (dequeue(tmp, p));
@@ -121,5 +122,43 @@ public:
 
     int GetMembersCount() {
         return MembersCount;
+    }
+};
+
+template <typename T>
+class TraversablePriQueue : public PriQueue<T> {
+public:
+    TraversablePriQueue() : PriQueue<T>() {}
+
+    // traversal & check a patient ID
+    bool isPatientPickedUp(int patientID) {
+        priNode<T>* current = this->head;  
+        while (current) {
+            T item;
+            int priority;
+            item = current->getItem(priority);
+            if (item->getPatientID() == patientID && 
+                item->getStatus() == "Loaded") {
+                return true;
+            }
+            current = current->getNext();
+        }
+        return false;
+    }
+
+    // traversal with predicate
+    template<typename Predicate>
+    bool findIf(Predicate pred) {
+        priNode<T>* current = this->head;
+        while (current) {
+            T item;
+            int priority;
+            item = current->getItem(priority);
+            if (pred(item)) {
+                return true;
+            }
+            current = current->getNext();
+        }
+        return false;
     }
 };

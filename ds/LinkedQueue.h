@@ -251,7 +251,7 @@ public:
     bool RemovePatientNode(const int patientID);
 };
 
-// Implementation remains the same
+
 template <typename T>
 bool SpecialLinkedQueue<T>::RemovePatientNode(const int patientID) {
     if (this->isEmpty()) return false;

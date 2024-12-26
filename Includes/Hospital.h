@@ -2,7 +2,7 @@
 #include "Car.h"
 #include "Request.h"
 #include "../ds/LinkedQueue.h"
-#include "../ds/priQueue.h"
+#include "../ds/PriQueue.h"
 #include <iostream>
 
 #include "ReadingHelper.h"
@@ -15,7 +15,7 @@ class Hospital
 	int ID;
 	LinkedQueue<Request*> SP_Requests;
 	SpecialLinkedQueue<Request*> NP_Requests;
-	priQueue<Request*>    EP_Requests;
+	PriQueue<Request*>    EP_Requests;
 	LinkedQueue<Car*>     sCars;
 	LinkedQueue<Car*>     nCars;
 

@@ -39,8 +39,10 @@ bool Hospital::handleNPCancellations(int patientID) {
     LinkedQueue<Car*> tempNCars = nCars;
     while (!tempNCars.isEmpty()) {
         tempNCars.dequeue(car);
-        if (car->getPatientID() == patientID) {
-            car->cancel();  // reseting car state
+        if (car->getPatientID() == patientID && car->getStatus() == "Assigned") {
+        	car->cancel();  // reseting car state
+        	car->setStatus("Ready");
+        	nCars.enqueue(car);
             return true;
         }
     }

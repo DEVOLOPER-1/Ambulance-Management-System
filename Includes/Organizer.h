@@ -32,8 +32,8 @@ private:
 	LinkedQueue<Request*> requests;
 	LinkedQueue<Request*> finishedRequests;
 	SpecialLinkedQueue<CancellationRequest*> cancellations;
-	priQueue<Car* > outCars;
-    priQueue<Car* > backCars;
+	TraversablePriQueue<Car* > outCars;
+    TraversablePriQueue<Car* > backCars;
 	static Organizer* instance;  /// Singleton Design Pattern
 
 	int variableIndex;
@@ -67,7 +67,7 @@ private:
 			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::out); //write mode
 		}
 		else
-			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //write mode
+			OutputFile.open("E:\\Coding\\C++\\Ambulance-Management-System\\OutputFile.txt", ios::app); //APPEND mode
 		if (OutputFile.is_open()){
 			if (IsPatientArray) {
 				if ( CallCounter == 0) {

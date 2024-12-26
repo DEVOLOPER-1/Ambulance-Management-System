@@ -16,7 +16,6 @@ class Car
 	int nextPickupTime;
 	int nextDropOffTime;
 
-	void setStatus(string status);
 	int calcDuration(int distance);
 public:
 	// Constructor
@@ -42,6 +41,7 @@ public:
 	// methods
 	void assign(int timestep, Request* request);
 
+	void setStatus(string status);
 
 	void pickUp();
 
