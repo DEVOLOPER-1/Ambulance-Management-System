@@ -71,13 +71,10 @@ void Organizer::handleCancellations(int timeStep) {
         int patientID = temp_cancel_req->GetPID();
         int hospitalID = temp_cancel_req->GetHID() - 1; // zero based indexing
 
-        bool isPickedUp = false;
         if (outCars.isPatientPickedUp(patientID)|| backCars.isPatientPickedUp(patientID)) {
-            isPickedUp = true;
             delete temp_cancel_req;
             continue;
         }
-
         //Deprecated
         // patient  picked up ?
         // bool isPickedUp = outCars.isPatientPickedUp(patientID);
@@ -90,10 +87,10 @@ void Organizer::handleCancellations(int timeStep) {
         // }
 
         // patient not picked up -> handle cancellation
-        if (!isPickedUp) {
-            hospitals[hospitalID]->handleNPCancellations(patientID);
-        }
-        
+        // if (!isPickedUp) {
+        //     hospitals[hospitalID]->handleNPCancellations(patientID);
+        // }
+        hospitals[hospitalID]->handleNPCancellations(patientID);
         delete temp_cancel_req;
     }
 }
