@@ -15,7 +15,7 @@ Organizer* Organizer::GetInstance()
     return instance;
 }
 
-Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText_2.txt")
+Organizer::Organizer() : FileName("E:\\Coding\\C++\\Ambulance-Management-System\\InputText_7.txt")
 , requests(), cancellations(), outCars(), backCars(), hospitals(nullptr), TotalSimulationTime(0),
 HospitalsCount(0), Total_EP_Patients_in_AllHospitals(0), Total_SP_Patients_in_AllHospitals(0),
 Total_NP_Patients_in_AllHospitals(0), CancellationsCount(0), Total_N_Cars_in_AllHospitals(0),
@@ -69,16 +69,25 @@ void Organizer::handleCancellations(int timeStep) {
         
         cancellations.dequeue(temp_cancel_req);
         int patientID = temp_cancel_req->GetPID();
-        int hospitalID = temp_cancel_req->GetHID() - 1;
+        int hospitalID = temp_cancel_req->GetHID() - 1; // zero based indexing
 
-        // patient  picked up ?
-        bool isPickedUp = outCars.isPatientPickedUp(patientID);
-        
-        if (!isPickedUp) {
-            isPickedUp = backCars.findIf([patientID](Car* car) {
-                return car->getPatientID() == patientID;
-            });
+        bool isPickedUp = false;
+        if (outCars.isPatientPickedUp(patientID)|| backCars.isPatientPickedUp(patientID)) {
+            isPickedUp = true;
+            delete temp_cancel_req;
+            continue;
         }
+
+        //Deprecated
+        // patient  picked up ?
+        // bool isPickedUp = outCars.isPatientPickedUp(patientID);
+        //if (!isPickedUp){backCars.isPatientPickedUp (patientID);} //2nd ver.
+        //
+        // if (!isPickedUp) { //lamada func 1st ver.
+        //     isPickedUp = backCars.findIf([patientID](Car* car) { 
+        //         return car->getPatientID() == patientID;
+        //     });
+        // }
 
         // patient not picked up -> handle cancellation
         if (!isPickedUp) {
