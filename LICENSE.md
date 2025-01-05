@@ -51,7 +51,6 @@ The GNU Affero General Public License is a free, copyleft license for software a
 - You can change the software or use pieces of it in new free programs.
 - Public use of a modified version requires providing the source code to users.
 
-For the full text, please see below.
 
 ---
 
