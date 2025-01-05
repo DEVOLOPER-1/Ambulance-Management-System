@@ -1,19 +1,39 @@
-# GNU Affero General Public License v3.0
+# License: GNU Affero General Public License v3.0
 
 This project is licensed under the **GNU Affero General Public License v3.0**. Please read the terms carefully before using, modifying, or distributing this software.
 
-## License Summary
+---
 
-The **GNU AGPL v3.0** ensures:
-- The freedom to use, study, share, and modify the software.
-- The obligation to make the source code of the software available to users if the software is distributed or made accessible over a network.
-- A strong copyleft clause ensuring derivative works are also licensed under the AGPL.
+## Why This License?
 
-For full details, refer to the text below.
+To ensure:
+- **Fair use and developer compensation**: Commercial use of this project requires explicit adherence to the licensing terms, ensuring that developers receive credit and compensation where applicable.
+- **Protection against unauthorized commercial use**: Unauthorized commercial use is strictly prohibited unless the user complies with this license.
+- **Open-source ethos with strong copyright protection**: This license ensures the software remains free and open-source while protecting developers' rights and interests.
 
 ---
 
-# GNU AFFERO GENERAL PUBLIC LICENSE
+## Summary of Key Terms
+
+1. **Freedom to use, study, share, and modify**:
+   - You can freely use this software for personal or non-commercial purposes.
+   - You can study the source code and modify it for your own use.
+
+2. **Obligation for network services**:
+   - If you deploy this software (or a modified version) on a server or service accessible over a network, you **must make the source code of your version available to users**.
+
+3. **Commercial use requires compliance**:
+   - Any commercial use must adhere to the terms of this license.
+   - If the software is used commercially, **you must ensure proper licensing and compensate the original developers**.
+
+4. **Copyleft for derivative works**:
+   - Any modifications or derivative works must also be licensed under the AGPL v3.0.
+
+---
+
+## Full License Text
+
+### GNU AFFERO GENERAL PUBLIC LICENSE
 Version 3, 19 November 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>  
@@ -21,13 +41,11 @@ Everyone is permitted to copy and distribute verbatim copies of this license doc
 
 ---
 
-## Preamble
+### Preamble
 
 The GNU Affero General Public License is a free, copyleft license for software and other kinds of works, specifically designed to ensure cooperation with the community in the case of network server software.
 
-When we speak of free software, we are referring to freedom, not price. This license guarantees your freedom to share and change all versions of the program, ensuring it remains free software for all its users.
-
-### Key Features:
+#### Key Features:
 - You can distribute copies of free software (and charge for them if you wish).
 - You receive source code or can get it if you want.
 - You can change the software or use pieces of it in new free programs.
@@ -36,6 +54,9 @@ When we speak of free software, we are referring to freedom, not price. This lic
 For the full text, please see below.
 
 ---
+
+
+
 
 
 
